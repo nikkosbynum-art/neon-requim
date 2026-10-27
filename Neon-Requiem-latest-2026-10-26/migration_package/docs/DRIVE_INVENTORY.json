@@ -1,0 +1,44 @@
+{
+  "Google Drive root": "https://drive.google.com/drive/folders/1EsuAqZMVJeGSLTWPULaDFitDcfwlq8c2",
+  "verified_files": [
+    {
+      "name": "01_world_roster_concept_sheet.png",
+      "id": "1C9kAqnmyBE_GMdNBB2j1tK1_g-JPVBhX"
+    },
+    {
+      "name": "02_character_faction_design_sheet.png",
+      "id": "1dQnQHU6MbAmr-Y798AS-J8xFGLUU19X7"
+    },
+    {
+      "name": "03_breaker_evolution_reference.png",
+      "id": "119ZEI1_FVZ5HiAjt9aHiIdxUnR0Z4Ll2"
+    },
+    {
+      "name": "04_breaker_production_board.png",
+      "id": "1upT7jW1K5pLr1X0ItmGm5b9UXe2JvFy5"
+    },
+    {
+      "name": "Breaker_Tier1_Godot_Production_Spec.md",
+      "id": "1Vw-drEACq3hdDy_OfYt25dGgjVEslORu"
+    },
+    {
+      "name": "README.md",
+      "id": "1E_SFhXoBVjZy8bE5X0ogtaxCREQQ9uWc"
+    },
+    {
+      "name": "MANIFEST.md",
+      "id": "104dFfcUdjeO7H1CwJLE8jUJHCbyEdN9Y"
+    },
+    {
+      "name": "Neon_Requiem_Reconstruction_Kit.zip",
+      "id": "1pIJpLWEnxu8esNkAX3_d46WuSt2Zw3iM",
+      "note": "Archive contains above files; intentionally not nested in this ZIP"
+    }
+  ],
+  "empty_at_inspection": [
+    "03 Environments & UI",
+    "04 Audio & Music",
+    "05 Godot Project Backups",
+    "07 Notion Exports"
+  ]
+}

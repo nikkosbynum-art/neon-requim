@@ -1,0 +1,45 @@
+{
+	"permanent": {
+		"evolution": {
+			"breaker_tier": "Street Grade"
+		},
+		"evolution_materials": {
+			"evolution_data": 2.0
+		},
+		"first_clear_material_claims": [
+			"district.undercity"
+		],
+		"highest_wave_ever": 25,
+		"lifetime_influence": 3.0,
+		"research": {
+			"combat": 1.0
+		},
+		"unlocks": [
+			"breaker"
+		]
+	},
+	"run": {
+		"credits": 158,
+		"highest_cleared_wave": 25.0,
+		"offline_claim_unix": 1792985294,
+		"recruits": {
+			"breaker": {
+				"level": 4.0
+			}
+		},
+		"squad_hp": [
+			120.0,
+			91.0,
+			83.0,
+			74.0,
+			65.0,
+			56.0
+		],
+		"wave": 40.0
+	},
+	"save_version": 1,
+	"settings": {
+		"master_volume": 0.45,
+		"window_mode": "windowed"
+	}
+}

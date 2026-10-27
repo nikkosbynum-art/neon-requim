@@ -1,0 +1,3 @@
+# Environment and encounter systems
+
+`environment_director.gd` selects data-driven environment modules and crossfades them when wave data enters a different encounter zone. It is presentation-only and never changes combat outcomes. `undercity_backdrop.gd` draws a temporary procedural skyline, restrained neon haze, rain, and wet-street perspective; the palette is supplied by `data/zones/undercity_prototype_zones.json`. These are placeholder environments, not production art. Modular encounter zones with seamless-looking transitions were approved on 2026-10-24. The two sample palettes and wave-13 test boundary are provisional and do not establish canonical location names or pacing.

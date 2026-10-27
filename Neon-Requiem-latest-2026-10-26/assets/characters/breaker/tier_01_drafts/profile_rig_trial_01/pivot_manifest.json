@@ -1,0 +1,1168 @@
+{
+  "status": "REVIEW ONLY — MASKS NOT ANIMATION READY",
+  "source": "assets/characters/breaker/tier_01_drafts/BREAKER_T1_profile_rebuild_candidate_01.png",
+  "source_canvas_px": [
+    1024,
+    1536
+  ],
+  "mask_supersampling": 4,
+  "layers_back_to_front": [
+    "right_thigh",
+    "right_shin",
+    "right_boot",
+    "left_thigh",
+    "left_shin",
+    "left_boot",
+    "pelvis",
+    "torso",
+    "head_neck",
+    "cyber_upper_arm",
+    "cyber_forearm",
+    "natural_upper_arm",
+    "natural_forearm"
+  ],
+  "pivots_px": {
+    "ground_anchor": [
+      535,
+      1472
+    ],
+    "pelvis": [
+      520,
+      850
+    ],
+    "torso": [
+      520,
+      620
+    ],
+    "head_neck": [
+      535,
+      230
+    ],
+    "cyber_shoulder": [
+      350,
+      340
+    ],
+    "cyber_elbow": [
+      345,
+      495
+    ],
+    "natural_shoulder": [
+      615,
+      330
+    ],
+    "natural_elbow": [
+      650,
+      580
+    ],
+    "left_hip": [
+      420,
+      860
+    ],
+    "left_knee": [
+      375,
+      1035
+    ],
+    "left_ankle": [
+      355,
+      1240
+    ],
+    "right_hip": [
+      580,
+      860
+    ],
+    "right_knee": [
+      590,
+      1030
+    ],
+    "right_ankle": [
+      580,
+      1240
+    ]
+  },
+  "pivot_status": "PROVISIONAL — source-pose estimates for isolated Godot test only",
+  "parts": [
+    {
+      "name": "right_boot",
+      "file": "right_boot.png",
+      "polygon_points_px": [
+        [
+          507,
+          1208
+        ],
+        [
+          644,
+          1212
+        ],
+        [
+          660,
+          1270
+        ],
+        [
+          706,
+          1322
+        ],
+        [
+          766,
+          1357
+        ],
+        [
+          791,
+          1382
+        ],
+        [
+          790,
+          1418
+        ],
+        [
+          766,
+          1434
+        ],
+        [
+          696,
+          1437
+        ],
+        [
+          640,
+          1442
+        ],
+        [
+          585,
+          1443
+        ],
+        [
+          548,
+          1438
+        ],
+        [
+          526,
+          1441
+        ],
+        [
+          520,
+          1428
+        ],
+        [
+          514,
+          1395
+        ],
+        [
+          514,
+          1365
+        ],
+        [
+          514,
+          1334
+        ]
+      ],
+      "parent_bone": "RightAnkle",
+      "pivot": "right_ankle",
+      "draw_order": 2,
+      "alpha_mode": "transparent_cutout"
+    },
+    {
+      "name": "right_shin",
+      "file": "right_shin.png",
+      "polygon_points_px": [
+        [
+          506,
+          997
+        ],
+        [
+          638,
+          1001
+        ],
+        [
+          652,
+          1061
+        ],
+        [
+          652,
+          1168
+        ],
+        [
+          642,
+          1235
+        ],
+        [
+          621,
+          1275
+        ],
+        [
+          574,
+          1285
+        ],
+        [
+          536,
+          1260
+        ],
+        [
+          514,
+          1213
+        ],
+        [
+          502,
+          1144
+        ],
+        [
+          498,
+          1077
+        ]
+      ],
+      "parent_bone": "RightKnee",
+      "pivot": "right_knee",
+      "draw_order": 1,
+      "alpha_mode": "transparent_cutout"
+    },
+    {
+      "name": "left_boot",
+      "file": "left_boot.png",
+      "polygon_points_px": [
+        [
+          281,
+          1209
+        ],
+        [
+          386,
+          1215
+        ],
+        [
+          417,
+          1270
+        ],
+        [
+          444,
+          1325
+        ],
+        [
+          482,
+          1371
+        ],
+        [
+          503,
+          1406
+        ],
+        [
+          515,
+          1440
+        ],
+        [
+          512,
+          1464
+        ],
+        [
+          489,
+          1472
+        ],
+        [
+          415,
+          1470
+        ],
+        [
+          344,
+          1459
+        ],
+        [
+          287,
+          1443
+        ],
+        [
+          275,
+          1420
+        ],
+        [
+          282,
+          1382
+        ],
+        [
+          293,
+          1334
+        ]
+      ],
+      "parent_bone": "LeftAnkle",
+      "pivot": "left_ankle",
+      "draw_order": 5,
+      "alpha_mode": "transparent_cutout"
+    },
+    {
+      "name": "left_shin",
+      "file": "left_shin.png",
+      "polygon_points_px": [
+        [
+          304,
+          1000
+        ],
+        [
+          496,
+          992
+        ],
+        [
+          491,
+          1040
+        ],
+        [
+          480,
+          1090
+        ],
+        [
+          462,
+          1150
+        ],
+        [
+          446,
+          1205
+        ],
+        [
+          430,
+          1250
+        ],
+        [
+          389,
+          1248
+        ],
+        [
+          360,
+          1275
+        ],
+        [
+          324,
+          1260
+        ],
+        [
+          302,
+          1225
+        ],
+        [
+          298,
+          1168
+        ],
+        [
+          304,
+          1091
+        ]
+      ],
+      "parent_bone": "LeftKnee",
+      "pivot": "left_knee",
+      "draw_order": 4,
+      "alpha_mode": "transparent_cutout"
+    },
+    {
+      "name": "right_thigh",
+      "file": "right_thigh.png",
+      "polygon_points_px": [
+        [
+          495,
+          824
+        ],
+        [
+          660,
+          820
+        ],
+        [
+          666,
+          872
+        ],
+        [
+          660,
+          929
+        ],
+        [
+          660,
+          992
+        ],
+        [
+          631,
+          1034
+        ],
+        [
+          590,
+          1055
+        ],
+        [
+          548,
+          1040
+        ],
+        [
+          516,
+          1016
+        ],
+        [
+          500,
+          973
+        ],
+        [
+          494,
+          914
+        ]
+      ],
+      "parent_bone": "RightHip",
+      "pivot": "right_hip",
+      "draw_order": 0,
+      "alpha_mode": "transparent_cutout"
+    },
+    {
+      "name": "left_thigh",
+      "file": "left_thigh.png",
+      "polygon_points_px": [
+        [
+          365,
+          831
+        ],
+        [
+          499,
+          832
+        ],
+        [
+          515,
+          878
+        ],
+        [
+          505,
+          931
+        ],
+        [
+          482,
+          986
+        ],
+        [
+          443,
+          1034
+        ],
+        [
+          401,
+          1054
+        ],
+        [
+          359,
+          1037
+        ],
+        [
+          334,
+          1006
+        ],
+        [
+          341,
+          955
+        ],
+        [
+          357,
+          900
+        ]
+      ],
+      "parent_bone": "LeftHip",
+      "pivot": "left_hip",
+      "draw_order": 3,
+      "alpha_mode": "transparent_cutout"
+    },
+    {
+      "name": "pelvis",
+      "file": "pelvis.png",
+      "polygon_points_px": [
+        [
+          392,
+          588
+        ],
+        [
+          627,
+          582
+        ],
+        [
+          651,
+          625
+        ],
+        [
+          646,
+          710
+        ],
+        [
+          653,
+          803
+        ],
+        [
+          645,
+          874
+        ],
+        [
+          616,
+          925
+        ],
+        [
+          570,
+          944
+        ],
+        [
+          520,
+          932
+        ],
+        [
+          466,
+          914
+        ],
+        [
+          408,
+          890
+        ],
+        [
+          377,
+          860
+        ],
+        [
+          373,
+          810
+        ],
+        [
+          389,
+          744
+        ]
+      ],
+      "parent_bone": "Pelvis",
+      "pivot": "pelvis",
+      "draw_order": 6,
+      "alpha_mode": "transparent_cutout"
+    },
+    {
+      "name": "torso",
+      "file": "torso.png",
+      "polygon_points_px": [
+        [
+          411,
+          201
+        ],
+        [
+          476,
+          199
+        ],
+        [
+          520,
+          213
+        ],
+        [
+          575,
+          218
+        ],
+        [
+          624,
+          240
+        ],
+        [
+          651,
+          278
+        ],
+        [
+          664,
+          338
+        ],
+        [
+          660,
+          411
+        ],
+        [
+          649,
+          486
+        ],
+        [
+          641,
+          555
+        ],
+        [
+          647,
+          619
+        ],
+        [
+          640,
+          696
+        ],
+        [
+          628,
+          764
+        ],
+        [
+          640,
+          832
+        ],
+        [
+          615,
+          882
+        ],
+        [
+          565,
+          900
+        ],
+        [
+          508,
+          877
+        ],
+        [
+          451,
+          865
+        ],
+        [
+          405,
+          842
+        ],
+        [
+          397,
+          775
+        ],
+        [
+          402,
+          690
+        ],
+        [
+          397,
+          603
+        ],
+        [
+          404,
+          518
+        ],
+        [
+          393,
+          437
+        ],
+        [
+          391,
+          350
+        ],
+        [
+          397,
+          275
+        ]
+      ],
+      "parent_bone": "Torso",
+      "pivot": "torso",
+      "draw_order": 7,
+      "alpha_mode": "transparent_cutout"
+    },
+    {
+      "name": "cyber_upper_arm",
+      "file": "cyber_upper_arm.png",
+      "polygon_points_px": [
+        [
+          292,
+          259
+        ],
+        [
+          344,
+          244
+        ],
+        [
+          396,
+          252
+        ],
+        [
+          431,
+          279
+        ],
+        [
+          451,
+          326
+        ],
+        [
+          451,
+          379
+        ],
+        [
+          434,
+          428
+        ],
+        [
+          415,
+          470
+        ],
+        [
+          382,
+          490
+        ],
+        [
+          337,
+          476
+        ],
+        [
+          297,
+          445
+        ],
+        [
+          276,
+          407
+        ],
+        [
+          274,
+          349
+        ]
+      ],
+      "parent_bone": "CyberShoulder",
+      "pivot": "cyber_shoulder",
+      "draw_order": 9,
+      "alpha_mode": "transparent_cutout"
+    },
+    {
+      "name": "cyber_forearm",
+      "file": "cyber_forearm.png",
+      "polygon_points_px": [
+        [
+          239,
+          405
+        ],
+        [
+          316,
+          409
+        ],
+        [
+          359,
+          435
+        ],
+        [
+          396,
+          470
+        ],
+        [
+          419,
+          516
+        ],
+        [
+          426,
+          566
+        ],
+        [
+          447,
+          619
+        ],
+        [
+          472,
+          680
+        ],
+        [
+          473,
+          723
+        ],
+        [
+          451,
+          766
+        ],
+        [
+          423,
+          800
+        ],
+        [
+          389,
+          819
+        ],
+        [
+          350,
+          830
+        ],
+        [
+          337,
+          824
+        ],
+        [
+          316,
+          770
+        ],
+        [
+          286,
+          737
+        ],
+        [
+          267,
+          690
+        ],
+        [
+          239,
+          642
+        ],
+        [
+          238,
+          590
+        ],
+        [
+          248,
+          540
+        ],
+        [
+          248,
+          488
+        ]
+      ],
+      "parent_bone": "CyberElbow",
+      "pivot": "cyber_elbow",
+      "draw_order": 10,
+      "alpha_mode": "transparent_cutout"
+    },
+    {
+      "name": "natural_upper_arm",
+      "file": "natural_upper_arm.png",
+      "polygon_points_px": [
+        [
+          586,
+          281
+        ],
+        [
+          629,
+          277
+        ],
+        [
+          666,
+          298
+        ],
+        [
+          691,
+          337
+        ],
+        [
+          710,
+          398
+        ],
+        [
+          725,
+          467
+        ],
+        [
+          729,
+          516
+        ],
+        [
+          716,
+          555
+        ],
+        [
+          692,
+          590
+        ],
+        [
+          662,
+          614
+        ],
+        [
+          633,
+          594
+        ],
+        [
+          610,
+          552
+        ],
+        [
+          591,
+          502
+        ],
+        [
+          579,
+          443
+        ],
+        [
+          576,
+          374
+        ]
+      ],
+      "parent_bone": "NaturalShoulder",
+      "pivot": "natural_shoulder",
+      "draw_order": 11,
+      "alpha_mode": "transparent_cutout"
+    },
+    {
+      "name": "natural_forearm",
+      "file": "natural_forearm.png",
+      "polygon_points_px": [
+        [
+          643,
+          526
+        ],
+        [
+          683,
+          539
+        ],
+        [
+          706,
+          570
+        ],
+        [
+          710,
+          613
+        ],
+        [
+          704,
+          653
+        ],
+        [
+          719,
+          686
+        ],
+        [
+          740,
+          717
+        ],
+        [
+          751,
+          751
+        ],
+        [
+          748,
+          784
+        ],
+        [
+          738,
+          833
+        ],
+        [
+          711,
+          846
+        ],
+        [
+          689,
+          850
+        ],
+        [
+          661,
+          846
+        ],
+        [
+          661,
+          816
+        ],
+        [
+          674,
+          793
+        ],
+        [
+          670,
+          759
+        ],
+        [
+          658,
+          726
+        ],
+        [
+          644,
+          689
+        ],
+        [
+          637,
+          647
+        ],
+        [
+          637,
+          596
+        ]
+      ],
+      "parent_bone": "NaturalElbow",
+      "pivot": "natural_elbow",
+      "draw_order": 12,
+      "alpha_mode": "transparent_cutout"
+    },
+    {
+      "name": "head_neck",
+      "file": "head_neck.png",
+      "polygon_points_px": [
+        [
+          453,
+          183
+        ],
+        [
+          432,
+          156
+        ],
+        [
+          425,
+          117
+        ],
+        [
+          443,
+          80
+        ],
+        [
+          482,
+          52
+        ],
+        [
+          535,
+          36
+        ],
+        [
+          588,
+          34
+        ],
+        [
+          632,
+          51
+        ],
+        [
+          667,
+          82
+        ],
+        [
+          682,
+          116
+        ],
+        [
+          672,
+          149
+        ],
+        [
+          651,
+          177
+        ],
+        [
+          633,
+          202
+        ],
+        [
+          617,
+          230
+        ],
+        [
+          619,
+          264
+        ],
+        [
+          638,
+          294
+        ],
+        [
+          624,
+          325
+        ],
+        [
+          565,
+          319
+        ],
+        [
+          505,
+          301
+        ],
+        [
+          462,
+          266
+        ],
+        [
+          442,
+          229
+        ]
+      ],
+      "parent_bone": "HeadNeck",
+      "pivot": "head_neck",
+      "draw_order": 8,
+      "alpha_mode": "transparent_cutout"
+    }
+  ],
+  "notes": [
+    "Masks are hand-estimated polygons clipped to the user-approved concept alpha matte.",
+    "The alpha threshold removes most backdrop glow but can trim soft edge pixels; the silhouette still needs visual review.",
+    "Latest neutral composite reconstructs the thresholded source exactly with zero uncovered silhouette pixels.",
+    "Pivots remain hand-estimated and hidden joint anatomy is not reconstructed; motion samples validate transform plumbing only, not all-frame seam continuity or deformation.",
+    "Godot review scale now targets 256 px visible feet-to-hair height using the measured 1427 px source silhouette."
+  ],
+  "validation": {
+    "all_parts_same_canvas": true,
+    "uncovered_silhouette_pixels": 0,
+    "neutral_reconstruction_exact": true,
+    "godot_rig_tested": true,
+    "godot_rig_test_scope": "Isolated Godot 4.7.2 review only: 256 px visible-height scale, shared canvas and transparent corners, facing/ground anchor, idle/walk/punch/hit/defeat pose samples, walk cycle and six-unit lineup captures.",
+    "production_ready": false,
+    "unresolved": [
+      "hand-estimated pivots",
+      "missing hidden anatomy under overlaps",
+      "continuous joint seam validation",
+      "mesh or skin deformation"
+    ]
+  },
+  "manifest_version": 1,
+  "character_id": "BREAKER",
+  "tier_id": 1,
+  "asset_status": "review_only",
+  "source_reference": "assets/characters/breaker/tier_01_drafts/BREAKER_T1_profile_rebuild_candidate_01.png",
+  "target_visible_height_px": 256,
+  "measured_visible_height_px": 1427,
+  "bone_hierarchy": [
+    {
+      "name": "GroundRoot",
+      "parent": null,
+      "pivot": "ground_anchor",
+      "parent_pivot": null
+    },
+    {
+      "name": "Pelvis",
+      "parent": "GroundRoot",
+      "pivot": "pelvis",
+      "parent_pivot": "ground_anchor"
+    },
+    {
+      "name": "Torso",
+      "parent": "Pelvis",
+      "pivot": "torso",
+      "parent_pivot": "pelvis"
+    },
+    {
+      "name": "HeadNeck",
+      "parent": "Torso",
+      "pivot": "head_neck",
+      "parent_pivot": "torso"
+    },
+    {
+      "name": "CyberShoulder",
+      "parent": "Torso",
+      "pivot": "cyber_shoulder",
+      "parent_pivot": "torso"
+    },
+    {
+      "name": "CyberElbow",
+      "parent": "CyberShoulder",
+      "pivot": "cyber_elbow",
+      "parent_pivot": "cyber_shoulder"
+    },
+    {
+      "name": "NaturalShoulder",
+      "parent": "Torso",
+      "pivot": "natural_shoulder",
+      "parent_pivot": "torso"
+    },
+    {
+      "name": "NaturalElbow",
+      "parent": "NaturalShoulder",
+      "pivot": "natural_elbow",
+      "parent_pivot": "natural_shoulder"
+    },
+    {
+      "name": "LeftHip",
+      "parent": "Pelvis",
+      "pivot": "left_hip",
+      "parent_pivot": "pelvis"
+    },
+    {
+      "name": "LeftKnee",
+      "parent": "LeftHip",
+      "pivot": "left_knee",
+      "parent_pivot": "left_hip"
+    },
+    {
+      "name": "LeftAnkle",
+      "parent": "LeftKnee",
+      "pivot": "left_ankle",
+      "parent_pivot": "left_knee"
+    },
+    {
+      "name": "RightHip",
+      "parent": "Pelvis",
+      "pivot": "right_hip",
+      "parent_pivot": "pelvis"
+    },
+    {
+      "name": "RightKnee",
+      "parent": "RightHip",
+      "pivot": "right_knee",
+      "parent_pivot": "right_hip"
+    },
+    {
+      "name": "RightAnkle",
+      "parent": "RightKnee",
+      "pivot": "right_ankle",
+      "parent_pivot": "right_knee"
+    }
+  ],
+  "production_gates": {
+    "visible_art_approved": false,
+    "hidden_anatomy_authored": false,
+    "pivots_authored": false,
+    "joint_seams_reviewed": false,
+    "animation_reviewed": false
+  }
+}

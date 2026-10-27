@@ -1,0 +1,5 @@
+# CIPHER Tier I cutout remap candidate 07
+
+Status: QUARANTINED REVIEW CANDIDATE; NOT RIG INPUT. This revision keeps the visible rear signal mast with `backpack_mount` instead of splitting it between that layer and `head_hood_hair_face`. The ownership follows the approved turnaround; the traced mask is provisional and must pass full-size visual review. Candidate 06 remains unchanged. No source pixels or hidden anatomy were invented. Pivots, far-side anatomy, deformation, and production approval remain unverified.
+
+User-approved hand/jacket occlusion interpretation (2026-10-25): the visible near hand is the separate foreground near_hand part; the jacket continues behind it, and visible hand pixels must not belong to pelvis_belt_gear. No hidden jacket underpaint has been authored. If added later for articulation, label it inferred because the flattened source does not show those pixels. This resolves ownership intent only; candidate 07 remains quarantined and all semantic/art/rig gates remain open.

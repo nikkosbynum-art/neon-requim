@@ -1,0 +1,204 @@
+{
+  "status": "QUARANTINED REVIEW CANDIDATE",
+  "source": "docs/visual_qa/CIPHER_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_view": "right-facing side profile; original flattened reference preserved",
+  "crop_xywh": [
+    600,
+    10,
+    330,
+    960
+  ],
+  "pivot_and_overlap_status": "provisional; inferred from visible seams; no hidden anatomy is source-backed",
+  "parts": {
+    "backpack_mount": {
+      "file": "CIPHER_T1_BACKPACK_MOUNT_REF_CUTOUT_CANDIDATE_01.png",
+      "size_px": [
+        262,
+        572
+      ],
+      "source_crop_xy": [
+        -31,
+        -27
+      ],
+      "safety_margin_px": 60,
+      "source_bbox_xyxy": [
+        29,
+        33,
+        171,
+        485
+      ],
+      "readiness": "reference-derived pixels; semantic boundary and pivot provisional"
+    },
+    "near_thigh": {
+      "file": "CIPHER_T1_NEAR_THIGH_REF_CUTOUT_CANDIDATE_01.png",
+      "size_px": [
+        238,
+        272
+      ],
+      "source_crop_xy": [
+        41,
+        576
+      ],
+      "safety_margin_px": 60,
+      "source_bbox_xyxy": [
+        101,
+        636,
+        219,
+        788
+      ],
+      "readiness": "reference-derived pixels; semantic boundary and pivot provisional"
+    },
+    "near_shin": {
+      "file": "CIPHER_T1_NEAR_SHIN_REF_CUTOUT_CANDIDATE_01.png",
+      "size_px": [
+        201,
+        200
+      ],
+      "source_crop_xy": [
+        46,
+        725
+      ],
+      "safety_margin_px": 60,
+      "source_bbox_xyxy": [
+        106,
+        785,
+        187,
+        865
+      ],
+      "readiness": "reference-derived pixels; semantic boundary and pivot provisional"
+    },
+    "near_boot": {
+      "file": "CIPHER_T1_NEAR_BOOT_REF_CUTOUT_CANDIDATE_01.png",
+      "size_px": [
+        307,
+        215
+      ],
+      "source_crop_xy": [
+        22,
+        801
+      ],
+      "safety_margin_px": 60,
+      "source_bbox_xyxy": [
+        82,
+        861,
+        269,
+        956
+      ],
+      "readiness": "reference-derived pixels; semantic boundary and pivot provisional"
+    },
+    "pelvis_belt_gear": {
+      "file": "CIPHER_T1_PELVIS_BELT_GEAR_REF_CUTOUT_CANDIDATE_01.png",
+      "size_px": [
+        257,
+        256
+      ],
+      "source_crop_xy": [
+        46,
+        446
+      ],
+      "safety_margin_px": 60,
+      "source_bbox_xyxy": [
+        106,
+        506,
+        243,
+        642
+      ],
+      "readiness": "reference-derived pixels; semantic boundary and pivot provisional"
+    },
+    "torso_jacket": {
+      "file": "CIPHER_T1_TORSO_JACKET_REF_CUTOUT_CANDIDATE_01.png",
+      "size_px": [
+        269,
+        479
+      ],
+      "source_crop_xy": [
+        66,
+        90
+      ],
+      "safety_margin_px": 60,
+      "source_bbox_xyxy": [
+        126,
+        150,
+        275,
+        509
+      ],
+      "readiness": "reference-derived pixels; semantic boundary and pivot provisional"
+    },
+    "near_upper_arm": {
+      "file": "CIPHER_T1_NEAR_UPPER_ARM_REF_CUTOUT_CANDIDATE_01.png",
+      "size_px": [
+        208,
+        318
+      ],
+      "source_crop_xy": [
+        46,
+        94
+      ],
+      "safety_margin_px": 60,
+      "source_bbox_xyxy": [
+        106,
+        154,
+        194,
+        352
+      ],
+      "readiness": "reference-derived pixels; semantic boundary and pivot provisional"
+    },
+    "near_forearm": {
+      "file": "CIPHER_T1_NEAR_FOREARM_REF_CUTOUT_CANDIDATE_01.png",
+      "size_px": [
+        190,
+        252
+      ],
+      "source_crop_xy": [
+        45,
+        260
+      ],
+      "safety_margin_px": 60,
+      "source_bbox_xyxy": [
+        105,
+        320,
+        175,
+        452
+      ],
+      "readiness": "reference-derived pixels; semantic boundary and pivot provisional"
+    },
+    "near_hand": {
+      "file": "CIPHER_T1_NEAR_HAND_REF_CUTOUT_CANDIDATE_01.png",
+      "size_px": [
+        186,
+        239
+      ],
+      "source_crop_xy": [
+        49,
+        354
+      ],
+      "safety_margin_px": 60,
+      "source_bbox_xyxy": [
+        109,
+        414,
+        175,
+        533
+      ],
+      "readiness": "reference-derived pixels; semantic boundary and pivot provisional"
+    },
+    "head_hood_hair_face": {
+      "file": "CIPHER_T1_HEAD_HOOD_HAIR_FACE_REF_CUTOUT_CANDIDATE_01.png",
+      "size_px": [
+        315,
+        333
+      ],
+      "source_crop_xy": [
+        13,
+        -48
+      ],
+      "safety_margin_px": 60,
+      "source_bbox_xyxy": [
+        73,
+        12,
+        268,
+        225
+      ],
+      "readiness": "reference-derived pixels; semantic boundary and pivot provisional"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "status": "QUARANTINED_REVIEW_ONLY",
+  "source_candidate": "assets/characters/breaker/tier_01_drafts/BREAKER_T1_arm_extent_reconciliation_study_candidate_09.png",
+  "donor_candidate": "assets/characters/breaker/tier_01_drafts/BREAKER_T1_pose_matched_arm_assembly_candidate_16.png",
+  "donor_method": "top three connected warm-skin regions from a diagnostic threshold; clipped to fully opaque source-art coverage so it stays hidden in the shell-on source composite",
+  "regions": [
+    {
+      "pixels": 51859,
+      "bounds": [
+        600,
+        429,
+        938,
+        698
+      ]
+    },
+    {
+      "pixels": 37846,
+      "bounds": [
+        872,
+        301,
+        1120,
+        580
+      ]
+    },
+    {
+      "pixels": 13628,
+      "bounds": [
+        1173,
+        82,
+        1285,
+        406
+      ]
+    }
+  ],
+  "fit": {
+    "uniform_scale": 0.3760231125071279,
+    "rotation_degrees": -27.040417867302928
+  },
+  "landmarks_px": {
+    "donor_upper_skin_center": [
+      996.0,
+      440.0
+    ],
+    "donor_lower_skin_center": [
+      769.0,
+      563.0
+    ],
+    "source_upper_skin_center": [
+      385.0,
+      335.0
+    ],
+    "source_lower_skin_center": [
+      330.0,
+      415.0
+    ]
+  },
+  "shell_on_diff_bbox": null,
+  "donor_overlaps_visible_forearm_bbox": [
+    268,
+    386,
+    394,
+    457
+  ],
+  "hidden_anatomy_verified": false,
+  "production_ready": false,
+  "visual_review": "REJECTED: shell-off fit shows disconnected skin patches and texture artifacts; shell-on image remains exact after opaque-coverage clipping.",
+  "qa_board": "docs/visual_qa/BREAKER_T1_candidate09_v11_candidate16_skin_donor.png",
+  "limitations": [
+    "manual estimated registration",
+    "skin threshold may include reflective metal",
+    "no authored components or pivots",
+    "no deformation or continuous animation-seam test"
+  ]
+}

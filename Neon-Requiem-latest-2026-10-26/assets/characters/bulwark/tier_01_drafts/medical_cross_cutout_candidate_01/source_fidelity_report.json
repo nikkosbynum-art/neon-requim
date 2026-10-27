@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "scope": "source_hash_and_pixel_fidelity_plus_mechanical_alpha_only",
+  "candidate_dir": "C:\\Users\\Work\\Downloads\\Projects\\Neon Requiem\\assets\\characters\\bulwark\\tier_01_drafts\\medical_cross_cutout_candidate_01",
+  "source_reference": "docs/visual_qa/BULWARK_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_sha256": "e297686a8b52a3177e3818185b7d9b56a64284cbffe459f96a1e9530a5ebda61",
+  "items": [
+    {
+      "id": "helmet_medical_cross_decal",
+      "status": "PASS",
+      "alpha_audit": {
+        "status": "PASS",
+        "scope": "mechanical_alpha_cutout_checks_only",
+        "width_px": 136,
+        "height_px": 136,
+        "alpha_threshold": 32,
+        "threshold_bbox_xyxy_exclusive": [
+          58,
+          56,
+          79,
+          78
+        ],
+        "connectivity_diagnostic": {
+          "neighbor_rule": "4-connected",
+          "component_count": 2,
+          "component_areas_px_descending": [
+            275,
+            4
+          ],
+          "component_bounds_xyxy_exclusive_descending_area": [
+            [
+              58,
+              56,
+              79,
+              77
+            ],
+            [
+              67,
+              77,
+              71,
+              78
+            ]
+          ],
+          "largest_component_px": 275,
+          "largest_secondary_component_ratio": 0.014545,
+          "review_note": "Diagnostic only; detached pieces may be intentional and require semantic visual review."
+        },
+        "margins_px": {
+          "left": 58,
+          "top": 56,
+          "right": 57,
+          "bottom": 58
+        },
+        "margin_fractions": {
+          "left": 0.4264705882352941,
+          "top": 0.4117647058823529,
+          "right": 0.41911764705882354,
+          "bottom": 0.4264705882352941
+        },
+        "minimum_margin_fraction": 0.1,
+        "halo_alpha_threshold_exclusive": 1,
+        "halo_tolerance_radius_px": 3,
+        "external_low_alpha_pixels": 0,
+        "maximum_external_low_alpha_pixels": 50,
+        "corner_alpha": {
+          "top_left": 0,
+          "top_right": 0,
+          "bottom_left": 0,
+          "bottom_right": 0
+        },
+        "failures": [],
+        "production_approved": false
+      },
+      "source_rgb_mismatches": 0,
+      "source_alpha_pixels": 279,
+      "errors": [],
+      "production_approved": false
+    }
+  ],
+  "pairwise_mask_overlap": [],
+  "errors": [],
+  "production_approved": false,
+  "semantic_completeness_verified": false,
+  "pivots_verified": false,
+  "animation_ready": false,
+  "runtime_integrated": false
+}

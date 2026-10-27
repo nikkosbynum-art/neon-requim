@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "character_id": "SPARK",
+  "source_reference": "docs/visual_qa/SPARK_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_status": "approved Tier I visual/anatomy reference; not animation-ready art",
+  "items": [
+    {
+      "id": "attack_drone_01_blue",
+      "bbox": [1240, 35, 1536, 260],
+      "background_seed": [1242, 38],
+      "object_seed": [1390, 158],
+      "background_tolerance": 22,
+      "safety_margin_px": 48
+    },
+    {
+      "id": "attack_drone_02_red",
+      "bbox": [1290, 230, 1536, 430],
+      "background_seed": [1292, 232],
+      "object_seed": [1414, 333],
+      "background_tolerance": 22,
+      "safety_margin_px": 48
+    },
+    {
+      "id": "attack_drone_03_amber",
+      "bbox": [1310, 410, 1536, 625],
+      "background_seed": [1312, 412],
+      "object_seed": [1420, 480],
+      "background_tolerance": 22,
+      "safety_margin_px": 48
+    }
+  ]
+}

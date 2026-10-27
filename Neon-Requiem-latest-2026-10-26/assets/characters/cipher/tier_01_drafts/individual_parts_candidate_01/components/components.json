@@ -1,0 +1,34 @@
+{
+  "status": "quarantined_component_crops",
+  "source": "assets/characters/cipher/tier_01_drafts/individual_parts_candidate_01/CIPHER_T1_HEAD_NECK_CANDIDATE_01_QUARANTINED.png",
+  "source_size_px": [
+    1536,
+    1024
+  ],
+  "alpha_threshold": 32,
+  "minimum_area": 50,
+  "padding_px": 8,
+  "subthreshold_alpha_trimmed": true,
+  "semantic_part_names_assigned": false,
+  "pivots_authored": false,
+  "production_approved": false,
+  "components": [
+    {
+      "component_id": "component_01",
+      "file": "component_01.png",
+      "threshold_bbox_xyxy_exclusive": [
+        372,
+        93,
+        1165,
+        949
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        364,
+        85,
+        1173,
+        957
+      ],
+      "thresholded_alpha_pixel_area": 451223
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "status": "REVIEW CANDIDATE - QUARANTINED",
+  "character_id": "CIPHER",
+  "tier_id": 1,
+  "source_workspace": "assets/characters/cipher/tier_01_drafts/reference_cutout_rig_candidate_09_knee_guard_review_02/krita_roundtrip_workspace_09b_02_DISPOSABLE/CIPHER_T1_KNEE_PARTS_EDIT_WORKSPACE_09B_ROUNDTRIP_02_DISPOSABLE.ora",
+  "source_workspace_sha256": "a54597c5a486b881cc201cc0ae063fb017f0d26331149f3b3829513dfa91b2b8",
+  "source_reference": "docs/visual_qa/CIPHER_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "canvas_px": [
+    330,
+    960
+  ],
+  "parts": [
+    {
+      "part_id": "near_thigh",
+      "layer_name": "ART - near_thigh - quarantined 09B source cutout; boundary status in manifest",
+      "category": "body_part",
+      "file": "parts/near_thigh.png",
+      "canvas_px": [
+        330,
+        960
+      ],
+      "alpha_bbox_xyxy_exclusive": [
+        114,
+        533,
+        234,
+        646
+      ],
+      "sha256": "82ecacf31b1a1eb3946c18fee22a556e25f22819e4c36eb9927f197d9ec94c94",
+      "source_layer_sha256": "82ecacf31b1a1eb3946c18fee22a556e25f22819e4c36eb9927f197d9ec94c94"
+    },
+    {
+      "part_id": "near_shin",
+      "layer_name": "ART - near_shin - quarantined 09B source cutout; boundary status in manifest",
+      "category": "body_part",
+      "file": "parts/near_shin.png",
+      "canvas_px": [
+        330,
+        960
+      ],
+      "alpha_bbox_xyxy_exclusive": [
+        99,
+        606,
+        207,
+        820
+      ],
+      "sha256": "e79eb29891328a9b5f0bbb528070d1799eb34b901ff3a94c476d32a95a5de808",
+      "source_layer_sha256": "e79eb29891328a9b5f0bbb528070d1799eb34b901ff3a94c476d32a95a5de808"
+    },
+    {
+      "part_id": "near_knee_guard",
+      "layer_name": "ART - near_knee_guard - quarantined 09B source cutout; boundary status in manifest",
+      "category": "body_part",
+      "file": "parts/near_knee_guard.png",
+      "canvas_px": [
+        330,
+        960
+      ],
+      "alpha_bbox_xyxy_exclusive": [
+        153,
+        600,
+        220,
+        667
+      ],
+      "sha256": "f8e57836cd7688617b57894471bc3828e10e6a3e52f9ce936bc4c99e2fa639e3",
+      "source_layer_sha256": "f8e57836cd7688617b57894471bc3828e10e6a3e52f9ce936bc4c99e2fa639e3"
+    },
+    {
+      "part_id": "near_boot",
+      "layer_name": "ART - near_boot - quarantined 09B source cutout; boundary status in manifest",
+      "category": "body_part",
+      "file": "parts/near_boot.png",
+      "canvas_px": [
+        330,
+        960
+      ],
+      "alpha_bbox_xyxy_exclusive": [
+        79,
+        783,
+        269,
+        956
+      ],
+      "sha256": "53ef5d7044568067ff027441c9a7295776285a3d7b9419a51fc5c63c37c81c93",
+      "source_layer_sha256": "53ef5d7044568067ff027441c9a7295776285a3d7b9419a51fc5c63c37c81c93"
+    }
+  ],
+  "production_approved": false,
+  "runtime_integrated": false,
+  "pivots_authored": false,
+  "animation_reviewed": false
+}

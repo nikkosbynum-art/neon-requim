@@ -1,0 +1,23 @@
+{
+  "manifest_version": 1,
+  "character_id": "REPLACE_WITH_FOUNDING_ROSTER_ID",
+  "tier_id": 1,
+  "asset_status": "review_only",
+  "source_reference": "REPLACE_WITH_PROJECT_RELATIVE_SOURCE_IMAGE",
+  "ground_pivot": "ground_anchor",
+  "source_canvas_px": [1024, 1536],
+  "target_visible_height_px": 256,
+  "measured_visible_height_px": 0,
+  "pivots_px": {},
+  "bone_hierarchy": [],
+  "parts": [],
+  "layers_back_to_front": [],
+  "production_gates": {
+    "visible_art_approved": false,
+    "hidden_anatomy_authored": false,
+    "pivots_authored": false,
+    "joint_seams_reviewed": false,
+    "animation_reviewed": false
+  },
+  "production_gate_evidence": {}
+}

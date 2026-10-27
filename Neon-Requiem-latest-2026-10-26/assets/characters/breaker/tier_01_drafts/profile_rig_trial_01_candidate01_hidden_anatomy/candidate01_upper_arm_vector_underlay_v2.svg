@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+  <!-- REVIEW ONLY. Compact anatomy hypothesis. Hidden by the approved shell-on layers. -->
+  <defs>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="0.18">
+      <stop offset="0" stop-color="#694137"/>
+      <stop offset="0.16" stop-color="#a76250"/>
+      <stop offset="0.40" stop-color="#cf8c73"/>
+      <stop offset="0.66" stop-color="#e6a58a"/>
+      <stop offset="0.84" stop-color="#d68e75"/>
+      <stop offset="1" stop-color="#704438"/>
+    </linearGradient>
+    <radialGradient id="bicep" cx="46%" cy="40%" r="58%">
+      <stop offset="0" stop-color="#f0b39a" stop-opacity="0.72"/>
+      <stop offset="0.62" stop-color="#d78f76" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#714638" stop-opacity="0.42"/>
+    </radialGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#39251f" stop-opacity="0.7"/>
+      <stop offset="0.42" stop-color="#39251f" stop-opacity="0"/>
+      <stop offset="1" stop-color="#39251f" stop-opacity="0.58"/>
+    </linearGradient>
+    <clipPath id="armClip">
+      <path d="M348 278 C331 278 317 290 311 307 C304 326 308 348 312 369 C317 396 324 420 332 444 C338 465 344 485 354 496 C362 504 376 501 382 491 C389 479 381 456 378 435 C374 412 377 391 387 369 C397 348 407 327 401 307 C396 289 371 278 348 278 Z"/>
+    </clipPath>
+  </defs>
+  <path d="M348 278 C331 278 317 290 311 307 C304 326 308 348 312 369 C317 396 324 420 332 444 C338 465 344 485 354 496 C362 504 376 501 382 491 C389 479 381 456 378 435 C374 412 377 391 387 369 C397 348 407 327 401 307 C396 289 371 278 348 278 Z"
+    fill="url(#skin)" stroke="#241914" stroke-width="6"/>
+  <g clip-path="url(#armClip)">
+    <path d="M311 300 C335 286 367 291 389 309 C399 324 395 347 385 367 C373 389 370 412 375 435 C379 457 385 479 374 497 L412 506 L416 270 L300 265 Z" fill="url(#bicep)"/>
+    <path d="M318 315 C323 334 325 351 331 368 C338 386 348 398 363 400 C373 401 379 396 385 389" fill="none" stroke="#8d5546" stroke-width="5" opacity="0.34"/>
+    <path d="M330 417 C342 425 358 424 372 416" fill="none" stroke="#f2b49b" stroke-width="4" opacity="0.36"/>
+    <path d="M342 300 C350 295 363 296 371 302" fill="none" stroke="#f3b99f" stroke-width="7" opacity="0.27"/>
+    <path d="M318 347 C322 365 326 377 331 388 M339 449 C345 463 350 474 355 481" fill="none" stroke="url(#edge)" stroke-width="4" opacity="0.52"/>
+    <g fill="#75483c" opacity="0.18">
+      <ellipse cx="326" cy="328" rx="2.1" ry="1.4"/><ellipse cx="340" cy="338" rx="1.6" ry="1.2"/>
+      <ellipse cx="357" cy="319" rx="1.8" ry="1.3"/><ellipse cx="377" cy="337" rx="2" ry="1.2"/>
+      <ellipse cx="335" cy="371" rx="1.7" ry="1.2"/><ellipse cx="363" cy="382" rx="2" ry="1.3"/>
+      <ellipse cx="348" cy="403" rx="1.7" ry="1.3"/><ellipse cx="373" cy="443" rx="2" ry="1.2"/>
+      <ellipse cx="345" cy="459" rx="1.8" ry="1.2"/><ellipse cx="364" cy="476" rx="1.6" ry="1.2"/>
+    </g>
+  </g>
+</svg>

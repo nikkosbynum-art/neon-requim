@@ -1,0 +1,13 @@
+{
+  "status": "APPROVED FOR PROTOTYPE FEASIBILITY TESTING ONLY — NOT FINAL BALANCE OR CANON",
+  "source_url": "https://app.notion.com/p/40394c5658c8812d849be3d32629920e",
+  "all_founding_recruits_available_from_start": true,
+  "starting_credits": 600,
+  "starting_owned_recruits": ["vector", "spark", "recoil"],
+  "duplicate_policy": "one_copy_each_founding_recruit",
+  "price_by_rarity": {
+    "Common": 300,
+    "Rare": 600,
+    "Epic": 1200
+  }
+}

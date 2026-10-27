@@ -1,0 +1,7 @@
+{
+  "status": "QUARANTINED FULL-SHELL-MASK STUDY \u2014 NOT PRODUCTION ART",
+  "extraction": "all generated pixels inside the complete opaque v4 shoulder-shell mask; no skin classifier",
+  "pixels": 25942,
+  "exact_shell_on_composite": true,
+  "limitation": "Full mask coverage supports shell-offset inspection but may reveal generated non-skin pixels; artistic surface review required."
+}

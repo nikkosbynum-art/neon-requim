@@ -1,0 +1,8 @@
+{
+  "status": "QUARANTINED GENERATED CORRECTION STUDY \u2014 NOT PRODUCTION ART",
+  "source": "shell_off_anatomy_study_v2.png",
+  "extraction": "all generated pixels inside complete opaque v4 shoulder-shell mask; no skin classifier",
+  "pixels": 25942,
+  "exact_shell_on_composite": true,
+  "limitation": "Visual shoulder remains oversized relative to approved character art; candidate retained for review only."
+}

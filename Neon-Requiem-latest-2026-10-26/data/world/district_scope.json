@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "status": "SOURCE-APPROVED 1.0 SCOPE METADATA ONLY — NOT CONSUMED BY RUNTIME WAVE OR ENCOUNTER SYSTEMS",
+  "source_urls": [
+    "https://app.notion.com/p/40394c5658c88159962fee5423c311de",
+    "https://app.notion.com/p/40394c5658c88127b755c01197ff628d",
+    "https://app.notion.com/p/40394c5658c8812d849be3d32629920e"
+  ],
+  "endless_progression_starts_at_wave": 126,
+  "districts": [
+    {
+      "id": "undercity",
+      "display_name": "Undercity",
+      "first_wave": 1,
+      "last_wave": 25,
+      "named_bosses_per_district": 1,
+      "boss_placement_trial": "district_endpoint",
+      "visual_modules_per_district": 2,
+      "visual_transition_local_wave": 13,
+      "module_names_and_production_art": "UNSPECIFIED"
+    },
+    {
+      "id": "neon_row",
+      "display_name": "Neon Row",
+      "first_wave": 26,
+      "last_wave": 50,
+      "named_bosses_per_district": 1,
+      "boss_placement_trial": "district_endpoint",
+      "visual_modules_per_district": 2,
+      "visual_transition_local_wave": 13,
+      "module_names_and_production_art": "UNSPECIFIED"
+    },
+    {
+      "id": "black_grid",
+      "display_name": "Black Grid",
+      "first_wave": 51,
+      "last_wave": 75,
+      "named_bosses_per_district": 1,
+      "boss_placement_trial": "district_endpoint",
+      "visual_modules_per_district": 2,
+      "visual_transition_local_wave": 13,
+      "module_names_and_production_art": "UNSPECIFIED"
+    },
+    {
+      "id": "enforcement_zone",
+      "display_name": "Enforcement Zone",
+      "first_wave": 76,
+      "last_wave": 100,
+      "named_bosses_per_district": 1,
+      "boss_placement_trial": "district_endpoint",
+      "visual_modules_per_district": 2,
+      "visual_transition_local_wave": 13,
+      "module_names_and_production_art": "UNSPECIFIED"
+    },
+    {
+      "id": "the_spire",
+      "display_name": "The Spire",
+      "first_wave": 101,
+      "last_wave": 125,
+      "named_bosses_per_district": 1,
+      "boss_placement_trial": "district_endpoint",
+      "visual_modules_per_district": 2,
+      "visual_transition_local_wave": 13,
+      "module_names_and_production_art": "UNSPECIFIED"
+    }
+  ],
+  "boss_concepts": [
+    {"id": "patchwork", "display_name": "Patchwork", "district_assignment": null, "status": "APPROVED NAME ONLY"},
+    {"id": "ghostlight", "display_name": "Ghostlight", "district_assignment": null, "status": "APPROVED NAME ONLY"},
+    {"id": "chainbreak", "display_name": "Chainbreak", "district_assignment": null, "status": "APPROVED NAME ONLY"},
+    {"id": "civic_warden", "display_name": "Civic Warden", "district_assignment": null, "status": "APPROVED NAME ONLY"},
+    {"id": "sable_venn", "display_name": "Sable Venn", "district_assignment": null, "status": "APPROVED NAME ONLY"}
+  ],
+  "boss_combat_and_recruitment_content": "UNSPECIFIED — see docs/OPEN_QUESTIONS.md"
+}

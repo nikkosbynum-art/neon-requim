@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "character_id": "SPECTER",
+  "tier_id": 1,
+  "status": "QUARANTINED REVIEW CANDIDATE",
+  "source_image": "docs/visual_qa/SPECTER_T1_CONCEPT_TURNAROUND_01_2026-10-25.png",
+  "source_sha256": "09e04f092934bbe881f19d0b0af2827fcb9c145a433babd1e73f34e89980bd50",
+  "source_view": "approved front three-quarter concept; only visible source pixels traced; grip region occluded by glove",
+  "upstream_sources": [],
+  "canvas_px": [
+    1536,
+    1024
+  ],
+  "production_approved": false,
+  "semantic_review_passed": false,
+  "pivots_authored": false,
+  "deformation_reviewed": false,
+  "runtime_integrated": false,
+  "parts": [
+    {
+      "part_id": "handheld_blade_hilt_visible",
+      "file": "SPECTER_T1_BLADE_HILT_VISIBLE_CANDIDATE_01.png",
+      "semantic_label": "exposed upper grip segment of the single handheld blade assembly",
+      "category": "weapon",
+      "owner_character_id": "SPECTER",
+      "attachment_role_id": "specter.blade",
+      "boundary_provenance": "manually traced source pixels on the approved concept; stops at the glove occlusion; does not fill the hidden grip",
+      "polygons_xy": [
+        [
+          [
+            365,
+            408
+          ],
+          [
+            371,
+            407
+          ],
+          [
+            378,
+            411
+          ],
+          [
+            385,
+            419
+          ],
+          [
+            393,
+            427
+          ],
+          [
+            400,
+            435
+          ],
+          [
+            404,
+            441
+          ],
+          [
+            401,
+            447
+          ],
+          [
+            395,
+            450
+          ],
+          [
+            388,
+            445
+          ],
+          [
+            381,
+            438
+          ],
+          [
+            374,
+            430
+          ],
+          [
+            368,
+            422
+          ],
+          [
+            364,
+            416
+          ]
+        ]
+      ],
+      "visible_source_pixels": 777,
+      "alpha_bounds_xyxy_exclusive": [
+        364,
+        407,
+        405,
+        451
+      ],
+      "canvas_px": [
+        1536,
+        1024
+      ],
+      "pivot_source_xy": null,
+      "readiness": "quarantined source-pixel cutout; semantic review required"
+    },
+    {
+      "part_id": "handheld_blade_body_visible",
+      "file": "SPECTER_T1_BLADE_BODY_VISIBLE_CANDIDATE_01.png",
+      "semantic_label": "exposed guard and blade body of the single handheld blade assembly",
+      "category": "weapon",
+      "owner_character_id": "SPECTER",
+      "attachment_role_id": "specter.blade",
+      "boundary_provenance": "manually traced visible blade/guard contour on the approved concept; glove pixels and source-hidden grip are excluded",
+      "polygons_xy": [
+        [
+          [
+            455,
+            488
+          ],
+          [
+            459,
+            483
+          ],
+          [
+            465,
+            483
+          ],
+          [
+            470,
+            488
+          ],
+          [
+            477,
+            493
+          ],
+          [
+            485,
+            501
+          ],
+          [
+            495,
+            511
+          ],
+          [
+            507,
+            523
+          ],
+          [
+            522,
+            538
+          ],
+          [
+            540,
+            556
+          ],
+          [
+            560,
+            576
+          ],
+          [
+            583,
+            599
+          ],
+          [
+            608,
+            623
+          ],
+          [
+            633,
+            648
+          ],
+          [
+            659,
+            675
+          ],
+          [
+            684,
+            700
+          ],
+          [
+            707,
+            724
+          ],
+          [
+            729,
+            745
+          ],
+          [
+            749,
+            760
+          ],
+          [
+            770,
+            768
+          ],
+          [
+            780,
+            770
+          ],
+          [
+            774,
+            774
+          ],
+          [
+            760,
+            772
+          ],
+          [
+            744,
+            766
+          ],
+          [
+            727,
+            755
+          ],
+          [
+            708,
+            737
+          ],
+          [
+            686,
+            715
+          ],
+          [
+            663,
+            691
+          ],
+          [
+            638,
+            665
+          ],
+          [
+            613,
+            638
+          ],
+          [
+            588,
+            611
+          ],
+          [
+            563,
+            584
+          ],
+          [
+            539,
+            558
+          ],
+          [
+            516,
+            533
+          ],
+          [
+            495,
+            511
+          ],
+          [
+            478,
+            496
+          ],
+          [
+            464,
+            489
+          ]
+        ]
+      ],
+      "visible_source_pixels": 2698,
+      "alpha_bounds_xyxy_exclusive": [
+        455,
+        483,
+        781,
+        775
+      ],
+      "canvas_px": [
+        1536,
+        1024
+      ],
+      "pivot_source_xy": null,
+      "readiness": "quarantined source-pixel cutout; semantic review required"
+    }
+  ]
+}

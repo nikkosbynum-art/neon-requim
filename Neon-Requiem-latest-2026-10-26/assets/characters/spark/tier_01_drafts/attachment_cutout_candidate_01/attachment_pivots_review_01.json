@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "character_id": "SPARK",
+  "tier_id": 1,
+  "status": "QUARANTINED PIVOT AUTHORING REVIEW",
+  "source_reference": "docs/visual_qa/SPARK_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_candidate_manifest": "candidate_manifest.json",
+  "pivot_space": "individual cutout canvas pixels including the 48 px transparent safety margin",
+  "review_scope": "visible rigid drone assemblies only; this does not define flight paths, formation, targeting, rotor animation, or combat behavior",
+  "animation_ready": false,
+  "production_approved": false,
+  "runtime_integrated": false,
+  "parts": [
+    {
+      "part_id": "attack_drone_01_blue",
+      "attachment_role_id": "spark.attack_drone_01_blue",
+      "owner_character_id": "SPARK",
+      "image": "SPARK_T1_ATTACK_DRONE_01_BLUE_REFERENCE_CUTOUT_CANDIDATE_01_QUARANTINED.png",
+      "pivot_px": [209, 152],
+      "pivot_basis": "author-placed at the center of the visible blue central sensor/core housing; review overlay is SPARK_DRONE_CANDIDATE_01_PIVOT_REVIEW_01_QUARANTINED.png",
+      "status": "QUARANTINED VISUAL REVIEW CANDIDATE"
+    },
+    {
+      "part_id": "attack_drone_02_red",
+      "attachment_role_id": "spark.attack_drone_02_red",
+      "owner_character_id": "SPARK",
+      "image": "SPARK_T1_ATTACK_DRONE_02_RED_REFERENCE_CUTOUT_CANDIDATE_01_QUARANTINED.png",
+      "pivot_px": [157, 123],
+      "pivot_basis": "author-placed at the center of the visible red central sensor/core housing; review overlay is SPARK_DRONE_CANDIDATE_01_PIVOT_REVIEW_01_QUARANTINED.png",
+      "status": "QUARANTINED VISUAL REVIEW CANDIDATE"
+    },
+    {
+      "part_id": "attack_drone_03_amber",
+      "attachment_role_id": "spark.attack_drone_03_amber",
+      "owner_character_id": "SPARK",
+      "image": "SPARK_T1_ATTACK_DRONE_03_AMBER_REFERENCE_CUTOUT_CANDIDATE_01_QUARANTINED.png",
+      "pivot_px": [169, 116],
+      "pivot_basis": "author-placed at the center of the visible amber central sensor/core housing; review overlay is SPARK_DRONE_CANDIDATE_01_PIVOT_REVIEW_01_QUARANTINED.png",
+      "status": "QUARANTINED VISUAL REVIEW CANDIDATE"
+    }
+  ]
+}

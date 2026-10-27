@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+  <!-- REVIEW ONLY. Provisional hand-authored underlay, aligned to candidate01 source coordinates. -->
+  <defs>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="0.2">
+      <stop offset="0" stop-color="#704335"/>
+      <stop offset="0.18" stop-color="#b8735d"/>
+      <stop offset="0.47" stop-color="#e5a188"/>
+      <stop offset="0.72" stop-color="#f0b39a"/>
+      <stop offset="1" stop-color="#8f5241"/>
+    </linearGradient>
+    <linearGradient id="shadow" x1="0" y1="0" x2="0.9" y2="0.25">
+      <stop offset="0" stop-color="#442b24" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#8b4d3c" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd1b4" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#ffd1b4" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffd1b4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <path d="M340 281 C326 294 315 318 314 345 C313 373 318 401 325 428 C332 452 340 477 349 494 C358 503 373 501 383 492 C389 470 393 445 399 420 C406 392 415 364 411 341 C407 318 392 297 377 286 C364 280 350 278 340 281 Z"
+      fill="url(#skin)" stroke="#241914" stroke-width="7"/>
+    <path d="M321 344 C320 373 326 406 336 437 C343 458 348 477 357 492 C351 468 349 445 347 423 C345 396 342 372 341 349 C339 326 345 306 355 287 C338 298 323 318 321 344 Z"
+      fill="url(#shadow)" opacity="0.78"/>
+    <path d="M357 301 C373 294 392 303 404 320 C413 337 415 359 411 379 C408 395 402 407 396 417"
+      fill="none" stroke="url(#light)" stroke-width="12" opacity="0.55"/>
+    <path d="M347 352 C360 362 377 365 392 359" fill="none" stroke="#854d3c" stroke-width="3" opacity="0.28"/>
+    <path d="M359 429 C370 435 383 434 393 428" fill="none" stroke="#f3b396" stroke-width="3" opacity="0.34"/>
+  </g>
+</svg>

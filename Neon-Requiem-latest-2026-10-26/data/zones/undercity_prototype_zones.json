@@ -1,0 +1,40 @@
+{
+  "district_id": "undercity",
+  "district_name": "Undercity",
+  "status": "prototype_only",
+  "notes": "Two palette-only modules exercise the approved transition architecture. The wave 13 boundary is a reversible test boundary, not approved level pacing or a canonical location split. No production environment art is included.",
+  "zones": [
+    {
+      "zone_id": "undercity_proto_01",
+      "first_wave": 1,
+      "last_wave": 12,
+      "transition_seconds": 0.85,
+      "palette": {
+        "sky": "#080a16",
+        "distant_city": "#11172a",
+        "near_city": "#171b31",
+        "street": "#131321",
+        "crimson": "#e73c65",
+        "cyan": "#45d9d0",
+        "purple": "#ad5ab4",
+        "haze": "#382442"
+      }
+    },
+    {
+      "zone_id": "undercity_proto_02",
+      "first_wave": 13,
+      "last_wave": 25,
+      "transition_seconds": 0.85,
+      "palette": {
+        "sky": "#090b18",
+        "distant_city": "#15192c",
+        "near_city": "#1d2036",
+        "street": "#151321",
+        "crimson": "#e24872",
+        "cyan": "#54c6e1",
+        "purple": "#b864c4",
+        "haze": "#482947"
+      }
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "status": "REJECTED AFTER PREVIEW SCREEN - QUARANTINED DIAGNOSTIC ONLY",
+  "semantic_review_status": "PREVIEW_SCREEN_FAIL",
+  "revision_from_candidate_04": "backpack_mount excludes the head_hood_hair_face mask",
+  "source": "docs/visual_qa/CIPHER_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_view": "approved right-facing side profile",
+  "crop_xywh": [
+    600,
+    10,
+    330,
+    960
+  ],
+  "pivot_and_overlap_status": "provisional polygon boundaries; no hidden/far-side anatomy or authored pivots",
+  "parts": {
+    "backpack_mount": {
+      "file": "CIPHER_T1_BACKPACK_MOUNT_REF_CUTOUT_CANDIDATE_05_QUARANTINED.png",
+      "size_px": [
+        215,
+        582
+      ],
+      "source_bbox_xyxy": [
+        29,
+        28,
+        124,
+        490
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional polygon; full-resolution semantic review required",
+      "pivot_status": "not authored"
+    },
+    "near_boot": {
+      "file": "CIPHER_T1_NEAR_BOOT_REF_CUTOUT_CANDIDATE_05_QUARANTINED.png",
+      "size_px": [
+        310,
+        293
+      ],
+      "source_bbox_xyxy": [
+        79,
+        783,
+        269,
+        956
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional polygon; full-resolution semantic review required",
+      "pivot_status": "not authored"
+    },
+    "near_shin": {
+      "file": "CIPHER_T1_NEAR_SHIN_REF_CUTOUT_CANDIDATE_05_QUARANTINED.png",
+      "size_px": [
+        241,
+        298
+      ],
+      "source_bbox_xyxy": [
+        99,
+        606,
+        220,
+        784
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional polygon; full-resolution semantic review required",
+      "pivot_status": "not authored"
+    },
+    "near_thigh": {
+      "file": "CIPHER_T1_NEAR_THIGH_REF_CUTOUT_CANDIDATE_05_QUARANTINED.png",
+      "size_px": [
+        240,
+        193
+      ],
+      "source_bbox_xyxy": [
+        114,
+        533,
+        234,
+        606
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional polygon; full-resolution semantic review required",
+      "pivot_status": "not authored"
+    },
+    "pelvis_belt_gear": {
+      "file": "CIPHER_T1_PELVIS_BELT_GEAR_REF_CUTOUT_CANDIDATE_05_QUARANTINED.png",
+      "size_px": [
+        263,
+        174
+      ],
+      "source_bbox_xyxy": [
+        101,
+        481,
+        244,
+        535
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional polygon; full-resolution semantic review required",
+      "pivot_status": "not authored"
+    },
+    "torso_jacket": {
+      "file": "CIPHER_T1_TORSO_JACKET_REF_CUTOUT_CANDIDATE_05_QUARANTINED.png",
+      "size_px": [
+        294,
+        458
+      ],
+      "source_bbox_xyxy": [
+        101,
+        144,
+        275,
+        482
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional polygon; full-resolution semantic review required",
+      "pivot_status": "not authored"
+    },
+    "near_upper_arm": {
+      "file": "CIPHER_T1_NEAR_UPPER_ARM_REF_CUTOUT_CANDIDATE_05_QUARANTINED.png",
+      "size_px": [
+        207,
+        352
+      ],
+      "source_bbox_xyxy": [
+        104,
+        151,
+        191,
+        383
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional polygon; full-resolution semantic review required",
+      "pivot_status": "not authored"
+    },
+    "near_forearm": {
+      "file": "CIPHER_T1_NEAR_FOREARM_REF_CUTOUT_CANDIDATE_05_QUARANTINED.png",
+      "size_px": [
+        191,
+        248
+      ],
+      "source_bbox_xyxy": [
+        103,
+        334,
+        174,
+        462
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional polygon; full-resolution semantic review required",
+      "pivot_status": "not authored"
+    },
+    "near_hand": {
+      "file": "CIPHER_T1_NEAR_HAND_REF_CUTOUT_CANDIDATE_05_QUARANTINED.png",
+      "size_px": [
+        193,
+        235
+      ],
+      "source_bbox_xyxy": [
+        105,
+        421,
+        178,
+        536
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional polygon; full-resolution semantic review required",
+      "pivot_status": "not authored"
+    },
+    "head_hood_hair_face": {
+      "file": "CIPHER_T1_HEAD_HOOD_HAIR_FACE_REF_CUTOUT_CANDIDATE_05_QUARANTINED.png",
+      "size_px": [
+        320,
+        279
+      ],
+      "source_bbox_xyxy": [
+        68,
+        12,
+        268,
+        171
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional polygon; full-resolution semantic review required",
+      "pivot_status": "not authored"
+    }
+  },
+  "production_approved": false,
+  "ownership_diagnostic": "docs/visual_qa/CIPHER_T1_PART_OWNERSHIP_MAP_05_QUARANTINED.png",
+  "semantic_review_evidence": "docs/visual_qa/CIPHER_T1_PARTS_CONTACT_SHEET_05_QUARANTINED.png",
+  "semantic_review_note": "A preliminary native-resolution alpha-checkerboard screen flags near_thigh as an incomplete waistband/shorts fragment and torso_jacket as containing a detached neighboring strip. The pelvis_belt_gear boundary also needs full review. This is a file-based preview screen, not full Krita review; hidden/far-side anatomy, authored pivots, and deformation remain unverified."
+}

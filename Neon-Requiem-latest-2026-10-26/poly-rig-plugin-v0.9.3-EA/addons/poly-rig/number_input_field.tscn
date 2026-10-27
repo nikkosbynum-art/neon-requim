@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c64hahlpfw7g0"]
+
+[ext_resource type="Script" uid="uid://c6g6torto7i6h" path="res://addons/poly-rig/number_input_field.gd" id="1_l53s3"]
+
+[node name="NumberInputField" type="HBoxContainer" unique_id=137163514]
+offset_right = 384.0
+offset_bottom = 31.0
+script = ExtResource("1_l53s3")
+number = 0.5
+
+[node name="Label" type="Label" parent="." unique_id=595093931]
+layout_mode = 2
+
+[node name="HSlider" type="HSlider" parent="." unique_id=1154318471]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="SpinBox" type="SpinBox" parent="." unique_id=366925073]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[connection signal="drag_ended" from="HSlider" to="." method="_on_h_slider_drag_ended"]
+[connection signal="value_changed" from="HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="SpinBox" to="." method="_on_spin_box_value_changed"]

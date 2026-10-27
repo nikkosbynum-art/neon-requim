@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "character_id": "IRONCLAD",
+  "tier_id": 1,
+  "source_image": "assets/characters/ironclad/tier_01_drafts/profile_mesh_rig_candidate_01/IRONCLAD_T1_VISIBLE_PROFILE_MESH_INPUT_CANDIDATE_01.png",
+  "source_view": "right-facing profile; existing source-RGB-preserving candidate derived from the approved anatomy turnaround",
+  "upstream_sources": [
+    {
+      "source_image": "docs/visual_qa/IRONCLAD_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+      "registration": "profile candidate uses source crop [569,5,918,955] and 128 px border; candidate pixel (x,y) maps to reference (x+441,y-123); exact RGB identity checked before tracing"
+    }
+  ],
+  "parts": [
+    {
+      "part_id": "back_power_cable_loop_visible",
+      "file": "IRONCLAD_T1_BACK_POWER_CABLE_LOOP_CANDIDATE_01.png",
+      "semantic_label": "visible U-shaped back-unit cable loop",
+      "category": "cable",
+      "owner_character_id": "IRONCLAD",
+      "attachment_role_id": "ironclad.back_unit_power_cable",
+      "boundary_provenance": "manually traced provisional polygons from native-scale source-preserving profile; hidden cable ends and surfaces are not inferred",
+      "polygons_xy": [
+        [[190, 598], [197, 598], [197, 613], [190, 613]],
+        [[251, 598], [258, 598], [258, 613], [251, 613]],
+        [[190, 612], [193, 622], [199, 633], [208, 642], [218, 647], [229, 648], [240, 643], [248, 635], [254, 624], [256, 613], [250, 614], [248, 624], [242, 633], [234, 639], [226, 642], [217, 641], [208, 636], [201, 629], [196, 620], [194, 613]]
+      ]
+    }
+  ]
+}

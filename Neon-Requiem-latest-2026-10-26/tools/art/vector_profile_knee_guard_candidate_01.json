@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "character_id": "VECTOR",
+  "tier_id": 1,
+  "status": "REJECTED CUTOUT TRIAL - RETAINED AS QUARANTINE EVIDENCE",
+  "source_image": "docs/visual_qa/VECTOR_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_view": "approved right-facing side profile; profile-visible knee armor plate",
+  "upstream_sources": [],
+  "canvas_px": [
+    1536,
+    1024
+  ],
+  "production_approved": false,
+  "semantic_review_passed": false,
+  "pivots_authored": false,
+  "deformation_reviewed": false,
+  "runtime_integrated": false,
+  "review_rejection": "The detail review shows adjacent dark pants/leg pixels attached around the gray knee plate. Do not use or promote this cutout or rerun this contour.",
+  "parts": [
+    {
+      "part_id": "profile_visible_knee_guard",
+      "file": "VECTOR_T1_PROFILE_VISIBLE_KNEE_GUARD_CANDIDATE_01_QUARANTINED.png",
+      "semantic_label": "visible gray knee armor plate in approved profile view",
+      "category": "accessory",
+      "owner_character_id": "VECTOR",
+      "attachment_role_id": "vector.profile_visible_knee_guard",
+      "boundary_provenance": "Single manually traced source-coordinate contour around the complete visible gray knee armor plate and its dark outline in the approved side profile. The source identifies its location at the knee; this trace does not assign a limb bone, pivot, hidden continuation, or deformation behavior.",
+      "polygons_xy": [
+        [
+          [
+            761,
+            606
+          ],
+          [
+            770,
+            602
+          ],
+          [
+            782,
+            599
+          ],
+          [
+            795,
+            600
+          ],
+          [
+            806,
+            603
+          ],
+          [
+            814,
+            608
+          ],
+          [
+            819,
+            613
+          ],
+          [
+            818,
+            624
+          ],
+          [
+            815,
+            637
+          ],
+          [
+            812,
+            647
+          ],
+          [
+            806,
+            653
+          ],
+          [
+            797,
+            656
+          ],
+          [
+            785,
+            655
+          ],
+          [
+            773,
+            652
+          ],
+          [
+            763,
+            648
+          ],
+          [
+            756,
+            643
+          ],
+          [
+            753,
+            635
+          ],
+          [
+            754,
+            626
+          ],
+          [
+            756,
+            617
+          ],
+          [
+            758,
+            611
+          ]
+        ]
+      ]
+    }
+  ]
+}

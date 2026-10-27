@@ -1,0 +1,88 @@
+{
+  "character": "STITCH",
+  "status": "QUARANTINED PROFILE-MESH RIG CANDIDATE",
+  "source_profile": "STITCH_T1_VISIBLE_PROFILE_MESH_INPUT_CANDIDATE_01.png",
+  "rig_type": "single flattened visible-profile texture on Polygon2D contour meshes",
+  "mesh_generation": "PolyRig constrained Delaunay with filtered Godot Delaunay fallback for rejected concave contours",
+  "weight_generation": "PolyRig geodesic inverse-distance weights; nearest-segment fallback for disconnected vertices",
+  "bone_landmarks_px": {
+    "root": [
+      245,
+      1028
+    ],
+    "pelvis": [
+      245,
+      700
+    ],
+    "torso": [
+      245,
+      505
+    ],
+    "neck": [
+      245,
+      265
+    ],
+    "head": [
+      290,
+      150
+    ],
+    "shoulder": [
+      265,
+      355
+    ],
+    "elbow": [
+      280,
+      500
+    ],
+    "wrist": [
+      290,
+      615
+    ],
+    "hip": [
+      235,
+      710
+    ],
+    "knee": [
+      245,
+      865
+    ],
+    "ankle": [
+      245,
+      980
+    ],
+    "toe": [
+      300,
+      1020
+    ]
+  },
+  "bone_landmark_padding_delta_px": [
+    64,
+    64
+  ],
+  "bone_count": 19,
+  "pose_states": [
+    "neutral",
+    "idle",
+    "walk",
+    "attack",
+    "hit",
+    "defeat"
+  ],
+  "pose_status": "generic smoke-test transforms only; not character-authored animation",
+  "far_side_bones": "structural placeholders; no art bound",
+  "readiness": "visible reference profile mesh rig; not modular parts or runtime-ready art",
+  "unresolved": [
+    "semantic modular body parts and evolution swaps",
+    "concealed anatomy and underpaint",
+    "artist-authored pivots",
+    "far-side art",
+    "weapon/drone/cape separation",
+    "production approval",
+    "character-specific animation and continuous seam quality review"
+  ],
+  "runtime_approved": false,
+  "binding_path_convention": "Polygon2D bone paths are relative to the Skeleton2D, matching PolyRigBoneManager.sync_bone()",
+  "coordinate_space": "Mesh vertices and bone landmarks use source-profile coordinates relative to the ground landmark; the Skeleton2D and mesh origin are placed at that source ground point.",
+  "render_validation": "Godot 4.7.2 display-rendered capture passed for six generic poses; visible-pixel and pose-change guards passed.",
+  "visual_review": "The ten contact boards were inspected; source identities remain recognizable and generic mesh deformation is visible. This is not production-art or animation approval."
+}

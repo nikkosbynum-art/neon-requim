@@ -1,0 +1,17 @@
+{
+  "status": "QUARANTINED GAP-FILL UNDERPAINT STUDY \u2014 VISUAL IMPROVEMENT NOT ESTABLISHED",
+  "source_donor": "assets/characters/breaker/tier_01_drafts/profile_rig_trial_09_canon_v6_reference_contour/hidden_biological_upper_arm_donor.png",
+  "morphological_close_px": 5,
+  "enclosed_holes_filled_px": 0,
+  "newly_color_filled_px": 591,
+  "source_visible_composite_exact": true,
+  "largest_8_connected_biological_surface_px": 25592,
+  "major_visible_skin_regions_connected": 2,
+  "canon_boundary": "user-approved 2026-10-25: external shell over biological upper arm; prosthesis begins at elbow",
+  "limitations": [
+    "This deterministic gap fill copies nearby generated skin colors; it is not artist-authored anatomy.",
+    "Manual review found no meaningful shell-off silhouette improvement; edge fragments remain.",
+    "The 2D mask does not verify biology, pivots, independent shell motion, or animation seams.",
+    "The shell-off proportion still requires visual review and the study is not runtime content."
+  ]
+}

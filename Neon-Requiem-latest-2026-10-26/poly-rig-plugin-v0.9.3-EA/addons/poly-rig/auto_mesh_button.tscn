@@ -1,0 +1,143 @@
+[gd_scene format=3 uid="uid://2o7pteku2n7i"]
+
+[ext_resource type="Script" uid="uid://bgi5yfshyc151" path="res://addons/poly-rig/auto_mesh_button.gd" id="1_taud4"]
+[ext_resource type="Script" uid="uid://ck58jhc2brqkb" path="res://addons/poly-rig/auto_mesh_display_polygon.gd" id="2_2qra3"]
+[ext_resource type="PackedScene" uid="uid://c64hahlpfw7g0" path="res://addons/poly-rig/number_input_field.tscn" id="3_i2xqc"]
+
+[node name="AutoMeshButton" type="Button" unique_id=1575425698]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Auto Geometry"
+script = ExtResource("1_taud4")
+
+[node name="AcceptDialog" type="AcceptDialog" parent="." unique_id=807828387]
+oversampling_override = 1.0
+title = "Auto Geometry Generator"
+initial_position = 1
+size = Vector2i(600, 800)
+ok_button_text = "Generate"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AcceptDialog" unique_id=1067799003]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 592.0
+offset_bottom = 751.0
+
+[node name="MarginContainer" type="MarginContainer" parent="AcceptDialog/VBoxContainer" unique_id=1838167836]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="PolygonDisplay" type="Control" parent="AcceptDialog/VBoxContainer/MarginContainer" unique_id=1992383512]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Polygon2D" type="Polygon2D" parent="AcceptDialog/VBoxContainer/MarginContainer/PolygonDisplay" unique_id=787111504]
+unique_name_in_owner = true
+script = ExtResource("2_2qra3")
+metadata/bone_data = []
+
+[node name="CalculationProgressBar" type="ProgressBar" parent="AcceptDialog/VBoxContainer" unique_id=1018575348]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+max_value = 1.0
+indeterminate = true
+editor_preview_indeterminate = true
+
+[node name="Label" type="Label" parent="AcceptDialog/VBoxContainer/CalculationProgressBar" unique_id=183837483]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 97.0
+offset_bottom = 11.5
+grow_vertical = 2
+text = " generating..."
+
+[node name="DensityInputField" parent="AcceptDialog/VBoxContainer" unique_id=137163514 instance=ExtResource("3_i2xqc")]
+layout_mode = 2
+field_name = "Density"
+number = 2.0
+max_value = 15.0
+step = 0.1
+
+[node name="Label" parent="AcceptDialog/VBoxContainer/DensityInputField" index="0" unique_id=595093931]
+text = "Density"
+
+[node name="HSlider" parent="AcceptDialog/VBoxContainer/DensityInputField" index="1" unique_id=1154318471]
+max_value = 15.0
+step = 0.1
+value = 2.0
+
+[node name="SpinBox" parent="AcceptDialog/VBoxContainer/DensityInputField" index="2" unique_id=366925073]
+max_value = 15.0
+step = 0.1
+value = 2.0
+
+[node name="InternalDensityInputField" parent="AcceptDialog/VBoxContainer" unique_id=1478732079 instance=ExtResource("3_i2xqc")]
+layout_mode = 2
+field_name = "Internal Density"
+number = 0.0
+max_value = 15.0
+step = 1.0
+
+[node name="Label" parent="AcceptDialog/VBoxContainer/InternalDensityInputField" index="0" unique_id=595093931]
+text = "Internal Density"
+
+[node name="HSlider" parent="AcceptDialog/VBoxContainer/InternalDensityInputField" index="1" unique_id=1154318471]
+max_value = 15.0
+step = 1.0
+value = 0.0
+
+[node name="SpinBox" parent="AcceptDialog/VBoxContainer/InternalDensityInputField" index="2" unique_id=366925073]
+max_value = 15.0
+step = 1.0
+value = 0.0
+
+[node name="PaddingInputField" parent="AcceptDialog/VBoxContainer" unique_id=754432771 instance=ExtResource("3_i2xqc")]
+layout_mode = 2
+field_name = "Padding"
+number = 10.0
+max_value = 25.0
+step = 1.0
+
+[node name="Label" parent="AcceptDialog/VBoxContainer/PaddingInputField" index="0" unique_id=595093931]
+text = "Padding"
+
+[node name="HSlider" parent="AcceptDialog/VBoxContainer/PaddingInputField" index="1" unique_id=1154318471]
+max_value = 25.0
+step = 1.0
+value = 10.0
+
+[node name="SpinBox" parent="AcceptDialog/VBoxContainer/PaddingInputField" index="2" unique_id=366925073]
+max_value = 25.0
+step = 1.0
+value = 10.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="AcceptDialog/VBoxContainer" unique_id=311244781]
+layout_mode = 2
+
+[node name="OnlyMeshCheckBox" type="CheckBox" parent="AcceptDialog/VBoxContainer/HBoxContainer" unique_id=547521984]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Triangulate Only (Generate Polygons using existing vertices)"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="confirmed" from="AcceptDialog" to="." method="_on_accept_dialog_confirmed"]
+[connection signal="resized" from="AcceptDialog/VBoxContainer/MarginContainer/PolygonDisplay" to="." method="_on_polygon_display_resized"]
+[connection signal="value_changed" from="AcceptDialog/VBoxContainer/DensityInputField" to="." method="_on_density_input_field_value_changed"]
+[connection signal="value_changed" from="AcceptDialog/VBoxContainer/InternalDensityInputField" to="." method="_on_internal_density_input_field_value_changed"]
+[connection signal="value_changed" from="AcceptDialog/VBoxContainer/PaddingInputField" to="." method="_on_padding_input_field_value_changed"]
+[connection signal="toggled" from="AcceptDialog/VBoxContainer/HBoxContainer/OnlyMeshCheckBox" to="." method="_on_only_mesh_check_box_toggled"]
+
+[editable path="AcceptDialog/VBoxContainer/DensityInputField"]
+[editable path="AcceptDialog/VBoxContainer/InternalDensityInputField"]
+[editable path="AcceptDialog/VBoxContainer/PaddingInputField"]

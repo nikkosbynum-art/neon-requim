@@ -1,0 +1,40 @@
+{
+  "character": "STITCH",
+  "status": "QUARANTINED VISIBLE-PROFILE MESH-RIG CANDIDATE",
+  "art_scope": "single flattened right-facing profile; no semantic part separation",
+  "source": "docs/visual_qa/STITCH_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_view_bounds_xyxy": [
+    615,
+    19,
+    905,
+    976
+  ],
+  "source_crop_xyxy": [
+    591,
+    7,
+    929,
+    988
+  ],
+  "candidate_image": "STITCH_T1_VISIBLE_PROFILE_MESH_INPUT_CANDIDATE_01.png",
+  "candidate_image_size_px": [
+    594,
+    1237
+  ],
+  "alpha32_bounds_xyxy": [
+    152,
+    140,
+    442,
+    1097
+  ],
+  "transparent_safety_border_px": 128,
+  "provisional_bone_landmarks": "approximate source-canvas points; see rig_manifest.json; pivots not artist-authored",
+  "unresolved": [
+    "semantic body-part boundaries",
+    "concealed anatomy and underpaint",
+    "authored pivots",
+    "far-side anatomy",
+    "detached accessory ownership",
+    "continuous deformation and production readiness"
+  ],
+  "runtime_approved": false
+}

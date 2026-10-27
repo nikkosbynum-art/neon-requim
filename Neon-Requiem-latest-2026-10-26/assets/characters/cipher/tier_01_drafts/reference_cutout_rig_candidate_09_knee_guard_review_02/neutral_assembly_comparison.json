@@ -1,0 +1,9 @@
+{
+  "candidate": "09B",
+  "comparison": "candidate08 neutral assembly vs candidate09B neutral assembly",
+  "pixel_identical": true,
+  "difference_bbox_xyxy": null,
+  "guard_alpha_pixels": 3023,
+  "semantic_review_status": "NOT_VERIFIED",
+  "production_approved": false
+}

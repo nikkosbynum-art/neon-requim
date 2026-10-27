@@ -1,0 +1,28 @@
+{
+  "roster_schema_version": 1,
+  "source": {
+    "url": "https://app.notion.com/p/40394c5658c8812d849be3d32629920e",
+    "retrieved_on": "2026-10-25"
+  },
+  "manifest_filename": "character_art_manifest.json",
+  "required_tier_ids": [1],
+  "characters": [
+    { "character_id": "BULWARK", "manifest_paths": [] },
+    {
+      "character_id": "BREAKER",
+      "manifest_paths": [
+        "assets/characters/breaker/tier_01_drafts/profile_rig_trial_01/pivot_manifest.json"
+      ]
+    },
+    { "character_id": "CIPHER", "manifest_paths": [] },
+    { "character_id": "SPARK", "manifest_paths": [] },
+    { "character_id": "SPECTER", "manifest_paths": [] },
+    { "character_id": "IRONCLAD", "manifest_paths": [] },
+    { "character_id": "STITCH", "manifest_paths": [] },
+    { "character_id": "RECOIL", "manifest_paths": [] },
+    { "character_id": "ECHO", "manifest_paths": [] },
+    { "character_id": "VECTOR", "manifest_paths": [] },
+    { "character_id": "DEADLOCK", "manifest_paths": [] },
+    { "character_id": "GLITCH", "manifest_paths": [] }
+  ]
+}

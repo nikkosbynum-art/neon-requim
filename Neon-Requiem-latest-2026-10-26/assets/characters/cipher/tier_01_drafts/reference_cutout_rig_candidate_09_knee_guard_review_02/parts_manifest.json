@@ -1,0 +1,580 @@
+{
+  "status": "QUARANTINED REVIEW CANDIDATE - NOT RIG INPUT",
+  "semantic_review_status": "PARTIAL_USER_APPROVAL; RASTER_AND_RIG_REVIEW_OPEN",
+  "semantic_review_evidence": "docs/visual_qa/CIPHER_T1_PARTS_CONTACT_SHEET_09B_QUARANTINED.png",
+  "semantic_review_note": "Candidate 09B implements the user-approved separate near_knee_guard part. The owner split and traced near_knee_guard boundary are user-approved; the front armor plate/red optic and upper side lug belong to the guard, while lower round hinge/wrap straps stay with the leg layers. Source RGB only. The neutral composite matches candidate 08 pixel-for-pixel. The pivot point is user-approved and authored in the manifest. Other part boundaries, hidden anatomy, deformation, and production approval remain unverified.",
+  "production_approved": false,
+  "revision_from_candidate_06": "Prevents the visible backpack signal mast from being divided between the head and backpack cutout layers.",
+  "ownership_adjustment": {
+    "from": "head_hood_hair_face",
+    "to": "backpack_mount",
+    "source_crop_polygon_xy": [
+      [
+        70,
+        19
+      ],
+      [
+        83,
+        20
+      ],
+      [
+        92,
+        32
+      ],
+      [
+        91,
+        52
+      ],
+      [
+        86,
+        60
+      ],
+      [
+        88,
+        91
+      ],
+      [
+        91,
+        99
+      ],
+      [
+        96,
+        106
+      ],
+      [
+        97,
+        121
+      ],
+      [
+        93,
+        132
+      ],
+      [
+        89,
+        139
+      ],
+      [
+        88,
+        179
+      ],
+      [
+        94,
+        186
+      ],
+      [
+        99,
+        195
+      ],
+      [
+        99,
+        207
+      ],
+      [
+        95,
+        218
+      ],
+      [
+        89,
+        225
+      ],
+      [
+        88,
+        377
+      ],
+      [
+        91,
+        388
+      ],
+      [
+        94,
+        406
+      ],
+      [
+        92,
+        428
+      ],
+      [
+        87,
+        451
+      ],
+      [
+        68,
+        452
+      ],
+      [
+        63,
+        437
+      ],
+      [
+        64,
+        419
+      ],
+      [
+        68,
+        403
+      ],
+      [
+        68,
+        228
+      ],
+      [
+        60,
+        220
+      ],
+      [
+        57,
+        208
+      ],
+      [
+        59,
+        193
+      ],
+      [
+        64,
+        183
+      ],
+      [
+        63,
+        146
+      ],
+      [
+        60,
+        130
+      ],
+      [
+        60,
+        110
+      ],
+      [
+        64,
+        99
+      ],
+      [
+        63,
+        58
+      ],
+      [
+        60,
+        49
+      ],
+      [
+        61,
+        33
+      ]
+    ],
+    "rationale": "The approved turnaround shows the mast physically mounted to the backpack, behind the head and torso."
+  },
+  "source": "docs/visual_qa/CIPHER_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_view": "approved right-facing side profile; front/rear views consulted for attachment ownership",
+  "crop_xywh": [
+    600,
+    10,
+    330,
+    960
+  ],
+  "pivot_and_overlap_status": "The near_knee_guard pivot at source [770,665] / part-local [77,115] is user-approved and authored; all other part pivots remain unauthored, and hidden/far-side anatomy remains unverified.",
+  "layer_order_back_to_front": [
+    "backpack_mount",
+    "near_thigh",
+    "near_shin",
+    "near_knee_guard",
+    "near_boot",
+    "pelvis_belt_gear",
+    "torso_jacket",
+    "near_upper_arm",
+    "near_forearm",
+    "near_hand",
+    "head_hood_hair_face"
+  ],
+  "parts": {
+    "backpack_mount": {
+      "file": "CIPHER_T1_BACKPACK_MOUNT_REF_CUTOUT_CANDIDATE_09B_QUARANTINED.png",
+      "size_px": [
+        215,
+        582
+      ],
+      "source_bbox_xyxy": [
+        29,
+        28,
+        124,
+        490
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "near_thigh": {
+      "file": "CIPHER_T1_NEAR_THIGH_REF_CUTOUT_CANDIDATE_09B_QUARANTINED.png",
+      "size_px": [
+        240,
+        233
+      ],
+      "source_bbox_xyxy": [
+        114,
+        533,
+        234,
+        646
+      ],
+      "padding_px": 60,
+      "boundary_status": "Candidate 09 removes the traced knee-guard region; remaining thigh boundary is provisional and requires review.",
+      "pivot_status": "not authored"
+    },
+    "near_shin": {
+      "file": "CIPHER_T1_NEAR_SHIN_REF_CUTOUT_CANDIDATE_09B_QUARANTINED.png",
+      "size_px": [
+        228,
+        334
+      ],
+      "source_bbox_xyxy": [
+        99,
+        606,
+        207,
+        820
+      ],
+      "padding_px": 60,
+      "boundary_status": "Candidate 09 removes the traced knee-guard region; remaining shin boundary is provisional and requires review.",
+      "pivot_status": "not authored"
+    },
+    "near_boot": {
+      "file": "CIPHER_T1_NEAR_BOOT_REF_CUTOUT_CANDIDATE_09B_QUARANTINED.png",
+      "size_px": [
+        310,
+        293
+      ],
+      "source_bbox_xyxy": [
+        79,
+        783,
+        269,
+        956
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "pelvis_belt_gear": {
+      "file": "CIPHER_T1_PELVIS_BELT_GEAR_REF_CUTOUT_CANDIDATE_09B_QUARANTINED.png",
+      "size_px": [
+        263,
+        174
+      ],
+      "source_bbox_xyxy": [
+        101,
+        481,
+        244,
+        535
+      ],
+      "padding_px": 60,
+      "boundary_status": "Candidate 07 source mask has no shared hand pixels; remaining source ownership is provisional and requires visual review.",
+      "pivot_status": "not authored"
+    },
+    "torso_jacket": {
+      "file": "CIPHER_T1_TORSO_JACKET_REF_CUTOUT_CANDIDATE_09B_QUARANTINED.png",
+      "size_px": [
+        294,
+        458
+      ],
+      "source_bbox_xyxy": [
+        101,
+        144,
+        275,
+        482
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "near_upper_arm": {
+      "file": "CIPHER_T1_NEAR_UPPER_ARM_REF_CUTOUT_CANDIDATE_09B_QUARANTINED.png",
+      "size_px": [
+        207,
+        352
+      ],
+      "source_bbox_xyxy": [
+        104,
+        151,
+        191,
+        383
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "near_forearm": {
+      "file": "CIPHER_T1_NEAR_FOREARM_REF_CUTOUT_CANDIDATE_09B_QUARANTINED.png",
+      "size_px": [
+        191,
+        248
+      ],
+      "source_bbox_xyxy": [
+        103,
+        334,
+        174,
+        462
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "near_hand": {
+      "file": "CIPHER_T1_NEAR_HAND_REF_CUTOUT_CANDIDATE_09B_QUARANTINED.png",
+      "size_px": [
+        193,
+        235
+      ],
+      "source_bbox_xyxy": [
+        105,
+        421,
+        178,
+        536
+      ],
+      "padding_px": 60,
+      "boundary_status": "Candidate 07 source mask assigns visible hand exclusively to near_hand; visual review required.",
+      "pivot_status": "not authored"
+    },
+    "head_hood_hair_face": {
+      "file": "CIPHER_T1_HEAD_HOOD_HAIR_FACE_REF_CUTOUT_CANDIDATE_09B_QUARANTINED.png",
+      "size_px": [
+        298,
+        279
+      ],
+      "source_bbox_xyxy": [
+        90,
+        12,
+        268,
+        171
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "near_knee_guard": {
+      "file": "CIPHER_T1_NEAR_KNEE_GUARD_REF_CUTOUT_CANDIDATE_09B_QUARANTINED.png",
+      "size_px": [
+        187,
+        187
+      ],
+      "source_bbox_xyxy": [
+        153,
+        600,
+        220,
+        667
+      ],
+      "padding_px": 60,
+      "boundary_status": "USER_APPROVED_BOUNDARY_2026-10-25; front armor plate/red optic and upper side lug belong to guard; lower hinge/wrap straps stay with leg. Exact motion seam remains under review.",
+      "pivot_status": "USER_APPROVED_AND_AUTHORED_2026-10-25",
+      "pivot_px_part_local": [
+        77,
+        115
+      ],
+      "pivot_coordinate_space": "near_knee_guard PNG pixels, origin top-left",
+      "semantic_role": "independent articulated knee guard",
+      "planned_anchor": "near_knee"
+    }
+  },
+  "approved_semantic_interpretations": {
+    "hand_jacket_occlusion": {
+      "status": "USER_APPROVED_INTERPRETATION_2026-10-25",
+      "visible_hand_owner": "near_hand",
+      "jacket_owner": "torso_jacket",
+      "jacket_continues_behind_hand": true,
+      "visible_hand_pixels_must_not_be_owned_by": "pelvis_belt_gear",
+      "required_draw_order_back_to_front": [
+        "torso_jacket",
+        "near_hand"
+      ],
+      "underpaint_status": "NOT_AUTHORED",
+      "underpaint_provenance_if_added": "INFERRED_NOT_VISIBLE_IN_FLATTENED_SOURCE",
+      "gate_effect": "INTERPRETATION_ONLY; SEMANTIC_REVIEW_AND_PRODUCTION_APPROVAL_REMAIN_FALSE"
+    }
+  },
+  "revision_from_candidate_07": "Adds a separate inferred jacket underpaint beneath the hand footprint; candidate 07 already assigns the visible hand exclusively to near_hand.",
+  "inferred_underpaint": {
+    "file": "CIPHER_T1_JACKET_UNDER_HAND_INFERRED_CANDIDATE_08_QUARANTINED.png",
+    "owner": "torso_jacket",
+    "provenance": "inferred_underpaint_user_approved_continuity",
+    "draw_order": "behind near_upper_arm, near_forearm, and near_hand",
+    "shape": "exact current near_hand alpha footprint",
+    "rgb_method": "neutral charcoal fallback RGB (38,39,43); no source pixels sampled; flat fill with no added markings",
+    "status": "NOT_VERIFIED - neutral-pose occlusion only; articulation coverage and visual texture require human review"
+  },
+  "assembly_preview": "CIPHER_T1_REFERENCE_ASSEMBLY_CANDIDATE_09B_QUARANTINED.png",
+  "scale_review_evidence": [
+    "docs/visual_qa/CIPHER_T1_CANDIDATE_08_ISOLATED_SCALE_1280x720_QUARANTINED.png",
+    "docs/visual_qa/CIPHER_T1_CANDIDATE_08_ISOLATED_SCALE_800x450_QUARANTINED.png"
+  ],
+  "revision_from_candidate_08": "Separates the visible knee armor and side joint into near_knee_guard; thigh/shin parent masks relinquish the traced guard region.",
+  "knee_bend_review_evidence": "docs/visual_qa/CIPHER_T1_CANDIDATE_09B_KNEE_UNDERPAINT_BEND_REVIEW_04_QUARANTINED.png",
+  "inferred_underpaint_review": {
+    "status": "USER_APPROVED_REVIEW_LAYER_2026-10-25",
+    "file": "CIPHER_T1_NEAR_KNEE_LEG_UNDERPAINT_INFERRED_CANDIDATE_09B_04_QUARANTINED.png",
+    "owner": "near_knee_leg_continuity_underpaint",
+    "draw_order": "behind near_thigh, near_shin, near_knee_guard, and near_boot",
+    "provenance": "INFERRED; the flattened source hides the surface exposed by bending the joint",
+    "construction": "only the transparent wedge revealed inside the source-derived leg silhouette by the 12-degree and 20-degree rigid-cutout preview poses; no added markings or copied texture",
+    "fill_rgb": [40, 35, 36],
+    "color_sample": {
+      "source": "approved CIPHER anatomy turnaround",
+      "profile_crop_xyxy": [155, 680, 175, 700],
+      "method": "median visible trouser-fabric RGB"
+    },
+    "review_evidence": [
+      "docs/visual_qa/CIPHER_T1_CANDIDATE_09B_KNEE_UNDERPAINT_ISOLATED_04_QUARANTINED.png",
+      "docs/visual_qa/CIPHER_T1_CANDIDATE_09B_KNEE_UNDERPAINT_BEND_REVIEW_04_QUARANTINED.png",
+      "docs/visual_qa/CIPHER_T1_CANDIDATE_09B_KNEE_UNDERPAINT_GODOT_MOTION_02_QUARANTINED.png"
+    ],
+    "user_visual_approval": "User approved this inferred underpaint candidate in this conversation on 2026-10-25.",
+    "godot_capture_visual_approval": "User approved the Godot-rendered knee-joint underpaint update in this conversation on 2026-10-25; approval applies to the shown review capture only.",
+    "approval_scope": "approved as a quarantined review layer for the shown knee flex range; this does not approve runtime integration, other hidden anatomy, or production readiness",
+    "godot_render_review": {
+      "renderer": "Godot 4.7.2 Compatibility / OpenGL 3.3",
+      "capture_script": "tests/art/capture_cipher_candidate_09b_knee_underpaint_motion_02.gd",
+      "output": "docs/visual_qa/CIPHER_T1_CANDIDATE_09B_KNEE_UNDERPAINT_GODOT_MOTION_02_QUARANTINED.png",
+      "neutral_knee_crop_difference_px": 0,
+      "neutral_knee_crop_sampled_px": 70000,
+      "neutral_panel": "static exported candidate reference; not a skinned neutral frame",
+      "weighted_pose_angles_deg": [-12, -20],
+      "pose_method": "rigid Sprite2D rotations around approved hinge, not a deforming rig"
+    },
+    "neutral_assembly_integration": false,
+    "runtime_integration": false
+  },
+  "superseded_inferred_underpaint_trials": [
+    "CIPHER_T1_NEAR_KNEE_LEG_UNDERPAINT_INFERRED_CANDIDATE_09B_QUARANTINED.png",
+    "CIPHER_T1_NEAR_KNEE_LEG_UNDERPAINT_INFERRED_CANDIDATE_09B_02_QUARANTINED.png",
+    "CIPHER_T1_NEAR_KNEE_LEG_UNDERPAINT_INFERRED_CANDIDATE_09B_03_QUARANTINED.png"
+  ],
+  "superseded_godot_capture_trial": {
+    "file": "docs/visual_qa/CIPHER_T1_CANDIDATE_09B_KNEE_UNDERPAINT_GODOT_MOTION_01_QUARANTINED.png",
+    "reason": "Per-pixel coordinate rounding introduced visible speckle; replaced by the SubViewport Sprite2D capture in motion 02."
+  },
+  "knee_guard_split": {
+    "source": "approved CIPHER right-profile anatomy turnaround; no new RGB pixels",
+    "method": "source-over alpha extracted from near_thigh and near_shin inside a conservative source-traced polygon; parent masks cleared only inside that polygon",
+    "polygon_profile_crop_xy": [
+      [
+        173,
+        610
+      ],
+      [
+        179,
+        604
+      ],
+      [
+        190,
+        600
+      ],
+      [
+        204,
+        602
+      ],
+      [
+        219,
+        606
+      ],
+      [
+        229,
+        613
+      ],
+      [
+        233,
+        622
+      ],
+      [
+        233,
+        633
+      ],
+      [
+        229,
+        644
+      ],
+      [
+        224,
+        653
+      ],
+      [
+        216,
+        660
+      ],
+      [
+        206,
+        665
+      ],
+      [
+        195,
+        666
+      ],
+      [
+        184,
+        662
+      ],
+      [
+        175,
+        656
+      ],
+      [
+        170,
+        647
+      ],
+      [
+        168,
+        637
+      ],
+      [
+        170,
+        627
+      ],
+      [
+        157,
+        630
+      ],
+      [
+        153,
+        624
+      ],
+      [
+        156,
+        617
+      ],
+      [
+        164,
+        612
+      ]
+    ],
+    "prior_shared_thresholded_pixels": 3520,
+    "pivot_status": "USER_APPROVED_AND_AUTHORED_2026-10-25 source turnaround pixel [770, 665] / part-local pixel [77, 115]",
+    "planned_anchor": "near_knee",
+      "status": "USER_APPROVED_OWNER_SPLIT_AND_RASTER_BOUNDARY_2026-10-25: front plate/red optic and upper side lug belong to near_knee_guard; lower round hinge/wrap straps stay with the leg layers."
+  },
+  "ownership_map_evidence": "docs/visual_qa/CIPHER_T1_PART_OWNERSHIP_MAP_09B_QUARANTINED.png",
+  "neutral_assembly_comparison": "neutral_assembly_comparison.json",
+  "boundary_review_evidence": "docs/visual_qa/CIPHER_T1_KNEE_GUARD_CANDIDATE_09B_BOUNDARY_REVIEW_QUARANTINED.png",
+  "pivot": {
+    "status": "USER_APPROVED_AND_AUTHORED_2026-10-25",
+    "coordinate_space": "full approved turnaround image pixels, origin top-left",
+    "source_xy": [770, 665],
+    "rationale": "Center of the lower round hinge, which the user approved to remain with the leg; guard pivot should align to this joint.",
+    "part_local_xy": [77, 115],
+    "part_local_coordinate_space": "near_knee_guard PNG pixels, origin top-left",
+    "approval_source": "User approved the proposed location in this conversation on 2026-10-25.",
+    "review_evidence": "docs/visual_qa/CIPHER_T1_CANDIDATE_09B_PIVOT_APPROVED_QUARANTINED.png",
+    "authored_into_part": true
+  },
+  "editable_to_godot_pilot": {
+    "status": "PARTIAL_PILOT; KRITA_SAVE_REOPEN_NOT_VERIFIED; QUARANTINED",
+    "workflow_feedback": "User reports that the negative-angle test worked as a diagnostic. This is workflow evidence only; it does not approve deformation quality, production art, or runtime integration.",
+    "authoring_workspace": "krita_authoring_workspace_09b/CIPHER_T1_KNEE_PARTS_EDIT_WORKSPACE_09B_QUARANTINED.ora",
+    "export_folder": "krita_export_09b_PRE_ROUNDTRIP_QUARANTINED/",
+    "krita_save_reopen": "NOT_VERIFIED; export was generated directly from the OpenRaster workspace, not from a Krita-saved file.",
+    "godot_weighted_review": {
+      "renderer": "Godot 4.7.2 Compatibility / OpenGL 3.3",
+      "capture_script": "tests/art/capture_cipher_candidate_09b_knee_weighted_deformation.gd",
+      "output": "docs/visual_qa/CIPHER_T1_CANDIDATE_09B_KNEE_WEIGHTED_DEFORMATION_GODOT_04_QUARANTINED.png",
+      "neutral_panel": "static exported candidate reference; not a skinned neutral frame",
+      "weighted_pose_angles_deg": [-12, -20],
+      "approved_pivot_source_xy": [770, 665],
+      "review_only_estimates": ["hip anchor", "two-bone skin weights", "mesh sampling"],
+      "runtime_integration": false,
+      "production_approved": false
+    }
+  }
+}

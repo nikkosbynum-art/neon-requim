@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "character_id": "BULWARK",
+  "tier_id": 1,
+  "source_reference": "docs/visual_qa/BULWARK_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_status": "approved Tier I visual/anatomy reference; not animation-ready art",
+  "extraction_method": "edge-flood near-background removal plus explicitly seeded connected foreground component",
+  "source_sha256": "e297686a8b52a3177e3818185b7d9b56a64284cbffe459f96a1e9530a5ebda61",
+  "status": "REFERENCE-DERIVED REVIEW CANDIDATE / QUARANTINED",
+  "readiness": "Static foreground cutouts only; semantic completeness, edge cleanup, pivots, 3D/deformation, and animation remain unverified.",
+  "animation_ready": false,
+  "production_approved": false,
+  "runtime_integrated": false,
+  "items": [
+    {
+      "bbox_source_px": [
+        315,
+        58,
+        355,
+        98
+      ],
+      "alpha_bbox_in_crop_px": [
+        10,
+        8,
+        31,
+        30
+      ],
+      "source_alpha_pixels": 279,
+      "source_crop_px": [
+        40,
+        40
+      ],
+      "background_sample_rgb": [
+        216,
+        215,
+        217
+      ],
+      "background_tolerance": 20,
+      "object_seed_source_px": [
+        335,
+        77
+      ],
+      "background_seed_source_px": [
+        320,
+        70
+      ],
+      "id": "helmet_medical_cross_decal",
+      "file": "BULWARK_T1_HELMET_MEDICAL_CROSS_DECAL_REFERENCE_CUTOUT_CANDIDATE_01_QUARANTINED.png",
+      "output_px": [
+        136,
+        136
+      ],
+      "safety_margin_px": 48,
+      "sha256": "cfbf4e4ad5bc45fc8fa0601af14843028778bfc676dc71fb53c4d8a62e171794",
+      "attachment_role_id": "bulwark.helmet_medical_cross_decal",
+      "owner_character_id": "BULWARK",
+      "pivot": null,
+      "animation_ready": false,
+      "production_approved": false,
+      "runtime_integrated": false,
+      "status": "REFERENCE-DERIVED CUTOUT CANDIDATE / QUARANTINED"
+    }
+  ]
+}

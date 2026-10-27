@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "character_id": "CIPHER",
+  "tier_id": 1,
+  "parts": [
+    {
+      "part_id": "near_thigh",
+      "layer_name": "ART - near_thigh - quarantined 09B source cutout; boundary status in manifest",
+      "category": "body_part"
+    },
+    {
+      "part_id": "near_shin",
+      "layer_name": "ART - near_shin - quarantined 09B source cutout; boundary status in manifest",
+      "category": "body_part"
+    },
+    {
+      "part_id": "near_knee_guard",
+      "layer_name": "ART - near_knee_guard - quarantined 09B source cutout; boundary status in manifest",
+      "category": "body_part"
+    },
+    {
+      "part_id": "near_boot",
+      "layer_name": "ART - near_boot - quarantined 09B source cutout; boundary status in manifest",
+      "category": "body_part"
+    }
+  ]
+}

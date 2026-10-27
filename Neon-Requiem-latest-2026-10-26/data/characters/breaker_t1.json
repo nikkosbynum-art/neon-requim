@@ -1,0 +1,30 @@
+{
+  "id": "breaker_t1",
+  "display_name": "BREAKER",
+  "faction": "The Fractured",
+  "class": "Brawler / Cyberpsycho",
+  "rarity": "Epic",
+  "role": "Frontline Damage",
+  "combat_style": "melee",
+  "identity": "Former prizefighter",
+  "signature_skill": "Redline: boosted impact with neural strain (design reference only; not implemented)",
+  "evolution_tier": "Origin Form",
+  "prototype_placeholder": true,
+  "animation_durations": {
+    "idle": 1.0,
+    "walk": 0.65,
+    "punch": 0.42,
+    "hit": 0.30,
+    "defeated": 0.95
+  },
+  "max_hp": 120.0,
+  "attack_power": 18.0,
+  "move_speed": 52.0,
+  "melee_contact_distance": 4.0,
+  "attack_range": 18.0,
+  "attack_interval": 0.72,
+  "upgrade_attack_per_level": 2.4,
+  "upgrade_hp_per_level": 9.0,
+  "upgrade_cost_base": 20,
+  "upgrade_cost_growth": 1.12
+}

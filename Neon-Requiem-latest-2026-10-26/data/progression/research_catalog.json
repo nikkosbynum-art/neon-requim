@@ -1,0 +1,9 @@
+{
+  "status": "FRAMEWORK ONLY — node identities, costs, effects, prerequisites, and unlock balance await approved design values",
+  "branches": [
+    {"id": "combat_protocols", "display_name": "Combat Protocols", "nodes": []},
+    {"id": "underground_economy", "display_name": "Underground Economy", "nodes": []},
+    {"id": "network_infrastructure", "display_name": "Network Infrastructure", "nodes": []},
+    {"id": "personnel_development", "display_name": "Personnel Development", "nodes": []}
+  ]
+}

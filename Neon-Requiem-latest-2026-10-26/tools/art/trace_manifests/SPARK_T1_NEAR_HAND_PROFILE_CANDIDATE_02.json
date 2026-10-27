@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "character_id": "SPARK",
+  "tier_id": 1,
+  "source_image": "docs/visual_qa/SPARK_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_sha256": "596753b13abb84bd1a663b51aab7436126783423706f24a5ba297a236cacd139",
+  "source_view": "Approved anatomy turnaround, right-facing side profile; source-pixel trace limited to the near hand and fingerless glove.",
+  "upstream_sources": [
+    {
+      "source_image": "docs/visual_qa/SPARK_T1_CONCEPT_TURNAROUND_01_2026-10-25.png",
+      "source_sha256": "344c81c49194fcbfff904cf9bf7a48bb66e08dde3cf4f2cf3ee9253b7c206f0c",
+      "role": "approved visual direction cross-reference; no pixels extracted from this sheet"
+    }
+  ],
+  "parts": [
+    {
+      "part_id": "near_hand_glove",
+      "file": "SPARK_T1_NEAR_HAND_GLOVE_PROFILE_CANDIDATE_02_QUARANTINED.png",
+      "semantic_label": "Near-side visible hand and fingerless glove as one source-only semantic unit; attached dark wrist closure retained with the glove. No hidden hand or underpaint.",
+      "category": "body_part",
+      "owner_character_id": "SPARK",
+      "boundary_provenance": "Revision 02 narrows the left/right source trace after visual screening of revision 01 found an adjacent orange equipment sliver. The visible outer glove/hand contour and finger gaps define this trace. The dark wrist closure is conservatively merged with the hand/glove; the separate silver forearm guard and neighboring equipment are excluded. Only currently visible source pixels are selected.",
+      "polygons_xy": [
+        [[638,443],[645,441],[654,441],[664,441],[672,442],[678,446],[682,452],[685,459],[688,467],[690,475],[690,481],[687,486],[682,489],[676,491],[668,492],[660,492],[652,490],[645,487],[640,483],[639,477],[639,470],[639,462],[639,454],[639,448]],
+        [[640,484],[648,485],[650,491],[650,501],[648,509],[645,512],[641,511],[640,507],[640,501],[640,493]],
+        [[648,485],[660,487],[662,495],[662,505],[660,513],[657,517],[652,516],[649,511],[647,504]],
+        [[660,487],[674,487],[676,496],[676,506],[674,515],[671,519],[667,519],[663,514],[661,507]],
+        [[674,485],[685,482],[690,486],[691,493],[691,501],[689,509],[685,515],[681,518],[677,516],[674,510]],
+        [[682,476],[688,478],[691,483],[691,491],[691,498],[689,504],[685,506],[681,502],[679,496],[680,488]]
+      ]
+    }
+  ]
+}

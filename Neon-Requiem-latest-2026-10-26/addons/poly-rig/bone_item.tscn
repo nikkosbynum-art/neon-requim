@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://csrs6a3hjd027"]
+
+[ext_resource type="Script" uid="uid://b44qgoa67omyv" path="res://addons/poly-rig/bone_item.gd" id="1_gbtvt"]
+[ext_resource type="Texture2D" uid="uid://cv1brcxb37gom" path="res://addons/poly-rig/assets/icons/Bone.svg" id="2_mcjrf"]
+[ext_resource type="Texture2D" uid="uid://3xbsbwwu8817" path="res://addons/poly-rig/assets/icons/Remove.svg" id="3_dusdl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dusdl"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.12719199, 0.39978397, 0.58431405, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="BoneItem" type="Button" unique_id=2132605588]
+custom_minimum_size = Vector2(0, 48)
+offset_right = 512.0
+offset_bottom = 48.0
+size_flags_horizontal = 3
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dusdl")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_dusdl")
+toggle_mode = true
+action_mode = 0
+script = ExtResource("1_gbtvt")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=730118952]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = -15.5
+offset_right = -8.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=1161695035]
+layout_mode = 2
+texture = ExtResource("2_mcjrf")
+expand_mode = 2
+
+[node name="BoneNameLabel" type="Label" parent="HBoxContainer" unique_id=703945530]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+text = "LeftArm"
+
+[node name="HSlider" type="HSlider" parent="HBoxContainer" unique_id=691973566]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.01
+
+[node name="SpinBox" type="SpinBox" parent="HBoxContainer" unique_id=1984144678]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+max_value = 1.0
+step = 0.01
+
+[node name="DeleteButton" type="Button" parent="HBoxContainer" unique_id=1455784829]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+icon = ExtResource("3_dusdl")
+icon_alignment = 1
+
+[connection signal="value_changed" from="HBoxContainer/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="HBoxContainer/SpinBox" to="." method="_on_spin_box_value_changed"]
+[connection signal="pressed" from="HBoxContainer/DeleteButton" to="." method="_on_delete_button_pressed"]

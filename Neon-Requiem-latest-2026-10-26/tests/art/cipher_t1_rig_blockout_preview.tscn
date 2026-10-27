@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://tests/art/cipher_t1_rig_blockout.gd" id="1_rig"]
+
+[node name="CipherTierOneRigBlockout" type="Node2D"]
+position = Vector2(420, 360)
+script = ExtResource("1_rig")

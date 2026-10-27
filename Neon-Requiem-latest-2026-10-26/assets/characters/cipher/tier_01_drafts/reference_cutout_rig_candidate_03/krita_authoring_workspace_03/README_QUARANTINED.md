@@ -1,0 +1,1 @@
+Status: QUARANTINED. Candidate 03 workspace is structurally verified but not yet opened in Krita. Use after 5 p.m. Chicago time for visual review only. Candidate 03 has not passed semantic/art review and is not runtime content. Save any edits as a new version. Approved source art and candidate 01/02 remain unchanged.

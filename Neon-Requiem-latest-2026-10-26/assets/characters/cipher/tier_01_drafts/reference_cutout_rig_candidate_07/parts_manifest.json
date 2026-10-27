@@ -1,0 +1,366 @@
+{
+  "status": "QUARANTINED REVIEW CANDIDATE - NOT RIG INPUT",
+  "semantic_review_status": "NOT_VERIFIED",
+  "semantic_review_evidence": "docs/visual_qa/CIPHER_T1_PARTS_CONTACT_SHEET_07_QUARANTINED.png",
+  "semantic_review_note": "Candidate 07 reallocates the visible rear signal mast/top cap/lower exposed tube from head_hood_hair_face to backpack_mount, matching the approved front/profile/rear views. The polygon is source-traced and subject to native-scale review; no pixels or hidden surfaces are invented. Pivots, far-side anatomy, and deformation remain NOT VERIFIED.",
+  "production_approved": false,
+  "revision_from_candidate_06": "Prevents the visible backpack signal mast from being divided between the head and backpack cutout layers.",
+  "ownership_adjustment": {
+    "from": "head_hood_hair_face",
+    "to": "backpack_mount",
+    "source_crop_polygon_xy": [
+      [
+        70,
+        19
+      ],
+      [
+        83,
+        20
+      ],
+      [
+        92,
+        32
+      ],
+      [
+        91,
+        52
+      ],
+      [
+        86,
+        60
+      ],
+      [
+        88,
+        91
+      ],
+      [
+        91,
+        99
+      ],
+      [
+        96,
+        106
+      ],
+      [
+        97,
+        121
+      ],
+      [
+        93,
+        132
+      ],
+      [
+        89,
+        139
+      ],
+      [
+        88,
+        179
+      ],
+      [
+        94,
+        186
+      ],
+      [
+        99,
+        195
+      ],
+      [
+        99,
+        207
+      ],
+      [
+        95,
+        218
+      ],
+      [
+        89,
+        225
+      ],
+      [
+        88,
+        377
+      ],
+      [
+        91,
+        388
+      ],
+      [
+        94,
+        406
+      ],
+      [
+        92,
+        428
+      ],
+      [
+        87,
+        451
+      ],
+      [
+        68,
+        452
+      ],
+      [
+        63,
+        437
+      ],
+      [
+        64,
+        419
+      ],
+      [
+        68,
+        403
+      ],
+      [
+        68,
+        228
+      ],
+      [
+        60,
+        220
+      ],
+      [
+        57,
+        208
+      ],
+      [
+        59,
+        193
+      ],
+      [
+        64,
+        183
+      ],
+      [
+        63,
+        146
+      ],
+      [
+        60,
+        130
+      ],
+      [
+        60,
+        110
+      ],
+      [
+        64,
+        99
+      ],
+      [
+        63,
+        58
+      ],
+      [
+        60,
+        49
+      ],
+      [
+        61,
+        33
+      ]
+    ],
+    "rationale": "The approved turnaround shows the mast physically mounted to the backpack, behind the head and torso."
+  },
+  "source": "docs/visual_qa/CIPHER_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_view": "approved right-facing side profile; front/rear views consulted for attachment ownership",
+  "crop_xywh": [
+    600,
+    10,
+    330,
+    960
+  ],
+  "pivot_and_overlap_status": "leg overlap is source-backed; backpack mast ownership is revised; pivots and hidden/far-side anatomy are not authored",
+  "layer_order_back_to_front": [
+    "backpack_mount",
+    "near_thigh",
+    "near_shin",
+    "near_boot",
+    "pelvis_belt_gear",
+    "torso_jacket",
+    "near_upper_arm",
+    "near_forearm",
+    "near_hand",
+    "head_hood_hair_face"
+  ],
+  "parts": {
+    "backpack_mount": {
+      "file": "CIPHER_T1_BACKPACK_MOUNT_REF_CUTOUT_CANDIDATE_07_QUARANTINED.png",
+      "size_px": [
+        215,
+        582
+      ],
+      "source_bbox_xyxy": [
+        29,
+        28,
+        124,
+        490
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "near_thigh": {
+      "file": "CIPHER_T1_NEAR_THIGH_REF_CUTOUT_CANDIDATE_07_QUARANTINED.png",
+      "size_px": [
+        240,
+        237
+      ],
+      "source_bbox_xyxy": [
+        114,
+        533,
+        234,
+        650
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "near_shin": {
+      "file": "CIPHER_T1_NEAR_SHIN_REF_CUTOUT_CANDIDATE_07_QUARANTINED.png",
+      "size_px": [
+        241,
+        334
+      ],
+      "source_bbox_xyxy": [
+        99,
+        606,
+        220,
+        820
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "near_boot": {
+      "file": "CIPHER_T1_NEAR_BOOT_REF_CUTOUT_CANDIDATE_07_QUARANTINED.png",
+      "size_px": [
+        310,
+        293
+      ],
+      "source_bbox_xyxy": [
+        79,
+        783,
+        269,
+        956
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "pelvis_belt_gear": {
+      "file": "CIPHER_T1_PELVIS_BELT_GEAR_REF_CUTOUT_CANDIDATE_07_QUARANTINED.png",
+      "size_px": [
+        263,
+        174
+      ],
+      "source_bbox_xyxy": [
+        101,
+        481,
+        244,
+        535
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "torso_jacket": {
+      "file": "CIPHER_T1_TORSO_JACKET_REF_CUTOUT_CANDIDATE_07_QUARANTINED.png",
+      "size_px": [
+        294,
+        458
+      ],
+      "source_bbox_xyxy": [
+        101,
+        144,
+        275,
+        482
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "near_upper_arm": {
+      "file": "CIPHER_T1_NEAR_UPPER_ARM_REF_CUTOUT_CANDIDATE_07_QUARANTINED.png",
+      "size_px": [
+        207,
+        352
+      ],
+      "source_bbox_xyxy": [
+        104,
+        151,
+        191,
+        383
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "near_forearm": {
+      "file": "CIPHER_T1_NEAR_FOREARM_REF_CUTOUT_CANDIDATE_07_QUARANTINED.png",
+      "size_px": [
+        191,
+        248
+      ],
+      "source_bbox_xyxy": [
+        103,
+        334,
+        174,
+        462
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "near_hand": {
+      "file": "CIPHER_T1_NEAR_HAND_REF_CUTOUT_CANDIDATE_07_QUARANTINED.png",
+      "size_px": [
+        193,
+        235
+      ],
+      "source_bbox_xyxy": [
+        105,
+        421,
+        178,
+        536
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    },
+    "head_hood_hair_face": {
+      "file": "CIPHER_T1_HEAD_HOOD_HAIR_FACE_REF_CUTOUT_CANDIDATE_07_QUARANTINED.png",
+      "size_px": [
+        298,
+        279
+      ],
+      "source_bbox_xyxy": [
+        90,
+        12,
+        268,
+        171
+      ],
+      "padding_px": 60,
+      "boundary_status": "provisional source-mask boundary; visual review required",
+      "pivot_status": "not authored"
+    }
+  },
+  "approved_semantic_interpretations": {
+    "hand_jacket_occlusion": {
+      "status": "USER_APPROVED_INTERPRETATION_2026-10-25",
+      "visible_hand_owner": "near_hand",
+      "jacket_owner": "torso_jacket",
+      "jacket_continues_behind_hand": true,
+      "visible_hand_pixels_must_not_be_owned_by": "pelvis_belt_gear",
+      "required_draw_order_back_to_front": [
+        "torso_jacket",
+        "near_hand"
+      ],
+      "underpaint_status": "NOT_AUTHORED",
+      "underpaint_provenance_if_added": "INFERRED_NOT_VISIBLE_IN_FLATTENED_SOURCE",
+      "gate_effect": "INTERPRETATION_ONLY; SEMANTIC_REVIEW_AND_PRODUCTION_APPROVAL_REMAIN_FALSE"
+    }
+  }
+}

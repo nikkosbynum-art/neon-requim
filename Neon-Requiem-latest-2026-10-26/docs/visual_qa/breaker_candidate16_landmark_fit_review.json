@@ -1,0 +1,27 @@
+{
+  "status": "quarantined visual fit review only",
+  "source": "assets/characters/breaker/tier_01_drafts/BREAKER_T1_arm_extent_reconciliation_study_candidate_09.png",
+  "donor": "assets/characters/breaker/tier_01_drafts/BREAKER_T1_pose_matched_arm_assembly_candidate_16.png",
+  "landmarks_px": {
+    "donor_shoulder_hub": [
+      807.0,
+      221.0
+    ],
+    "donor_fist_center": [
+      105.0,
+      963.0
+    ],
+    "reference_shoulder_hub": [
+      320.0,
+      295.0
+    ],
+    "reference_fist_center": [
+      285.0,
+      489.0
+    ]
+  },
+  "derived_uniform_scale": 0.192992,
+  "rotation_radians": -0.579212,
+  "rotation_degrees": -33.186,
+  "limitation": "Landmarks are manual estimates; this assesses visual pose fit only. It does not separate art parts, validate hidden anatomy, set pivots, or test deformation."
+}

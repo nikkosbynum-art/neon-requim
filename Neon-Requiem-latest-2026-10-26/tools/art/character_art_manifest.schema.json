@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:neon-requiem:schemas:character-art-manifest:v1",
+  "title": "Neon Requiem Character Art Manifest v1",
+  "description": "Shared intake contract for character art layers. Python validation adds filesystem, image-decoding, cross-reference, and measured-alpha checks.",
+  "type": "object",
+  "required": [
+    "manifest_version",
+    "character_id",
+    "tier_id",
+    "asset_status",
+    "source_reference",
+    "source_canvas_px",
+    "target_visible_height_px",
+    "measured_visible_height_px",
+    "pivots_px",
+    "bone_hierarchy",
+    "parts",
+    "layers_back_to_front",
+    "production_gates"
+  ],
+  "properties": {
+    "manifest_version": { "const": 1 },
+    "character_id": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]*$" },
+    "tier_id": { "type": "integer", "minimum": 1 },
+    "asset_status": {
+      "type": "string",
+      "enum": ["review_only", "production_candidate", "production_ready"]
+    },
+    "source_reference": { "type": "string", "minLength": 1 },
+    "source_reference_sha256": {
+      "type": "string",
+      "pattern": "^[A-Fa-f0-9]{64}$",
+      "description": "SHA-256 of the exact approved reference file used for this manifest."
+    },
+    "source_canvas_px": {
+      "type": "array",
+      "prefixItems": [
+        { "type": "integer", "minimum": 1 },
+        { "type": "integer", "minimum": 1 }
+      ],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "ground_pivot": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional for backward-compatible v1 structural intake; required by the manifest rig preview for ground alignment."
+    },
+    "target_visible_height_px": { "type": "integer", "minimum": 1 },
+    "measured_visible_height_px": { "type": "integer", "minimum": 1 },
+    "pivots_px": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "array",
+        "prefixItems": [{ "type": "number" }, { "type": "number" }],
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "bone_hierarchy": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "parent", "pivot", "parent_pivot"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "parent": { "type": ["string", "null"] },
+          "pivot": { "type": "string", "minLength": 1 },
+          "parent_pivot": { "type": ["string", "null"] }
+        },
+        "additionalProperties": true
+      }
+    },
+    "parts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "file", "parent_bone", "pivot", "draw_order", "alpha_mode"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "file": { "type": "string", "minLength": 1 },
+          "parent_bone": { "type": "string", "minLength": 1 },
+          "pivot": { "type": "string", "minLength": 1 },
+          "draw_order": { "type": "integer" },
+          "alpha_mode": { "const": "transparent_cutout" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "layers_back_to_front": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "production_gates": {
+      "type": "object",
+      "required": [
+        "visible_art_approved",
+        "hidden_anatomy_authored",
+        "pivots_authored",
+        "joint_seams_reviewed",
+        "animation_reviewed"
+      ],
+      "properties": {
+        "visible_art_approved": { "type": "boolean" },
+        "hidden_anatomy_authored": { "type": "boolean" },
+        "pivots_authored": { "type": "boolean" },
+        "joint_seams_reviewed": { "type": "boolean" },
+        "animation_reviewed": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "production_gate_evidence": {
+      "type": "object",
+      "description": "Evidence required for every production gate marked true by the project validator.",
+      "properties": {
+        "visible_art_approved": { "$ref": "#/$defs/gateEvidence" },
+        "hidden_anatomy_authored": { "$ref": "#/$defs/gateEvidence" },
+        "pivots_authored": { "$ref": "#/$defs/gateEvidence" },
+        "joint_seams_reviewed": { "$ref": "#/$defs/gateEvidence" },
+        "animation_reviewed": { "$ref": "#/$defs/gateEvidence" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "gateEvidence": {
+      "type": "object",
+      "required": ["reviewer", "reviewed_at", "evidence_paths"],
+      "properties": {
+        "reviewer": { "type": "string", "minLength": 1 },
+        "reviewed_at": { "type": "string", "format": "date-time" },
+        "evidence_paths": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

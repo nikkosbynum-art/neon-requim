@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "character_id": "IRONCLAD",
+  "tier_id": 1,
+  "status": "QUARANTINED REVIEW CANDIDATE",
+  "source_image": "assets/characters/ironclad/tier_01_drafts/profile_mesh_rig_candidate_01/IRONCLAD_T1_VISIBLE_PROFILE_MESH_INPUT_CANDIDATE_01.png",
+  "source_sha256": "22df09d3e2c82d19c113f432af936470ee56e342eefe834838325d7092718b06",
+  "source_view": "right-facing profile; existing source-RGB-preserving candidate derived from the approved anatomy turnaround",
+  "upstream_sources": [
+    {
+      "source_image": "docs/visual_qa/IRONCLAD_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+      "registration": "profile candidate uses source crop [569,5,918,955] and 128 px border; candidate pixel (x,y) maps to reference (x+441,y-123); exact RGB identity checked before tracing",
+      "source_sha256": "079febbfb03a67b104322ecc7f350f1e060eb8157fe4d23055f981985d26434d"
+    }
+  ],
+  "canvas_px": [
+    605,
+    1206
+  ],
+  "production_approved": false,
+  "semantic_review_passed": false,
+  "pivots_authored": false,
+  "deformation_reviewed": false,
+  "runtime_integrated": false,
+  "parts": [
+    {
+      "part_id": "back_power_cable_loop_visible",
+      "file": "IRONCLAD_T1_BACK_POWER_CABLE_LOOP_CANDIDATE_01.png",
+      "semantic_label": "visible U-shaped back-unit cable loop",
+      "category": "cable",
+      "owner_character_id": "IRONCLAD",
+      "attachment_role_id": "ironclad.back_unit_power_cable",
+      "boundary_provenance": "manually traced provisional polygons from native-scale source-preserving profile; hidden cable ends and surfaces are not inferred",
+      "polygons_xy": [
+        [
+          [
+            190,
+            598
+          ],
+          [
+            197,
+            598
+          ],
+          [
+            197,
+            613
+          ],
+          [
+            190,
+            613
+          ]
+        ],
+        [
+          [
+            251,
+            598
+          ],
+          [
+            258,
+            598
+          ],
+          [
+            258,
+            613
+          ],
+          [
+            251,
+            613
+          ]
+        ],
+        [
+          [
+            190,
+            612
+          ],
+          [
+            193,
+            622
+          ],
+          [
+            199,
+            633
+          ],
+          [
+            208,
+            642
+          ],
+          [
+            218,
+            647
+          ],
+          [
+            229,
+            648
+          ],
+          [
+            240,
+            643
+          ],
+          [
+            248,
+            635
+          ],
+          [
+            254,
+            624
+          ],
+          [
+            256,
+            613
+          ],
+          [
+            250,
+            614
+          ],
+          [
+            248,
+            624
+          ],
+          [
+            242,
+            633
+          ],
+          [
+            234,
+            639
+          ],
+          [
+            226,
+            642
+          ],
+          [
+            217,
+            641
+          ],
+          [
+            208,
+            636
+          ],
+          [
+            201,
+            629
+          ],
+          [
+            196,
+            620
+          ],
+          [
+            194,
+            613
+          ]
+        ]
+      ],
+      "visible_source_pixels": 781,
+      "canvas_px": [
+        605,
+        1206
+      ],
+      "pivot_source_xy": null,
+      "readiness": "quarantined source-pixel cutout; semantic review required"
+    }
+  ]
+}

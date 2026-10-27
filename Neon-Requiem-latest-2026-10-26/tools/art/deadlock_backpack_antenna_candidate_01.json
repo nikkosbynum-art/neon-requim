@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "character_id": "DEADLOCK",
+  "tier_id": 1,
+  "source_image": "docs/visual_qa/DEADLOCK_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_view": "approved right-facing profile; backpack-mounted blue-lit antenna",
+  "parts": [
+    {
+      "part_id": "backpack_antenna_blue_visible",
+      "file": "DEADLOCK_T1_BACKPACK_ANTENNA_BLUE_VISIBLE_CANDIDATE_01_QUARANTINED.png",
+      "semantic_label": "visible blue-lit backpack antenna with upper mount collar",
+      "category": "accessory",
+      "owner_character_id": "DEADLOCK",
+      "attachment_role_id": "deadlock.backpack_antenna_blue",
+      "boundary_provenance": "Manual source-coordinate contour of the isolated antenna rod, cap, and visible upper mount collar from the approved profile view; stops at the backpack socket and excludes the lower long item whose weapon identity is unresolved. No hidden pixels or pivot are inferred.",
+      "polygon_xy": [[692,29],[700,29],[704,33],[704,50],[701,55],[701,116],[704,119],[708,124],[709,132],[707,142],[703,149],[702,157],[698,163],[690,163],[686,159],[683,153],[682,145],[683,136],[685,128],[687,121],[688,116],[688,56],[685,52],[685,35],[688,30]]
+    }
+  ]
+}

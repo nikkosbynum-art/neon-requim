@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://d01nejus786oa"]
+
+[ext_resource type="Script" uid="uid://cevrqr7s5sinj" path="res://addons/poly-rig/mesh_tool_box.gd" id="1_04t70"]
+[ext_resource type="PackedScene" uid="uid://5mfso62xor7v" path="res://addons/poly-rig/mesh_edit_type_button.tscn" id="1_m32xw"]
+[ext_resource type="PackedScene" uid="uid://2o7pteku2n7i" path="res://addons/poly-rig/auto_mesh_button.tscn" id="2_04t70"]
+[ext_resource type="Texture2D" uid="uid://7hnqwbrtlogr" path="res://addons/poly-rig/assets/icons/EditInternal.svg" id="3_hwv6y"]
+[ext_resource type="Texture2D" uid="uid://bk5p4nxyn1mbv" path="res://addons/poly-rig/assets/icons/PolygonDock.svg" id="5_wlrh2"]
+[ext_resource type="Texture2D" uid="uid://dgvxe2llvfomq" path="res://addons/poly-rig/assets/icons/ToolTriangle.svg" id="6_4msjw"]
+[ext_resource type="Script" uid="uid://dqrt8wacqyx4y" path="res://addons/poly-rig/triangulate_button.gd" id="7_l7vwt"]
+
+[node name="MeshToolBox" type="HBoxContainer" unique_id=2105631674]
+offset_right = 366.0
+offset_bottom = 31.0
+script = ExtResource("1_04t70")
+
+[node name="MeshEditTypeButton" parent="." unique_id=411170206 instance=ExtResource("1_m32xw")]
+layout_mode = 2
+text = "Hide Internal"
+icon = ExtResource("3_hwv6y")
+
+[node name="AutoMeshButton" parent="." unique_id=1575425698 node_paths=PackedStringArray("_mesh_type_button") instance=ExtResource("2_04t70")]
+layout_mode = 2
+icon = ExtResource("5_wlrh2")
+_mesh_type_button = NodePath("../MeshEditTypeButton")
+
+[node name="TriangulateButton" type="Button" parent="." unique_id=842847349 node_paths=PackedStringArray("_mesh_type_button")]
+layout_mode = 2
+text = "Triangulate"
+icon = ExtResource("6_4msjw")
+script = ExtResource("7_l7vwt")
+_mesh_type_button = NodePath("../MeshEditTypeButton")
+
+[connection signal="pressed" from="TriangulateButton" to="TriangulateButton" method="_on_pressed"]

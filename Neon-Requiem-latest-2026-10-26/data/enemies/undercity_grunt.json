@@ -1,0 +1,14 @@
+{
+  "id": "undercity_grunt",
+  "display_name": "Undercity Grunt (prototype)",
+  "prototype_placeholder": true,
+  "combat_style": "melee",
+  "max_hp_base": 48.0,
+  "hp_per_wave": 9.0,
+  "attack_power_base": 8.0,
+  "attack_per_wave": 1.6,
+  "move_speed": 25.0,
+  "melee_contact_distance": 4.0,
+  "attack_range": 46.0,
+  "attack_interval": 1.05
+}

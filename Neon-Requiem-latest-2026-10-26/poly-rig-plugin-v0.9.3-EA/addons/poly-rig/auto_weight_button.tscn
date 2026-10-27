@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://87kf5eft1ouw"]
+
+[ext_resource type="Script" uid="uid://bbm5att8fdqsk" path="res://addons/poly-rig/auto_weight_button.gd" id="1_kfylu"]
+
+[node name="AutoWeightButton" type="Button" unique_id=729819256]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Auto Weight"
+script = ExtResource("1_kfylu")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

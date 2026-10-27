@@ -1,0 +1,32 @@
+{
+  "status": "QUARANTINED SOURCE-ROW-PROFILE UNDERLAYER \u2014 NOT CANON / NOT PRODUCTION ART / NOT RUNTIME",
+  "source_skin": "assets/characters/breaker/tier_01_drafts/profile_rig_trial_09_canon_v4_manual_skin/cyber_upper_arm_skin.png",
+  "roi_px": [
+    230,
+    250,
+    465,
+    475
+  ],
+  "row_profile_visible_skin_bounds": [
+    315,
+    454
+  ],
+  "side_margin_px": 8,
+  "proximal_extension_y": 260,
+  "proximal_start_width_px": 48,
+  "distal_extension_y": 468,
+  "distal_end_width_px": 74,
+  "added_hidden_pixels": 2595,
+  "proximal_width_px": 57,
+  "v5_proximal_width_px": 160,
+  "largest_visible_hidden_component_px": 16168,
+  "major_visible_skin_regions_connected": 2,
+  "source_visible_composite_exact": true,
+  "canon_boundary": "user-approved 2026-10-25: external shoulder shell over biological upper arm; mechanical prosthesis begins at elbow",
+  "limitations": [
+    "Hidden silhouette is interpolated from visible skin rows and is not recovered source anatomy.",
+    "Generated skin texture is clipped to the source-derived contour; surface detail and artwork quality require visual review.",
+    "The continuous 2D layer does not prove 3D anatomy, independent shell motion, or animation deformation.",
+    "This remains a feasibility draft and is not approved for runtime or production art."
+  ]
+}

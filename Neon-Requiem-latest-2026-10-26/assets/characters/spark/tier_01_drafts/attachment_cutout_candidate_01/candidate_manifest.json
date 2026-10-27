@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "character_id": "SPARK",
+  "tier_id": 1,
+  "source_reference": "docs/visual_qa/SPARK_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_sha256": "596753b13abb84bd1a663b51aab7436126783423706f24a5ba297a236cacd139",
+  "status": "REFERENCE-DERIVED REVIEW CANDIDATE / QUARANTINED",
+  "readiness": "Static foreground cutouts only; semantic completeness, edge cleanup, pivots, 3D/deformation, and animation remain unverified.",
+  "animation_ready": false,
+  "production_approved": false,
+  "runtime_integrated": false,
+  "items": [
+    {
+      "bbox_source_px": [
+        1240,
+        35,
+        1536,
+        260
+      ],
+      "alpha_bbox_in_crop_px": [
+        40,
+        27,
+        280,
+        170
+      ],
+      "source_alpha_pixels": 15353,
+      "source_crop_px": [
+        296,
+        225
+      ],
+      "background_sample_rgb": [
+        204,
+        203,
+        199
+      ],
+      "background_tolerance": 22,
+      "object_seed_source_px": [
+        1390,
+        158
+      ],
+      "background_seed_source_px": [
+        1242,
+        38
+      ],
+      "id": "attack_drone_01_blue",
+      "file": "SPARK_T1_ATTACK_DRONE_01_BLUE_REFERENCE_CUTOUT_CANDIDATE_01_QUARANTINED.png",
+      "output_px": [
+        392,
+        321
+      ],
+      "safety_margin_px": 48,
+      "sha256": "046a226075b101475194921d5bf68e3f9ec4e9328442d9c2d4c1f7a60f81b402",
+      "attachment_role_id": "spark.attack_drone_01_blue",
+      "owner_character_id": "SPARK",
+      "pivot": null,
+      "animation_ready": false,
+      "production_approved": false,
+      "runtime_integrated": false,
+      "status": "REFERENCE-DERIVED CUTOUT CANDIDATE / QUARANTINED"
+    },
+    {
+      "bbox_source_px": [
+        1290,
+        230,
+        1536,
+        430
+      ],
+      "alpha_bbox_in_crop_px": [
+        14,
+        16,
+        215,
+        141
+      ],
+      "source_alpha_pixels": 11094,
+      "source_crop_px": [
+        246,
+        200
+      ],
+      "background_sample_rgb": [
+        205,
+        203,
+        199
+      ],
+      "background_tolerance": 22,
+      "object_seed_source_px": [
+        1414,
+        333
+      ],
+      "background_seed_source_px": [
+        1292,
+        232
+      ],
+      "id": "attack_drone_02_red",
+      "file": "SPARK_T1_ATTACK_DRONE_02_RED_REFERENCE_CUTOUT_CANDIDATE_01_QUARANTINED.png",
+      "output_px": [
+        342,
+        296
+      ],
+      "safety_margin_px": 48,
+      "sha256": "1ced4709ddb7892220588e9f891013a728f9d93d8bf3cb8378389358d1d35d6f",
+      "attachment_role_id": "spark.attack_drone_02_red",
+      "owner_character_id": "SPARK",
+      "pivot": null,
+      "animation_ready": false,
+      "production_approved": false,
+      "runtime_integrated": false,
+      "status": "REFERENCE-DERIVED CUTOUT CANDIDATE / QUARANTINED"
+    },
+    {
+      "bbox_source_px": [
+        1310,
+        410,
+        1536,
+        625
+      ],
+      "alpha_bbox_in_crop_px": [
+        25,
+        6,
+        207,
+        128
+      ],
+      "source_alpha_pixels": 9772,
+      "source_crop_px": [
+        226,
+        215
+      ],
+      "background_sample_rgb": [
+        208,
+        205,
+        201
+      ],
+      "background_tolerance": 22,
+      "object_seed_source_px": [
+        1420,
+        480
+      ],
+      "background_seed_source_px": [
+        1312,
+        412
+      ],
+      "id": "attack_drone_03_amber",
+      "file": "SPARK_T1_ATTACK_DRONE_03_AMBER_REFERENCE_CUTOUT_CANDIDATE_01_QUARANTINED.png",
+      "output_px": [
+        322,
+        311
+      ],
+      "safety_margin_px": 48,
+      "sha256": "61fe24987be92d93f460e67984a993eeb1d2b67f962ad4777649b4c7fe3012ea",
+      "attachment_role_id": "spark.attack_drone_03_amber",
+      "owner_character_id": "SPARK",
+      "pivot": null,
+      "animation_ready": false,
+      "production_approved": false,
+      "runtime_integrated": false,
+      "status": "REFERENCE-DERIVED CUTOUT CANDIDATE / QUARANTINED"
+    }
+  ],
+  "source_status": "approved Tier I visual/anatomy reference; not animation-ready art",
+  "extraction_method": "edge-flood near-background removal plus explicitly seeded connected foreground component"
+}

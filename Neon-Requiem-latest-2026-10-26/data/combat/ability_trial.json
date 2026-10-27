@@ -1,0 +1,29 @@
+{
+  "status": "OWNER_DELEGATED_PLAYTEST_DEFAULTS_NOT_CANON",
+  "enabled_by_default": false,
+  "activation_argument": "--neon-ability-trial",
+  "runtime_scope": "Simulation-only provisional ability trial. Direct damage remains the default combat model. No ability cooldown/effect is written to saves.",
+  "abilities": {
+    "bulwark": {"ability_id": "last_protocol", "cooldown_seconds": 10.0, "emergency_hp_ratio": 0.4, "heal_amount": 18.0},
+    "breaker": {"ability_id": "redline", "cooldown_seconds": 8.0, "attack_multiplier": 1.5, "strain_interval_add_seconds": 0.18, "strain_duration_seconds": 2.0},
+    "cipher": {"ability_id": "ghost_round", "cooldown_seconds": 9.0, "precision_multiplier": 1.8, "attack_style": "precision"},
+    "spark": {"ability_id": "scrap_swarm", "cooldown_seconds": 8.0, "drone_attack_count": 3, "drone_damage_multiplier": 0.8},
+    "specter": {"ability_id": "null_trace", "cooldown_seconds": 10.0, "strike_multiplier": 1.6, "cloak_duration_seconds": 3.5},
+    "ironclad": {"ability_id": "lockdown", "cooldown_seconds": 12.0, "anchor_duration_seconds": 2.5, "suppression_duration_seconds": 3.0, "suppression_attack_multiplier": 0.55},
+    "stitch": {"ability_id": "black_market_cocktail", "cooldown_seconds": 11.0, "heal_threshold_ratio": 0.6, "heal_amount": 20.0, "team_attack_multiplier": 1.15, "team_boost_duration_seconds": 4.0, "self_interval_add_seconds": 0.2, "instability_duration_seconds": 4.0},
+    "recoil": {"ability_id": "breach_charge", "cooldown_seconds": 8.0, "target_limit": 3, "strike_multiplier": 0.85},
+    "echo": {"ability_id": "signal_cascade", "cooldown_seconds": 14.0, "decoy_durability": 20.0, "decoy_duration_seconds": 5.0},
+    "vector": {"ability_id": "slipstream", "cooldown_seconds": 8.0, "target_limit": 3, "strike_multiplier": 1.0},
+    "deadlock": {"ability_id": "system_break", "cooldown_seconds": 10.0},
+    "glitch": {"ability_id": "frame_skip", "cooldown_seconds": 10.0, "burst_duration_seconds": 3.0}
+  },
+  "enemy_trial_capabilities": {
+    "undercity_grunt": {
+      "functional_cyberware": true,
+      "cyberware_attack_multiplier": 1.1,
+      "functional_implants": true,
+      "implant_strength": 1.0,
+      "implant_attack_multiplier": 1.1
+    }
+  }
+}

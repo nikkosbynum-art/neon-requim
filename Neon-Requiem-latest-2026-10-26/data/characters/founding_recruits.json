@@ -1,0 +1,20 @@
+{
+  "source_url": "https://app.notion.com/p/40394c5658c8812d849be3d32629920e",
+  "source_page_last_edited_at": "2026-10-26T03:12:07.445Z",
+  "retrieved_for_implementation": "2026-10-25 America/Chicago",
+  "status": "LIVE NOTION ROSTER DATA — recruitment attributes are source-backed; gameplay abilities and production art remain separate work",
+  "recruits": [
+    {"id":"bulwark","name":"BULWARK","faction":"Vanguard Zero","roles":"Tactical Soldier / Combat Medic","rarity":"Rare"},
+    {"id":"breaker","name":"BREAKER","faction":"The Fractured","roles":"Brawler / Cyberpsycho","rarity":"Epic"},
+    {"id":"cipher","name":"CIPHER","faction":"Ghost Circuit","roles":"Netrunner / Sharpshooter","rarity":"Rare"},
+    {"id":"spark","name":"SPARK","faction":"Redline Syndicate","roles":"Combat Engineer / Drone Operator","rarity":"Common"},
+    {"id":"specter","name":"SPECTER","faction":"Helix Dominion","roles":"Infiltrator / Blade Specialist","rarity":"Epic"},
+    {"id":"ironclad","name":"IRONCLAD","faction":"Helix Dominion","roles":"Heavy Gunner / Tank","rarity":"Rare"},
+    {"id":"stitch","name":"STITCH","faction":"Chrome Saints","roles":"Rippertech / Chem Specialist","rarity":"Common"},
+    {"id":"recoil","name":"RECOIL","faction":"Redline Syndicate","roles":"Shotgunner / Brawler","rarity":"Common"},
+    {"id":"echo","name":"ECHO","faction":"Ghost Circuit","roles":"Netrunner / Drone Operator","rarity":"Rare"},
+    {"id":"vector","name":"VECTOR","faction":"Independent Mercenary","roles":"Blade Specialist / Skirmisher","rarity":"Common"},
+    {"id":"deadlock","name":"DEADLOCK","faction":"Vanguard Zero","roles":"Tactical Marksman / Anti-Cyberware","rarity":"Rare"},
+    {"id":"glitch","name":"GLITCH","faction":"The Fractured","roles":"Cyberpsycho / Infiltrator","rarity":"Epic"}
+  ]
+}

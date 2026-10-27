@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://5mfso62xor7v"]
+
+[ext_resource type="Script" uid="uid://orme1pfrek05" path="res://addons/poly-rig/mesh_edit_type_button.gd" id="1_gypnn"]
+
+[node name="MeshEditTypeButton" type="Button" unique_id=411170206]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "显示内点模式"
+script = ExtResource("1_gypnn")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

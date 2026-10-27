@@ -1,0 +1,8 @@
+{
+  "status": "QUARANTINED PROPORTION STUDY \u2014 NOT PRODUCTION ART",
+  "method": "horizontally compressed generated v5 study at 82% around x=365, skin classified, largest connected skin component clipped to opaque shell and arm ROI",
+  "source_skin_component_pixels": 11144,
+  "under_shell_pixels": 11144,
+  "exact_shell_on_composite": true,
+  "limitation": "Proportional transform is an exploration, not authored anatomy; shell-off review required."
+}

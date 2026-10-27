@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "scope": "source_hash_and_pixel_fidelity_plus_mechanical_alpha_only",
+  "candidate_dir": "C:\\Users\\Work\\Downloads\\Projects\\Neon Requiem\\assets\\characters\\spark\\tier_01_drafts\\attachment_cutout_candidate_01",
+  "source_reference": "docs/visual_qa/SPARK_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_sha256": "596753b13abb84bd1a663b51aab7436126783423706f24a5ba297a236cacd139",
+  "items": [
+    {
+      "id": "attack_drone_01_blue",
+      "status": "PASS",
+      "alpha_audit": {
+        "status": "PASS",
+        "scope": "mechanical_alpha_cutout_checks_only",
+        "width_px": 392,
+        "height_px": 321,
+        "alpha_threshold": 32,
+        "threshold_bbox_xyxy_exclusive": [
+          88,
+          75,
+          328,
+          218
+        ],
+        "margins_px": {
+          "left": 88,
+          "top": 75,
+          "right": 64,
+          "bottom": 103
+        },
+        "margin_fractions": {
+          "left": 0.22448979591836735,
+          "top": 0.2336448598130841,
+          "right": 0.16326530612244897,
+          "bottom": 0.32087227414330216
+        },
+        "minimum_margin_fraction": 0.1,
+        "halo_alpha_threshold_exclusive": 1,
+        "halo_tolerance_radius_px": 3,
+        "external_low_alpha_pixels": 0,
+        "maximum_external_low_alpha_pixels": 50,
+        "corner_alpha": {
+          "top_left": 0,
+          "top_right": 0,
+          "bottom_left": 0,
+          "bottom_right": 0
+        },
+        "failures": [],
+        "production_approved": false
+      },
+      "source_rgb_mismatches": 0,
+      "source_alpha_pixels": 15353,
+      "errors": [],
+      "production_approved": false
+    },
+    {
+      "id": "attack_drone_02_red",
+      "status": "PASS",
+      "alpha_audit": {
+        "status": "PASS",
+        "scope": "mechanical_alpha_cutout_checks_only",
+        "width_px": 342,
+        "height_px": 296,
+        "alpha_threshold": 32,
+        "threshold_bbox_xyxy_exclusive": [
+          62,
+          64,
+          263,
+          189
+        ],
+        "margins_px": {
+          "left": 62,
+          "top": 64,
+          "right": 79,
+          "bottom": 107
+        },
+        "margin_fractions": {
+          "left": 0.18128654970760233,
+          "top": 0.21621621621621623,
+          "right": 0.2309941520467836,
+          "bottom": 0.3614864864864865
+        },
+        "minimum_margin_fraction": 0.1,
+        "halo_alpha_threshold_exclusive": 1,
+        "halo_tolerance_radius_px": 3,
+        "external_low_alpha_pixels": 0,
+        "maximum_external_low_alpha_pixels": 50,
+        "corner_alpha": {
+          "top_left": 0,
+          "top_right": 0,
+          "bottom_left": 0,
+          "bottom_right": 0
+        },
+        "failures": [],
+        "production_approved": false
+      },
+      "source_rgb_mismatches": 0,
+      "source_alpha_pixels": 11094,
+      "errors": [],
+      "production_approved": false
+    },
+    {
+      "id": "attack_drone_03_amber",
+      "status": "PASS",
+      "alpha_audit": {
+        "status": "PASS",
+        "scope": "mechanical_alpha_cutout_checks_only",
+        "width_px": 322,
+        "height_px": 311,
+        "alpha_threshold": 32,
+        "threshold_bbox_xyxy_exclusive": [
+          73,
+          54,
+          255,
+          176
+        ],
+        "margins_px": {
+          "left": 73,
+          "top": 54,
+          "right": 67,
+          "bottom": 135
+        },
+        "margin_fractions": {
+          "left": 0.2267080745341615,
+          "top": 0.17363344051446947,
+          "right": 0.2080745341614907,
+          "bottom": 0.4340836012861736
+        },
+        "minimum_margin_fraction": 0.1,
+        "halo_alpha_threshold_exclusive": 1,
+        "halo_tolerance_radius_px": 3,
+        "external_low_alpha_pixels": 0,
+        "maximum_external_low_alpha_pixels": 50,
+        "corner_alpha": {
+          "top_left": 0,
+          "top_right": 0,
+          "bottom_left": 0,
+          "bottom_right": 0
+        },
+        "failures": [],
+        "production_approved": false
+      },
+      "source_rgb_mismatches": 0,
+      "source_alpha_pixels": 9772,
+      "errors": [],
+      "production_approved": false
+    }
+  ],
+  "pairwise_mask_overlap": [
+    {
+      "first": "attack_drone_01_blue",
+      "second": "attack_drone_02_red",
+      "shared_source_pixels": 0
+    },
+    {
+      "first": "attack_drone_01_blue",
+      "second": "attack_drone_03_amber",
+      "shared_source_pixels": 0
+    },
+    {
+      "first": "attack_drone_02_red",
+      "second": "attack_drone_03_amber",
+      "shared_source_pixels": 0
+    }
+  ],
+  "errors": [],
+  "production_approved": false,
+  "semantic_completeness_verified": false,
+  "pivots_verified": false,
+  "animation_ready": false,
+  "runtime_integrated": false
+}

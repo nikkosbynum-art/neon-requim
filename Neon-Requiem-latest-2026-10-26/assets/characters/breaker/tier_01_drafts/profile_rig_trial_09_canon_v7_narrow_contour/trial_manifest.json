@@ -1,0 +1,19 @@
+{
+  "status": "REJECTED AFTER VISUAL REVIEW \u2014 QUARANTINED, NOT PRODUCTION ART / NOT RUNTIME",
+  "source_donor": "assets/characters/breaker/tier_01_drafts/profile_rig_trial_09_canon_v6_reference_contour/hidden_biological_upper_arm_donor.png",
+  "horizontal_scale": 0.92,
+  "horizontal_center_px": 365.0,
+  "selected_hidden_skin_pixels": 14753,
+  "v5_hidden_skin_pixels": 18066,
+  "largest_8_connected_biological_surface_px": 23625,
+  "major_visible_skin_regions_connected": 2,
+  "source_visible_composite_exact": true,
+  "canon_boundary": "user-approved 2026-10-25: external shell over biological upper arm; prosthesis begins at elbow",
+  "limitations": [
+    "The 8% geometric narrowing is a comparison parameter, not a canonical anatomy measurement.",
+    "Manual review rejects this version: the contour change is insufficient and introduces visibly fragmented edges.",
+    "Connected masks and exact compositing do not establish anatomy, pivots, or deformation quality.",
+    "The source is still a flattened concept illustration and hidden surfaces remain inferred.",
+    "Not tested in Godot; not a production rig or runtime asset."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "squad_id": "undercity_six_slot_prototype",
+  "active_slots": 6,
+  "prototype_placeholder": true,
+  "slots": [
+    {"id": "breaker", "display_name": "BREAKER", "character_definition": "res://data/characters/breaker_t1.json", "formation_depth": -16.0, "formation_start_offset_x": 0.0},
+    {"id": "unassigned_02", "display_name": "Unassigned Ally 02", "prototype_placeholder": true, "combat_style": "ranged", "engagement_distance": 88.0, "formation_depth": -80.0, "formation_start_offset_x": -96.0, "move_speed": 36.0},
+    {"id": "unassigned_03", "display_name": "Unassigned Ally 03", "prototype_placeholder": true, "combat_style": "ranged", "engagement_distance": 68.0, "formation_depth": -48.0, "formation_start_offset_x": -48.0, "move_speed": 43.0},
+    {"id": "unassigned_04", "display_name": "Unassigned Ally 04", "prototype_placeholder": true, "combat_style": "melee", "formation_depth": 16.0, "formation_start_offset_x": 48.0, "move_speed": 49.0},
+    {"id": "unassigned_05", "display_name": "Unassigned Ally 05", "prototype_placeholder": true, "combat_style": "melee", "formation_depth": 48.0, "formation_start_offset_x": 96.0, "move_speed": 58.0},
+    {"id": "unassigned_06", "display_name": "Unassigned Ally 06", "prototype_placeholder": true, "combat_style": "melee", "formation_depth": 80.0, "formation_start_offset_x": 144.0, "move_speed": 66.0}
+  ],
+  "placeholder_combat_stats": {
+    "max_hp": 70.0,
+    "attack_power": 8.0,
+    "move_speed": 48.0,
+    "combat_style": "melee",
+    "melee_contact_distance": 4.0,
+    "attack_range": 92.0,
+    "attack_interval": 1.0
+  },
+  "prototype_enemy_hp_per_active_ally_bonus": 26.0
+}

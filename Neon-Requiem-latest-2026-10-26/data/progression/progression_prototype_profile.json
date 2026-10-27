@@ -1,0 +1,64 @@
+{
+  "status": "APPROVED FOR PROTOTYPE FEASIBILITY TESTING ONLY — NOT FINAL BALANCE OR CANON",
+  "system_reboot": {
+    "first_eligibility_wave": 25,
+    "waves_per_influence_step": 25,
+    "influence_per_step": 1,
+    "calculation_basis": "highest_wave_since_last_reboot",
+    "basis_reset_semantics": "APPROVED 2026-10-24: a successful Reboot resets current wave to 1 and run highest-cleared wave to 0; the award uses the pre-reset highest-cleared wave. The formula is approved for prototype feasibility testing only, not final balance."
+  },
+  "lifetime_influence_benefit": {
+    "stat": "outgoing_squad_damage",
+    "coefficient": 0.005,
+    "influence_exponent": 0.5,
+    "maximum_bonus_fraction": 0.25,
+    "formula": "min(coefficient * pow(lifetime_influence, influence_exponent), maximum_bonus_fraction)",
+    "application_scope": "outgoing ally damage only; does not change HP, defense, enemy damage, or movement"
+  },
+  "evolution_material_policy": {
+    "status": "APPROVED FOR PROTOTYPE FEASIBILITY TESTING ONLY — NOT FINAL BALANCE OR CANON",
+    "material_source_policy": "deterministic_first_clear_and_repeatable_encounters",
+    "inventory_scope": "shared_roster",
+    "long_term_supply_target": "sufficient_for_all_12_recruits_to_evolve",
+    "material_id": "evolution_data",
+    "repeatable_per_clear": 1,
+    "first_clear_extra": 1,
+    "first_clear_scope": "district_milestones_and_named_bosses",
+    "district_milestones": [
+      {"wave": 25, "claim_id": "district.undercity"},
+      {"wave": 50, "claim_id": "district.neon_row"},
+      {"wave": 75, "claim_id": "district.black_grid"},
+      {"wave": 100, "claim_id": "district.enforcement_zone"},
+      {"wave": 125, "claim_id": "district.the_spire"}
+    ]
+  },
+  "offline_earnings": {
+    "status": "APPROVED FOR PROTOTYPE FEASIBILITY TESTING ONLY — NOT FINAL BALANCE",
+    "cap_seconds": 28800,
+    "ordinary_rewards_per_hour": 1.0,
+    "rate_basis": "ordinary_credit_reward_at_saved_highest_cleared_holding_wave",
+    "wave_advancement": false,
+    "claim_persistence": "atomic_save_before_live_apply"
+  },
+  "evolution": {
+	"status": "APPROVED FOR PROTOTYPE FEASIBILITY TESTING ONLY — NOT FINAL BALANCE OR CANON",
+    "material_id": "evolution_data",
+    "material_display_name": "Evolution Data (working label)",
+    "material_source": "Prototype trial: deterministic first-clear and repeatable encounters",
+    "inventory_scope": "Prototype trial: shared roster inventory; costs apply per recruit",
+    "gates": {
+      "Adapted Form": {
+        "minimum_cleared_wave": 25,
+        "material_costs": {"evolution_data": 1}
+      },
+      "Signature Form": {
+        "minimum_cleared_wave": 75,
+        "material_costs": {"evolution_data": 2}
+      },
+      "Requiem Form": {
+        "minimum_cleared_wave": 125,
+        "material_costs": {"evolution_data": 3}
+      }
+    }
+  }
+}

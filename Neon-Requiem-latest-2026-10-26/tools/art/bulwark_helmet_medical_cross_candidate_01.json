@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "character_id": "BULWARK",
+  "source_reference": "docs/visual_qa/BULWARK_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+  "source_status": "approved Tier I visual/anatomy reference; not animation-ready art",
+  "items": [
+    {
+      "id": "helmet_medical_cross_decal",
+      "bbox": [315, 58, 355, 98],
+      "background_seed": [320, 70],
+      "object_seed": [335, 77],
+      "background_tolerance": 20,
+      "safety_margin_px": 48
+    }
+  ]
+}

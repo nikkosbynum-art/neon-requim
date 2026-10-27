@@ -1,0 +1,39 @@
+{
+  "comparisons": [
+    {
+      "contour_count": 1,
+      "difference_ratio": 0.00233918128654971,
+      "fallback_contours": 0,
+      "opaque_interior_differences": 0,
+      "part_id": "handheld_blade_hilt_visible",
+      "pixel_differences": 8,
+      "polyrig_contours": 1,
+      "sample_count": 3420,
+      "source_crop_px": [
+        57,
+        60
+      ]
+    },
+    {
+      "contour_count": 16,
+      "difference_ratio": 0.000958836485152275,
+      "fallback_contours": 0,
+      "opaque_interior_differences": 0,
+      "part_id": "handheld_blade_body_visible",
+      "pixel_differences": 101,
+      "polyrig_contours": 16,
+      "sample_count": 105336,
+      "source_crop_px": [
+        342,
+        308
+      ]
+    }
+  ],
+  "deformation_reviewed": false,
+  "image": "res://docs/visual_qa/SPECTER_T1_BLADE_CANDIDATE_01_POLYRIG_FIDELITY_03_QUARANTINED.png",
+  "pivots_authored": false,
+  "production_approved": false,
+  "runtime_integrated": false,
+  "semantic_correctness": "NOT_VERIFIED",
+  "status": "QUARANTINED_STATIC_RENDER_FIDELITY_DIAGNOSTIC"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "QUARANTINED CONTINUOUS ARM UNDERLAYER \u2014 ART FIT NOT ACCEPTED",
+  "source_masks": [
+    "assets/characters/breaker/tier_01_drafts/profile_rig_trial_09_canon_v6_reference_contour/hidden_biological_upper_arm_donor.png",
+    "assets/characters/breaker/tier_01_drafts/profile_rig_trial_09_canon_v4_manual_skin/cyber_upper_arm_skin.png"
+  ],
+  "roi_px": [
+    230,
+    220,
+    465,
+    480
+  ],
+  "morphological_close_size": 11,
+  "enclosed_holes_filled": 0,
+  "added_hidden_underlayer_pixels": 698,
+  "source_visible_composite_exact": true,
+  "largest_8_connected_biological_surface_px": 26226,
+  "major_visible_skin_regions_connected": 2,
+  "canon_boundary": "user-approved 2026-10-25: external shell over biological upper arm; prosthesis begins at elbow",
+  "limitations": [
+    "The underlayer is a shape/color reconstruction from existing concept pixels, not artist-authored anatomy.",
+    "It deliberately continues behind the shell and arm straps; only shell-on source composition is authoritative.",
+    "The shell-off view remains a diagnostic, not an approved final character appearance.",
+    "The shell-off view still differs substantially from the approved reference; this is not accepted art.",
+    "No pivots, independent shell deformation, production alpha, or animation seams are verified."
+  ]
+}

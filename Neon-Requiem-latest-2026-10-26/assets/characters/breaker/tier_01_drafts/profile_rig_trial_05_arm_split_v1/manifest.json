@@ -1,0 +1,40 @@
+{
+  "status": "REJECTED AS A STANDALONE HUMAN ARM ASSET; PRESERVED AS A MASK-OWNERSHIP QA FIXTURE \u2014 NOT PRODUCTION ART / NOT RUNTIME",
+  "canon_decision": "2026-10-25 user-approved: external shoulder shell over biological upper arm; mechanical prosthesis begins at elbow",
+  "source_draft": "assets/characters/breaker/tier_01_drafts/BREAKER_T1_guarded_pose_review_candidate_05.png",
+  "source_draft_sha256": "E5EA7AA0BE3AAA8BC3E29C0EB037DB640F45FEEA61B7E0A38238B1EC48874889",
+  "source_layer": "profile_rig_trial_05_guarded_pose_v8/cyber_upper_arm.png",
+  "canvas_px": [
+    1024,
+    1536
+  ],
+  "components": {
+    "visible_human_upper_arm_surface.png": {
+      "role": "visible source skin-tone pixels only",
+      "pixel_count": 4178,
+      "hidden_anatomy": "not included; remains inferred/unknown"
+    },
+    "external_shoulder_shell.png": {
+      "role": "remaining visible shoulder/upper-arm hardware and outlines",
+      "pixel_count": 22564
+    }
+  },
+  "neutral_reconstruction": {
+    "different_pixels": 0,
+    "result": "exact source-layer pixel reconstruction"
+  },
+  "classification": "warm RGB heuristic applied only inside the original cyber_upper_arm mask; no pixels synthesized",
+  "limitations": [
+    "The input is a flattened generated concept, not authored source anatomy.",
+    "The visible skin surface is a mask split, not a complete independent arm drawing.",
+    "Surfaces hidden beneath the shell remain absent/inferred.",
+    "No animation or deformation test is part of this build step.",
+    "Keep all outputs quarantined until the production-art gate passes.",
+    "Manual visual review failed the standalone anatomy-art usability check: color-classified skin pixels form a sparse mask, not a continuous arm drawing."
+  ],
+  "sha256": {
+    "visible_human_upper_arm_surface.png": "c9dbe084a08e9c99b6b8081138aeac4a767c410f3dfcdeab2106eccb45c15421",
+    "external_shoulder_shell.png": "4f279046a6371c40e5032543130e327a65b2f59a8ecca290b8746a5587849c28"
+  },
+  "visual_review": "Exact neutral reconstruction passed, but manual review at the intended 256 px character scale shows the heuristic skin layer is fragmented/sparse rather than a coherent arm surface. Do not use it as a rig part."
+}

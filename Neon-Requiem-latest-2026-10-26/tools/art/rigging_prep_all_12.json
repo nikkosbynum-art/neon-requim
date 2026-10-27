@@ -1,0 +1,574 @@
+{
+  "schema_version": 1,
+  "status": "planning contract plus quarantined edit workspace generation; no character has a production-approved rig or functional attachment implementation",
+  "active_workspace_batch": "attachment_decomposition_01",
+  "active_workspace_version": 1,
+  "source_references": {
+    "roster": "tools/art/character_art_roster.json",
+    "authoring_guide": "docs/CHARACTER_PART_AUTHORING_GUIDE.md",
+    "design_decisions": "docs/DESIGN_DECISIONS.md",
+    "implementation_status": "docs/IMPLEMENTATION_STATUS.md",
+    "source_policy": "Approved visual references guide visible design only; hidden anatomy, part boundaries, pivots, and deformation require separate verification."
+  },
+  "shared_required_parts": [
+    "head_and_neck",
+    "torso_front",
+    "torso_back_or_backpack_mount",
+    "pelvis",
+    "near_upper_arm",
+    "near_forearm",
+    "near_hand",
+    "far_upper_arm",
+    "far_forearm",
+    "far_hand",
+    "near_thigh",
+    "near_shin",
+    "near_foot",
+    "far_thigh",
+    "far_shin",
+    "far_foot"
+  ],
+  "shared_validation_gates": [
+    "source-reference identity and anatomy review",
+    "separate semantic parts with source-canvas bounds and authored pivots",
+    "transparent safety margins and full-resolution edge review",
+    "hidden overlap paint and far-side anatomy marked as source-backed or inferred",
+    "static neutral assembly checked against front, profile, and back reference views",
+    "character-specific weapon, cape, drone, cable, armor, or cyberware attachment mapping where present",
+    "Godot Skeleton2D neutral alignment and ground contact",
+    "rendered seam coverage across idle, walk, attack, hit, and defeat clips",
+    "explicit art review and runtime-integration approval"
+  ],
+  "characters": [
+    {
+      "id": "BULWARK",
+      "concept_reference": "docs/visual_qa/BULWARK_T1_CONCEPT_TURNAROUND_01_2026-10-25.png",
+      "anatomy_reference": "docs/visual_qa/BULWARK_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+      "existing_candidate": "assets/characters/bulwark/tier_01_drafts/profile_mesh_rig_candidate_01/",
+      "candidate_status": "quarantined flattened profile mesh; not semantic parts",
+      "special_rig_items": [
+        "medical backpack and hose connections",
+        "medical cross backing is helmet-panel-owned by user approval; exact cutout/layer boundary and profile mapping remain open",
+        "carried rifle; attachment ownership/pivot unresolved"
+      ],
+      "priority_note": "Keep the medical pack silhouette and hoses readable through torso/shoulder motion.",
+      "attachment_workspace_layers": [
+        "medical backpack (one torso/back-owned part)",
+        "medical hose or cable (one authored physical route per layer; count and routing follow source review)",
+        "primary rifle (one rigid weapon part; hand/back mounts are separate pivots, not duplicated weapon art)",
+        "medical marking detail (helmet panel owns the white backing by user approval; exact cutout/layer split and view mapping remain open; no independent pivot)",
+        "life-support equipment other than the backpack (separate item layers; identify each from the reference)"
+      ],
+      "functional_attachment_contract": [
+        {
+          "id": "primary_rifle",
+          "kind": "weapon",
+          "known_behavior": "Tactical soldier/medic role; rifle is present in the approved visual reference. Display the weapon only in authored carry/attack poses and synchronize its firing cue to simulation attack events.",
+          "gameplay_authority": "Combat simulation",
+          "unknowns": [
+            "Exact firing cadence, projectile presentation, and weapon hand/back transition are unspecified."
+          ]
+        },
+        {
+          "id": "medical_life_support",
+          "kind": "support_accessory",
+          "known_behavior": "Medical pack, hoses, and insignia remain separate readable equipment; Last Protocol healing presentation responds to the authoritative ability event.",
+          "gameplay_authority": "Combat simulation",
+          "unknowns": [
+            "No independent gameplay effects are assigned to the pack, hoses, or insignia."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BREAKER",
+      "concept_reference": "migration_package/drive_assets/concept_art/04_breaker_production_board.png and migration_package/drive_assets/Breaker_Tier1_Godot_Production_Spec.md",
+      "anatomy_reference": "assets/characters/breaker/tier_01_drafts/BREAKER_T1_profile_rebuild_candidate_01.png",
+      "existing_candidate": "assets/characters/breaker/tier_01_drafts/profile_rig_trial_05_guarded_pose_v4/ and assets/characters/breaker/tier_01_drafts/profile_rig_trial_01_candidate01_hidden_anatomy/",
+      "candidate_status": "isolated review rigs; hidden arm candidate v20 remains quarantined",
+      "special_rig_items": [
+        "approved external shoulder shell over biological upper arm",
+        "prosthesis starts at elbow",
+        "preserve elbow contact and source-matched visible arm boundary"
+      ],
+      "priority_note": "Do not replace v20; keep its candidate status and approved arm reading.",
+      "attachment_workspace_layers": [
+        "external right shoulder shell (separate overlay over the biological upper arm)",
+        "biological right upper arm ending at the elbow boundary",
+        "mechanical right forearm starting at the elbow",
+        "signature fist/hand on its wrist-owned part",
+        "neck neural regulator (separate head/neck-owned accessory)",
+        "spine/back accessory item (one item per independently moving part, identified from reference)",
+        "cable (one authored physical route per layer; do not merge separate cables)"
+      ],
+      "functional_attachment_contract": [
+        {
+          "id": "right_prosthetic_fist",
+          "kind": "integrated_cyberware",
+          "known_behavior": "External shoulder shell overlays biological upper arm; prosthesis starts at elbow. Forearm/fist follow the authored elbow-to-wrist chain. Redline impact/strain presentation responds to simulation events.",
+          "gameplay_authority": "Combat simulation",
+          "unknowns": [
+            "No extra effect beyond approved Redline behavior."
+          ]
+        },
+        {
+          "id": "neural_regulator_cables",
+          "kind": "accessory",
+          "known_behavior": "Regulator, spine gear, and cables attach to their authored body anchors and stay readable through the pose suite.",
+          "gameplay_authority": "Presentation only unless a source-backed gameplay effect is later approved",
+          "unknowns": [
+            "Cable secondary motion and exact cable routing require art review."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CIPHER",
+      "concept_reference": "docs/visual_qa/CIPHER_T1_CONCEPT_TURNAROUND_01_2026-10-25.png",
+      "anatomy_reference": "docs/visual_qa/CIPHER_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+      "existing_candidate": "assets/characters/cipher/tier_01_drafts/reference_cutout_rig_candidate_01/ and assets/characters/cipher/tier_01_drafts/reference_cutout_rig_candidate_05/",
+      "candidate_status": "candidate 01 quarantined; candidate 05 mechanically passes but PREVIEW_SCREEN_FAIL; neither is rig input",
+      "special_rig_items": [
+        "hood/hair/optic and collar overlap",
+        "backpack mount",
+        "rifle as detached hand/back attachment"
+      ],
+      "priority_note": "Do not use the rejected atlas components as semantic parts.",
+      "attachment_open_questions": [
+        "User approval (2026-10-26): the rifle held in the concept and the vertical side-view item are the same prop in different carry states. This resolves identity only; the existing isolated crop, cutout boundary, grip/stow coordinates, pivots, and transition behavior remain unverified. Do not infer new attachment points."
+      ],
+      "attachment_workspace_layers": [
+        "hacked rifle with its rigidly mounted optic (single weapon assembly; optic stays aligned to rifle)",
+        "backpack (separate back-owned accessory)",
+        "hood (separate head-owned accessory where supported by the source)",
+        "head-mounted optic/device (separate head-owned item; distinct from the rifle-mounted scope in the approved reference)",
+        "collar accessory (separate only where its boundary is visible in the approved source)"
+      ],
+      "workspace_batch": "attachment_decomposition_02",
+      "workspace_version": 2,
+      "functional_attachment_contract": [
+        {
+          "id": "hacked_rifle_optics",
+          "kind": "weapon_and_accessory",
+          "known_behavior": "Rifle grip/stock follow authored hand and stow pivots; optic remains aligned to the rifle. Ghost Round cyberware-disruption presentation responds to the simulation ability event.",
+          "gameplay_authority": "Combat simulation",
+          "unknowns": [
+            "Exact rifle firing cadence and optic animation are unspecified."
+          ]
+        },
+        {
+          "id": "backpack",
+          "kind": "accessory",
+          "known_behavior": "Backpack uses a torso/back anchor and is checked against hood/collar overlap through facing and action poses.",
+          "gameplay_authority": "Presentation only",
+          "unknowns": [
+            "No gameplay effect specified."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SPARK",
+      "concept_reference": "docs/visual_qa/SPARK_T1_CONCEPT_TURNAROUND_01_2026-10-25.png",
+      "anatomy_reference": "docs/visual_qa/SPARK_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+      "existing_candidate": "assets/characters/spark/tier_01_drafts/profile_mesh_rig_candidate_01/",
+      "candidate_status": "quarantined flattened profile mesh; not semantic parts",
+      "special_rig_items": [
+        "three drones as independent articulated attachments",
+        "tool/weapon attachments",
+        "backpack and cable clearances"
+      ],
+      "priority_note": "Drones are independent props; their presence does not imply the character floats.",
+      "attachment_workspace_layers": [
+        "attack drone 01 (independent object/owner transform)",
+        "attack drone 02 (independent object/owner transform)",
+        "attack drone 03 (independent object/owner transform)",
+        "engineer handheld wrench/tool (source-visible; combat use remains unspecified)",
+        "backpack (separate back-owned accessory)",
+        "cable (one authored physical route per layer; validate clearance and endpoints)"
+      ],
+      "workspace_batch": "attachment_decomposition_02",
+      "workspace_version": 2,
+      "attachment_open_questions": [
+        "The approved reference shows a wrench-like handheld tool. The roster does not assign it a combat action; keep its use presentation-only unless a source-backed behavior is approved."
+      ],
+      "functional_attachment_contract": [
+        {
+          "id": "attack_drones_01_03",
+          "kind": "three_independent_attack_drones",
+          "known_behavior": "Scrap Swarm uses exactly three drone identities from the roster. Each drone has its own owner-linked transform and can visualize only simulation-issued attack/ability events.",
+          "gameplay_authority": "Combat simulation",
+          "unknowns": [
+            "Formation, flight path, target assignment, attack cadence, return/stow behavior, and collision rules are unspecified; do not schedule autonomous damage in presentation code."
+          ]
+        },
+        {
+          "id": "engineer_tool_and_pack",
+          "kind": "tool_and_accessory",
+          "known_behavior": "Tool and backpack/cables attach to authored mounts; clear drone paths and character joints.",
+          "gameplay_authority": "Presentation only unless a source-backed gameplay effect is approved",
+          "unknowns": [
+            "Tool’s use in combat is unspecified."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SPECTER",
+      "concept_reference": "docs/visual_qa/SPECTER_T1_CONCEPT_TURNAROUND_01_2026-10-25.png",
+      "anatomy_reference": "docs/visual_qa/SPECTER_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+      "existing_candidate": "assets/characters/specter/tier_01_drafts/profile_mesh_rig_candidate_01/",
+      "candidate_status": "quarantined flattened profile mesh; not semantic parts",
+      "special_rig_items": [
+        "hood and mask separation",
+        "long cape/cloth silhouette",
+        "blade attachment"
+      ],
+      "priority_note": "Cape motion needs its own cloth/secondary-motion plan; do not bake it into the torso mesh.",
+      "attachment_workspace_layers": [
+        "blade (one rigid weapon part; hand and sheath/back are distinct mounts)",
+        "main cape/cloak sheet (preserve its continuous torn silhouette; split only at visible independent seams)",
+        "hood (separate head-owned accessory)",
+        "mask (separate head-owned accessory)"
+      ],
+      "workspace_batch": "attachment_decomposition_02",
+      "workspace_version": 2,
+      "attachment_open_questions": [
+        "Both approved views depict a continuous torn cape/cloak. Do not split ragged edges into separate cloth parts; use one main sheet and add a separate panel only where a real seam or independently owned panel is visible. Null Trace VFX remain a separate unresolved presentation task."
+      ],
+      "functional_attachment_contract": [
+        {
+          "id": "blade",
+          "kind": "weapon",
+          "known_behavior": "Blade follows hand grip or sheath/back mount; Null Trace cloak and priority-strike cues respond to simulation state/events.",
+          "gameplay_authority": "Combat simulation",
+          "unknowns": [
+            "Cloak appearance/timing and blade-specific attack cadence are unspecified."
+          ]
+        },
+        {
+          "id": "cape_hood_mask",
+          "kind": "cloth_and_accessories",
+          "known_behavior": "Hood/mask remain attached to head; cape panels use separate back-owned layers and pass secondary-motion/clipping checks.",
+          "gameplay_authority": "Presentation only",
+          "unknowns": [
+            "No gameplay effect specified."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IRONCLAD",
+      "concept_reference": "docs/visual_qa/IRONCLAD_T1_CONCEPT_TURNAROUND_01_2026-10-25.png",
+      "anatomy_reference": "docs/visual_qa/IRONCLAD_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+      "existing_candidate": "assets/characters/ironclad/tier_01_drafts/profile_mesh_rig_candidate_01/",
+      "candidate_status": "quarantined flattened profile mesh; not semantic parts",
+      "special_rig_items": [
+        "powered armor plates at shoulders, elbows, hips, knees, and shins",
+        "heavy rotary weapon as detached hand attachment",
+        "back-mounted armor/power unit"
+      ],
+      "priority_note": "Armor plates should follow rigid joint hierarchy; character remains ground-supported unless an approved ability specifies flight.",
+      "attachment_workspace_layers": [
+        "heavy rotary weapon (one rigid weapon part; author the visible grip/mount; no stow point is specified)",
+        "shoulder armor plate (joint-owned)",
+        "elbow armor plate (joint-owned)",
+        "hip armor plate (joint-owned)",
+        "knee armor plate (joint-owned)",
+        "shin armor plate (joint-owned)",
+        "back-mounted armor/power unit (separate torso/back-owned item)"
+      ],
+      "workspace_batch": "attachment_decomposition_02",
+      "workspace_version": 2,
+      "attachment_open_questions": [
+        "The approved views show the heavy weapon held in the action pose. They do not specify a weapon stow point or transition; do not create a back-stow mount from assumption."
+      ],
+      "functional_attachment_contract": [
+        {
+          "id": "heavy_weapon",
+          "kind": "weapon",
+          "known_behavior": "Weapon shown in the approved visual reference follows its authored grip/mount; firing/recoil cues respond to simulation attack events. Lockdown anchor/suppress presentation follows the ability event.",
+          "gameplay_authority": "Combat simulation",
+          "unknowns": [
+            "The roster does not define weapon subtype, firing cadence, recoil strength, or suppression implementation."
+          ]
+        },
+        {
+          "id": "powered_armor_and_back_unit",
+          "kind": "armor_and_accessory",
+          "known_behavior": "Armor plates are owned by their corresponding joints; back unit stays attached through Lockdown and locomotion poses.",
+          "gameplay_authority": "Presentation only unless a source-backed gameplay effect is approved",
+          "unknowns": [
+            "Do not add armor stats or extra movement constraints from art alone."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STITCH",
+      "concept_reference": "docs/visual_qa/STITCH_T1_CONCEPT_TURNAROUND_01_2026-10-25.png",
+      "anatomy_reference": "docs/visual_qa/STITCH_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+      "existing_candidate": "assets/characters/stitch/tier_01_drafts/profile_mesh_rig_candidate_01/",
+      "candidate_status": "quarantined flattened profile mesh; not semantic parts",
+      "special_rig_items": [
+        "long coat front/back panels",
+        "medical harness and carried case",
+        "handheld vial/tool attachment"
+      ],
+      "priority_note": "Coat tails and case need overlap order that does not hide leg articulation.",
+      "attachment_workspace_layers": [
+        "long coat front panel (separate cloth part)",
+        "long coat back panel (separate cloth part)",
+        "medical harness (separate torso-owned accessory)",
+        "carried case (separate body attachment)",
+        "handheld vial (separate hand attachment; any additional tool must be visible in source before authoring)"
+      ],
+      "workspace_batch": "attachment_decomposition_02",
+      "workspace_version": 2,
+      "attachment_open_questions": [
+        "The approved views clearly show a handheld vial and a separate carried case. They do not establish a separate handheld tool or its use animation; do not add a tool prop without source support."
+      ],
+      "functional_attachment_contract": [
+        {
+          "id": "chem_med_kit_vial",
+          "kind": "tool_and_accessory",
+          "known_behavior": "Harness, case, and vial remain independent attachments; Black Market Cocktail healing, boost, and instability cues respond to simulation-issued events.",
+          "gameplay_authority": "Combat simulation",
+          "unknowns": [
+            "Chemical appearance, dosage, use animation, and instability visuals are unspecified."
+          ]
+        },
+        {
+          "id": "coat_panels",
+          "kind": "cloth",
+          "known_behavior": "Front/back coat panels stay body-owned and pass walk/attack/hit/defeat clipping checks.",
+          "gameplay_authority": "Presentation only",
+          "unknowns": [
+            "Secondary-motion method is not prescribed."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RECOIL",
+      "concept_reference": "docs/visual_qa/RECOIL_T1_CONCEPT_TURNAROUND_01_2026-10-25.png",
+      "anatomy_reference": "docs/visual_qa/RECOIL_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+      "existing_candidate": "assets/characters/recoil/tier_01_drafts/profile_mesh_rig_candidate_01/",
+      "candidate_status": "quarantined flattened profile mesh; not semantic parts",
+      "special_rig_items": [
+        "hydraulic prosthetic arm with separate shoulder/upper arm, elbow, forearm, and hand components",
+        "shotgun as detached hand attachment"
+      ],
+      "priority_note": "Confirm prosthetic side against the approved profile before assigning near/far labels.",
+      "attachment_workspace_layers": [
+        "hydraulic prosthetic shoulder/upper-arm segment (side label provisional)",
+        "hydraulic prosthetic elbow segment (side label provisional)",
+        "hydraulic prosthetic forearm segment (side label provisional)",
+        "hydraulic prosthetic hand segment (side label provisional)",
+        "shotgun (one rigid weapon part; authored grip and stow mounts are distinct pivots)"
+      ],
+      "functional_attachment_contract": [
+        {
+          "id": "hydraulic_prosthetic",
+          "kind": "integrated_cyberware",
+          "known_behavior": "Shoulder/upper arm, elbow, forearm, and hand follow a connected joint chain; side and seams must match the approved anatomy reference.",
+          "gameplay_authority": "Combat simulation for attacks; art rig visualizes movement",
+          "unknowns": [
+            "Exact hydraulic actuation effects are not specified."
+          ]
+        },
+        {
+          "id": "shotgun",
+          "kind": "weapon",
+          "known_behavior": "Shotgun follows authored grip/stow mounts; shot/recoil cue responds to ordinary simulation attack events. Breach Charge movement/impact cues follow its simulation event.",
+          "gameplay_authority": "Combat simulation",
+          "unknowns": [
+            "Exact shot cadence, projectile spread, and Breach Charge path are unspecified."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ECHO",
+      "concept_reference": "docs/visual_qa/ECHO_T1_CONCEPT_TURNAROUND_01_2026-10-25.png",
+      "anatomy_reference": "docs/visual_qa/ECHO_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+      "existing_candidate": "assets/characters/echo/tier_01_drafts/profile_mesh_rig_candidate_01/",
+      "candidate_status": "quarantined flattened profile mesh; not semantic parts",
+      "special_rig_items": [
+        "neural-interface head/ear unit",
+        "reusable sensory drone visual unit; runtime count remains unresolved",
+        "Signal Cascade decoy presentation is distinct from sensory drones; visual form and count remain unresolved",
+        "backpack and cable overlaps"
+      ],
+      "priority_note": "Keep the sensory-drone unit, Signal Cascade decoy presentation, and tethers as separate roles; do not bake a count into the art. Maintain grounded foot contact.",
+      "workspace_batch": "attachment_decomposition_01",
+      "workspace_version": 1,
+      "attachment_workspace_layers": [
+        "sensory drone unit template (each instantiated drone needs its own runtime identity/transform; count unresolved)",
+        "Signal Cascade decoy visual (separate from drone art; appearance and count unresolved)",
+        "neural interface (separate body-owned accessory)",
+        "tether/cable segment (separate layer per authored physical route; endpoints and count follow source review)",
+        "backpack (separate back-owned accessory)"
+      ],
+      "attachment_open_questions": [
+        "Exact drone count and drone-to-decoy relationship are unresolved. The reconstructed local note mentions two sensory drones, while the live roster says drones (plural) and the approved visual reference depicts multiple visible units. Do not bake an exact count into gameplay or rig data until reconciled."
+      ],
+      "functional_attachment_contract": [
+        {
+          "id": "sensory_drones_and_decoys",
+          "kind": "independent_drone_set",
+          "known_behavior": "Remote drones are sensory extensions; Signal Cascade creates decoys. Drones and decoys have separate IDs/transforms when present and respond only to owner/ability state from the simulation.",
+          "gameplay_authority": "Combat simulation",
+          "unknowns": [
+            "Exact drone count, drone-to-decoy relationship, formation, paths, and sensory gameplay rules are unresolved; the visual rig must not decide targets or grant information."
+          ]
+        },
+        {
+          "id": "neural_interface_cables_pack",
+          "kind": "accessory_and_tether",
+          "known_behavior": "Interface, pack, and cable endpoints are anchored to their owners; tethers pass movement and facing tests without tearing or controlling combat.",
+          "gameplay_authority": "Presentation only unless separately specified",
+          "unknowns": [
+            "Cable secondary motion and exact routing require visual review."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VECTOR",
+      "concept_reference": "docs/visual_qa/VECTOR_T1_CONCEPT_TURNAROUND_01_2026-10-25.png",
+      "anatomy_reference": "docs/visual_qa/VECTOR_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+      "existing_candidate": "assets/characters/vector/tier_01_drafts/profile_mesh_rig_candidate_01/",
+      "candidate_status": "quarantined flattened profile mesh; not semantic parts",
+      "special_rig_items": [
+        "courier bag and straps",
+        "blade attachment",
+        "reflex/cyberware details at limbs"
+      ],
+      "priority_note": "Bag straps must not fuse the torso and far-side arm in deformation.",
+      "attachment_workspace_layers": [
+        "courier bag (separate back-owned accessory)",
+        "courier strap segment (separate where its owner or motion differs from the bag)",
+        "blade (one rigid weapon part; hand and sheath/back are distinct mounts)",
+        "reflex/cyberware detail (one overlay per owning limb/joint, identified from reference)"
+      ],
+      "functional_attachment_contract": [
+        {
+          "id": "blade",
+          "kind": "weapon",
+          "known_behavior": "Blade follows hand grip or sheath mount; Slipstream dash/multi-target cues follow simulation movement and target events.",
+          "gameplay_authority": "Combat simulation",
+          "unknowns": [
+            "Dash path, timing, and exact blade attack cadence remain tuning/spec decisions."
+          ]
+        },
+        {
+          "id": "courier_bag_straps_cyberware",
+          "kind": "accessory_and_cyberware",
+          "known_behavior": "Bag/straps attach to torso/back anchors and overlays stay joint-owned; validate no arm fusion or silhouette break during dash poses.",
+          "gameplay_authority": "Presentation only unless separately specified",
+          "unknowns": [
+            "No independent gameplay effect specified."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DEADLOCK",
+      "concept_reference": "docs/visual_qa/DEADLOCK_T1_CONCEPT_TURNAROUND_01_2026-10-25.png",
+      "anatomy_reference": "docs/visual_qa/DEADLOCK_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+      "existing_candidate": "assets/characters/deadlock/tier_01_drafts/profile_mesh_rig_candidate_01/",
+      "candidate_status": "quarantined flattened profile mesh; not semantic parts",
+      "special_rig_items": [
+        "precision rifle as detached hand/back attachment",
+        "backpack and shoulder straps",
+        "forearm suppression/cyberware detail"
+      ],
+      "priority_note": "One rifle is user-approved as shown held and back-mounted in different states; any grip/stow anchors or articulation remain artist-authored and unapproved until reviewed.",
+      "attachment_workspace_layers": [
+        "precision rifle (one authored weapon part shown held and back-mounted in different states by user approval; no new attachment coordinates or transition behavior inferred)",
+        "backpack (separate back-owned accessory)",
+        "shoulder strap segment (separate when its anchor differs from the backpack)",
+        "forearm suppression/cyberware detail (separate forearm-owned overlay)"
+      ],
+      "workspace_batch": "attachment_decomposition_02",
+      "workspace_version": 2,
+      "attachment_open_questions": [
+        "User approval (2026-10-26): one rifle is shown held and back-mounted in different states. This resolves identity/count only; cutout boundaries, authored grip/stow coordinates, pivots, and transition behavior remain open. Do not duplicate weapon art or infer new attachment points."
+      ],
+      "functional_attachment_contract": [
+        {
+          "id": "precision_rifle",
+          "kind": "weapon",
+          "known_behavior": "Marksman weapon follows authored grip/stow pivots; aim/fire cues reflect the simulation attack event and System Break’s simulation-selected target.",
+          "gameplay_authority": "Combat simulation",
+          "unknowns": [
+            "Exact rifle subtype, cadence, aim duration, and anti-cyberware VFX are unspecified."
+          ]
+        },
+        {
+          "id": "backpack_straps_suppression_cyberware",
+          "kind": "accessory_and_cyberware",
+          "known_behavior": "Pack/straps and forearm details remain separate body-owned overlays and do not occlude the authored rifle grip.",
+          "gameplay_authority": "Presentation only unless separately specified",
+          "unknowns": [
+            "No extra suppression mechanics or stats may be inferred."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GLITCH",
+      "concept_reference": "docs/visual_qa/GLITCH_T1_CONCEPT_TURNAROUND_01_2026-10-25.png",
+      "anatomy_reference": "docs/visual_qa/GLITCH_T1_ANATOMY_TURNAROUND_01_2026-10-25.png",
+      "existing_candidate": "assets/characters/glitch/tier_01_drafts/profile_mesh_rig_candidate_01/",
+      "candidate_status": "quarantined flattened profile mesh; not semantic parts",
+      "special_rig_items": [
+        "large cape as separate back/cloth layers",
+        "asymmetric cybernetic lower-limb armor",
+        "sidearm and thigh gear attachments"
+      ],
+      "priority_note": "Keep the continuous cape behind the body; separate it from body art, not into invented panels.",
+      "attachment_workspace_layers": [
+        "main cape sheet behind the body (preserve its continuous torn silhouette; split only at visible independent seams)",
+        "cybernetic lower-limb armor plate (one layer per owning joint, guided by reference)",
+        "sidearm (one rigid weapon part; carry/grip mounts are distinct pivots)",
+        "thigh gear (separate thigh-owned attachment)"
+      ],
+      "workspace_batch": "attachment_decomposition_02",
+      "workspace_version": 2,
+      "attachment_open_questions": [
+        "Both approved views show a continuous torn cape; do not treat each ragged edge as an independent cloth panel. The roster contract calls the weapon a sidearm, while the concept depicts a long blade-like item in the hand and a long object on the back. Confirm weapon identity and count before authoring weapon cutouts or hand/stow mounts."
+      ],
+      "functional_attachment_contract": [
+        {
+          "id": "sidearm",
+          "kind": "weapon",
+          "known_behavior": "Sidearm remains attached to its authored carry/grip mount; its attack cues respond to ordinary simulation events. Frame Skip target-switch burst is displayed from the simulation’s target-change event.",
+          "gameplay_authority": "Combat simulation",
+          "unknowns": [
+            "Sidearm cadence and Frame Skip timing/effect details beyond target-switch burst are unspecified."
+          ]
+        },
+        {
+          "id": "cape_limb_armor_thigh_gear",
+          "kind": "cloth_armor_and_accessories",
+          "known_behavior": "Cape layers remain back-owned; asymmetric limb armor follows its corresponding joints; thigh gear stays attached through locomotion/target-switch poses.",
+          "gameplay_authority": "Presentation only unless separately specified",
+          "unknowns": [
+            "Do not infer stat bonuses or combat effects from equipment visuals."
+          ]
+        }
+      ]
+    }
+  ],
+  "functional_attachment_validation_gates": [
+    "Every independently moving item has a stable attachment ID, owner character, authored anchor/socket, pivot, transform space, and draw order; do not merge items that must move independently.",
+    "Weapons follow authored hand/back grips, stow transitions, facing changes, and attack events; firing/recoil/swing cues must be driven by the combat event stream, not by animation timers.",
+    "Drone and decoy transforms have explicit owners and independent IDs. SPARK has three attack drones; ECHO exact count and drone/decoy mapping remain unresolved. No presentation script schedules damage, chooses targets, or invents formation/flight cadence.",
+    "Accessories, armor, cloth, cables, tools, and medical/chem equipment have explicit ownership and pass idle, walk, attack, hit, defeat, and applicable facing/ability poses for clipping, joint connection, readability, and secondary motion.",
+    "Only ability cues named in the roster are linked to ability events; the simulation remains authoritative for target selection, damage, movement, ability activation, and outcome. Animation, weapon effects, and drones visualize simulation events.",
+    "Record source-backed attachment counts and pivots; flag unspecified behavior and any contradiction rather than inferring gameplay from concept art."
+  ],
+  "attachment_workspaces_status": "Twelve blank Krita/OpenRaster edit containers generated; they are authoring aids only. Their functional attachment contracts are requirements, not implemented gameplay or approved art."
+}

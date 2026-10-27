@@ -1,0 +1,405 @@
+[gd_scene format=3 uid="uid://btq5hlktjtdxa"]
+
+[ext_resource type="Script" uid="uid://b4qwk680y3ec8" path="res://addons/poly-rig/bone_weight_editor.gd" id="1_qnc1l"]
+[ext_resource type="Script" uid="uid://bku10mhmseu8h" path="res://addons/poly-rig/edit_bone_set_button.gd" id="2_10nth"]
+[ext_resource type="Script" uid="uid://bhnx3nbh0ybo4" path="res://addons/poly-rig/weight_chart.gd" id="2_ibbc4"]
+[ext_resource type="Script" uid="uid://bgo76xx6tqt30" path="res://addons/poly-rig/brush.gd" id="3_havll"]
+[ext_resource type="PackedScene" uid="uid://dus48t1fbggv" path="res://addons/poly-rig/bone_set_popup.tscn" id="3_l3tw4"]
+[ext_resource type="Script" uid="uid://0o642yqp78q1" path="res://addons/poly-rig/mouse_event.gd" id="4_4om1t"]
+[ext_resource type="Script" uid="uid://qvctdm78x5lo" path="res://addons/poly-rig/bone_item_list.gd" id="4_svwfl"]
+[ext_resource type="PackedScene" uid="uid://87kf5eft1ouw" path="res://addons/poly-rig/auto_weight_button.tscn" id="5_fr8cw"]
+[ext_resource type="PackedScene" uid="uid://c64hahlpfw7g0" path="res://addons/poly-rig/number_input_field.tscn" id="5_xeg7w"]
+[ext_resource type="Texture2D" uid="uid://k346dqrohr7o" path="res://addons/poly-rig/assets/icons/ToolBoneSelect.svg" id="6_57o1r"]
+[ext_resource type="Script" uid="uid://bt10ls2otgu2o" path="res://addons/poly-rig/manager/weight_manager.gd" id="6_wvh47"]
+[ext_resource type="Script" uid="uid://cbb2kwytmh0dw" path="res://addons/poly-rig/brush_container.gd" id="7_ht740"]
+[ext_resource type="Script" uid="uid://dordvm33rtwnt" path="res://addons/poly-rig/manager/bone_manager.gd" id="10_havll"]
+[ext_resource type="Texture2D" uid="uid://cqsivt3tk108n" path="res://addons/poly-rig/assets/icons/Modifiers.svg" id="10_hxmel"]
+[ext_resource type="Texture2D" uid="uid://dn77167qvli52" path="res://addons/poly-rig/assets/icons/InsertAtCurrentTime.svg" id="11_2vah5"]
+[ext_resource type="Texture2D" uid="uid://cay6p32234b24" path="res://addons/poly-rig/assets/icons/ZoomMore.svg" id="12_4om1t"]
+[ext_resource type="Texture2D" uid="uid://db04dnpxroflp" path="res://addons/poly-rig/assets/icons/Curve2D.svg" id="12_gmd58"]
+[ext_resource type="Texture2D" uid="uid://b815cjp51qi67" path="res://addons/poly-rig/assets/icons/ZoomLess.svg" id="13_3vffh"]
+[ext_resource type="Script" uid="uid://c1qrkypw2vcqp" path="res://addons/poly-rig/smooth_button.gd" id="13_s2750"]
+[ext_resource type="Texture2D" uid="uid://dg3i1glymiljs" path="res://addons/poly-rig/assets/icons/GDScript.svg" id="14_pncv7"]
+[ext_resource type="PackedScene" uid="uid://cna7epvohfyd8" path="res://addons/poly-rig/zoom_bar.tscn" id="18_hxmel"]
+[ext_resource type="Script" uid="uid://b7d5g6lklrwkx" path="res://addons/poly-rig/manager/drag_manager.gd" id="19_2vah5"]
+[ext_resource type="Script" uid="uid://b6hjygj48omi1" path="res://addons/poly-rig/manager/mesh_manager.gd" id="21_3vffh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_57o1r"]
+line_spacing = 0.0
+font_color = Color(0.6542321, 0.6542321, 0.654232, 1)
+
+[node name="BoneWeightEditor" type="Control" unique_id=1861968667]
+clip_contents = true
+custom_minimum_size = Vector2(800, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qnc1l")
+
+[node name="WeightManager" type="Node" parent="." unique_id=1897556107]
+unique_name_in_owner = true
+script = ExtResource("6_wvh47")
+
+[node name="BoneManager" type="Node" parent="." unique_id=472507940]
+unique_name_in_owner = true
+script = ExtResource("10_havll")
+
+[node name="DragManager" type="Node" parent="." unique_id=30422338]
+unique_name_in_owner = true
+script = ExtResource("19_2vah5")
+
+[node name="MeshManager" type="Node" parent="." unique_id=848106138]
+unique_name_in_owner = true
+script = ExtResource("21_3vffh")
+
+[node name="Panel" type="Panel" parent="." unique_id=994667749]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HSplitContainer" parent="Panel" unique_id=1912662884]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="Panel/HBoxContainer" unique_id=1810568166]
+clip_contents = true
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_right = 2
+
+[node name="Control" type="Control" parent="Panel/HBoxContainer/MarginContainer2" unique_id=1353324704]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/HBoxContainer/MarginContainer2/Control" unique_id=1690107662]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 64
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="WeightChart" type="Control" parent="Panel/HBoxContainer/MarginContainer2/Control/MarginContainer" unique_id=729820093]
+unique_name_in_owner = true
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("2_ibbc4")
+
+[node name="Polygon2D" type="Polygon2D" parent="Panel/HBoxContainer/MarginContainer2/Control/MarginContainer/WeightChart" unique_id=2113574145]
+z_index = -1
+position = Vector2(-10.961703, 134.06885)
+scale = Vector2(0.81734955, 0.81734955)
+metadata/bone_data = []
+
+[node name="Brush" type="Control" parent="Panel/HBoxContainer/MarginContainer2/Control" unique_id=835507029]
+z_index = 4096
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("3_havll")
+
+[node name="MouseEvent" type="Control" parent="Panel/HBoxContainer/MarginContainer2/Control" unique_id=721932929]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("4_4om1t")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/HBoxContainer/MarginContainer2/Control" unique_id=1297779139]
+z_index = 3
+clip_contents = true
+layout_mode = 1
+offset_right = 762.0
+offset_bottom = 31.0
+
+[node name="ZoomBar" parent="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2" unique_id=1401462186 instance=ExtResource("18_hxmel")]
+unique_name_in_owner = true
+z_index = 3
+layout_mode = 2
+
+[node name="BrushContainer" type="HBoxContainer" parent="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2" unique_id=1947607722]
+unique_name_in_owner = true
+visible = false
+z_index = 3
+layout_mode = 2
+script = ExtResource("7_ht740")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer" unique_id=879516228]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer/HBoxContainer2" unique_id=576464788]
+layout_mode = 2
+text = "Size"
+
+[node name="BrushSizeSlider" type="HSlider" parent="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer/HBoxContainer2" unique_id=1310302306]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+min_value = 10.0
+value = 50.0
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer" unique_id=604709341]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer/HBoxContainer3" unique_id=1968665827]
+layout_mode = 2
+text = "Feathering"
+
+[node name="FeatheringSizeSlider" type="HSlider" parent="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer/HBoxContainer3" unique_id=208600951]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.01
+value = 0.3
+
+[node name="StrengthInputField" parent="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer" unique_id=137163514 instance=ExtResource("5_xeg7w")]
+layout_mode = 2
+size_flags_horizontal = 3
+field_name = "Strength"
+emit_drag_end = false
+number = 1.0
+min_value = 0.1
+
+[node name="Label" parent="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer/StrengthInputField" index="0" unique_id=595093931]
+text = "Strength"
+
+[node name="HSlider" parent="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer/StrengthInputField" index="1" unique_id=1154318471]
+custom_minimum_size = Vector2(120, 0)
+min_value = 0.1
+value = 1.0
+
+[node name="SpinBox" parent="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer/StrengthInputField" index="2" unique_id=366925073]
+min_value = 0.1
+value = 1.0
+
+[node name="HScrollBar" type="HScrollBar" parent="Panel/HBoxContainer/MarginContainer2/Control" unique_id=651765660]
+unique_name_in_owner = true
+z_index = 3
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -8.0
+offset_right = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+min_value = -932.0
+max_value = 1663.9999389648438
+page = 732.0
+
+[node name="VScrollBar" type="VScrollBar" parent="Panel/HBoxContainer/MarginContainer2/Control" unique_id=519389741]
+unique_name_in_owner = true
+z_index = 3
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_top = 40.0
+offset_bottom = -24.0
+grow_horizontal = 0
+grow_vertical = 2
+min_value = -580.09106
+max_value = 1116.0911
+page = 536.0
+
+[node name="CurrentBoneLabel" type="Label" parent="Panel/HBoxContainer/MarginContainer2/Control" unique_id=723643599]
+unique_name_in_owner = true
+z_index = 3
+layout_mode = 0
+offset_top = 32.0
+offset_right = 40.0
+offset_bottom = 55.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/HBoxContainer" unique_id=146796551]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Panel/HBoxContainer/MarginContainer" unique_id=1316779232]
+clip_contents = true
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+
+[node name="BoxContainer" type="HBoxContainer" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer" unique_id=1427843405]
+layout_mode = 2
+
+[node name="HeatMapOptionButton" type="OptionButton" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer/BoxContainer" unique_id=1313654233]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "Full Heatmap"
+popup/item_0/id = 0
+popup/item_1/text = "Selected Heatmap"
+popup/item_1/id = 1
+popup/item_2/text = "No Heatmap"
+popup/item_2/id = 2
+
+[node name="WeightTypeOptionButton" type="OptionButton" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer/BoxContainer" unique_id=1927042153]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+selected = 0
+item_count = 4
+popup/item_0/text = "Direct (No Brush)"
+popup/item_0/icon = ExtResource("11_2vah5")
+popup/item_0/id = 0
+popup/item_1/text = "Add Brush"
+popup/item_1/icon = ExtResource("12_4om1t")
+popup/item_1/id = 1
+popup/item_2/text = "Subtract Brush"
+popup/item_2/icon = ExtResource("13_3vffh")
+popup/item_2/id = 2
+popup/item_3/text = "Replace Brush"
+popup/item_3/icon = ExtResource("14_pncv7")
+popup/item_3/id = 3
+
+[node name="HSeparator2" type="HSeparator" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer" unique_id=851350112]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer" unique_id=2047960447]
+layout_mode = 2
+
+[node name="SmoothButton" type="Button" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=576138732]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Smooth"
+icon = ExtResource("12_gmd58")
+script = ExtResource("13_s2750")
+
+[node name="EditBoneSetButton" type="Button" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1563603475]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Edit Bones"
+icon = ExtResource("6_57o1r")
+script = ExtResource("2_10nth")
+
+[node name="BoneSetPopup" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/EditBoneSetButton" unique_id=1663940824 node_paths=PackedStringArray("_bone_manager") instance=ExtResource("3_l3tw4")]
+unique_name_in_owner = true
+title = "Edit Bones"
+visible = false
+_bone_manager = NodePath("../../../../../../../BoneManager")
+
+[node name="AutoWeightButton" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=729819256 node_paths=PackedStringArray("weight_manager") instance=ExtResource("5_fr8cw")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Auto Weights"
+icon = ExtResource("10_hxmel")
+weight_manager = NodePath("../../../../../../WeightManager")
+
+[node name="HSeparator" type="HSeparator" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer" unique_id=1233822394]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer" unique_id=123457635]
+layout_mode = 2
+
+[node name="WeightNormalCheckBox" type="CheckBox" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2" unique_id=946860687]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+button_pressed = true
+text = "Normalize"
+
+[node name="ShowPieChartCheckBox" type="CheckBox" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2" unique_id=170670968]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Pie Chart"
+
+[node name="ShowBoneCheckBox" type="CheckBox" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2" unique_id=852002605]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+button_pressed = true
+text = "Bones"
+
+[node name="HSeparator3" type="HSeparator" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer" unique_id=1168066827]
+layout_mode = 2
+
+[node name="BonelessTip" type="Label" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer" unique_id=838587078]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+text = "there are no bones, please click \"Edit Bones\" 
+to add bones and then draw weights."
+label_settings = SubResource("LabelSettings_57o1r")
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer" unique_id=320735648]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BoneItemList" type="VBoxContainer" parent="Panel/HBoxContainer/MarginContainer/HBoxContainer/ScrollContainer" unique_id=166866397]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("4_svwfl")
+
+[connection signal="bone_data_changed" from="BoneManager" to="Panel/HBoxContainer/MarginContainer2/Control/MarginContainer/WeightChart" method="_on_bone_manager_bone_data_changed"]
+[connection signal="bone_data_changed" from="BoneManager" to="Panel/HBoxContainer/MarginContainer/HBoxContainer/ScrollContainer/BoneItemList" method="_on_bone_manager_bone_data_changed"]
+[connection signal="vertex_selected" from="Panel/HBoxContainer/MarginContainer2/Control/MarginContainer/WeightChart" to="Panel/HBoxContainer/MarginContainer/HBoxContainer/ScrollContainer/BoneItemList" method="_on_weight_chart_vertex_selected"]
+[connection signal="mouse_entered" from="Panel/HBoxContainer/MarginContainer2/Control/MouseEvent" to="Panel/HBoxContainer/MarginContainer2/Control/MouseEvent" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/HBoxContainer/MarginContainer2/Control/MouseEvent" to="Panel/HBoxContainer/MarginContainer2/Control/MouseEvent" method="_on_mouse_exited"]
+[connection signal="mouse_in_changed" from="Panel/HBoxContainer/MarginContainer2/Control/MouseEvent" to="Panel/HBoxContainer/MarginContainer2/Control/Brush" method="_on_mouse_event_mouse_in_changed"]
+[connection signal="reset_requested" from="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/ZoomBar" to="DragManager" method="reset_view"]
+[connection signal="zoom_changed" from="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/ZoomBar" to="DragManager" method="_on_zoom_bar_zoom_changed"]
+[connection signal="zoom_changed" from="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/ZoomBar" to="Panel/HBoxContainer/MarginContainer2/Control/MarginContainer/WeightChart" method="_on_zoom_bar_zoom_changed"]
+[connection signal="zoom_changed" from="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/ZoomBar" to="Panel/HBoxContainer/MarginContainer2/Control/Brush" method="_on_zoom_bar_zoom_changed"]
+[connection signal="brush_settings_changed" from="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer" to="Panel/HBoxContainer/MarginContainer2/Control/Brush" method="_on_brush_container_brush_settings_changed"]
+[connection signal="value_changed" from="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer/HBoxContainer2/BrushSizeSlider" to="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer" method="_on_brush_size_slider_value_changed"]
+[connection signal="value_changed" from="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer/HBoxContainer3/FeatheringSizeSlider" to="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer" method="_on_feathering_size_slider_value_changed"]
+[connection signal="value_changed" from="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer/StrengthInputField" to="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer" method="_on_strength_input_field_value_changed"]
+[connection signal="value_changed" from="Panel/HBoxContainer/MarginContainer2/Control/HScrollBar" to="DragManager" method="_on_h_scroll_value_changed"]
+[connection signal="value_changed" from="Panel/HBoxContainer/MarginContainer2/Control/VScrollBar" to="DragManager" method="_on_v_scroll_value_changed"]
+[connection signal="item_selected" from="Panel/HBoxContainer/MarginContainer/HBoxContainer/BoxContainer/HeatMapOptionButton" to="Panel/HBoxContainer/MarginContainer2/Control/MarginContainer/WeightChart" method="_on_heat_map_option_button_item_selected"]
+[connection signal="item_selected" from="Panel/HBoxContainer/MarginContainer/HBoxContainer/BoxContainer/WeightTypeOptionButton" to="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer" method="_on_weight_type_option_button_item_selected"]
+[connection signal="pressed" from="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/SmoothButton" to="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/SmoothButton" method="_on_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/EditBoneSetButton" to="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/EditBoneSetButton" method="_on_pressed"]
+[connection signal="toggled" from="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2/WeightNormalCheckBox" to="Panel/HBoxContainer/MarginContainer/HBoxContainer/ScrollContainer/BoneItemList" method="_on_weight_normal_check_box_toggled"]
+[connection signal="toggled" from="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2/ShowPieChartCheckBox" to="Panel/HBoxContainer/MarginContainer2/Control/MarginContainer/WeightChart" method="_on_show_pie_chart_check_box_toggled"]
+[connection signal="toggled" from="Panel/HBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2/ShowBoneCheckBox" to="Panel/HBoxContainer/MarginContainer2/Control/MarginContainer/WeightChart" method="_on_show_bone_check_box_toggled"]
+[connection signal="bone_selected" from="Panel/HBoxContainer/MarginContainer/HBoxContainer/ScrollContainer/BoneItemList" to="Panel/HBoxContainer/MarginContainer2/Control/MarginContainer/WeightChart" method="_on_bone_item_list_bone_selected"]
+[connection signal="bone_weights_changed" from="Panel/HBoxContainer/MarginContainer/HBoxContainer/ScrollContainer/BoneItemList" to="Panel/HBoxContainer/MarginContainer2/Control/MarginContainer/WeightChart" method="_on_bone_item_list_bone_weights_changed"]
+
+[editable path="Panel/HBoxContainer/MarginContainer2/Control/HBoxContainer2/BrushContainer/StrengthInputField"]

@@ -1,0 +1,49 @@
+{
+  "asset_set": "BREAKER Tier I modular parts trial 01",
+  "status": "QUARANTINED REVIEW PREVIEW — NOT ANIMATION READY",
+  "source_date": "2026-10-24",
+  "source_images_preserved": true,
+  "runtime_references": false,
+  "measurement": {
+    "canvas_px": [1254, 1254],
+    "alpha_bounds_threshold": 32,
+    "note": "Bounds are measured from source alpha. Pivot pixels, target positions, and per-part scales are visual estimates in tests/breaker_parts_trial_01_preview.gd; none are validated skeleton data. Parts were independently generated and their original scale/pose is not guaranteed to match."
+  },
+  "parts": [
+    {"file":"head_neck.png", "alpha_bounds_px":[214,96,1177,1154], "pivot_name":"neck_base", "pivot_px_estimate":[800,1135], "readiness":"profile reads right; neck cut edge is usable for trial; hair and head combined"},
+    {"file":"torso_vest.png", "alpha_bounds_px":[238,61,1044,1198], "pivot_name":"waist", "pivot_px_estimate":[640,1150], "readiness":"vest silhouette present; view angle and scale require fit review"},
+    {"file":"pelvis.png", "alpha_bounds_px":[155,137,1143,1129], "pivot_name":"waist_top", "pivot_px_estimate":[650,150], "readiness":"waist/leg seam estimate only"},
+    {"file":"left_upper_arm.png", "alpha_bounds_px":[184,86,1097,1173], "pivot_name":"shoulder", "pivot_px_estimate":[420,205], "readiness":"bent pose; elbow endpoint estimate only"},
+    {"file":"left_forearm_hand.png", "alpha_bounds_px":[120,321,1137,1025], "pivot_name":"wrist", "pivot_px_estimate":[195,430], "readiness":"forearm and hand combined; palm angle may not match side view"},
+    {"file":"right_cyber_arm.png", "alpha_bounds_px":[216,15,1132,1244], "pivot_name":"shoulder_socket", "pivot_px_estimate":[900,180], "readiness":"single combined arm; elbow articulation unavailable"},
+    {"file":"right_fist.png", "alpha_bounds_px":[32,234,1223,1049], "pivot_name":"wrist_cuff", "pivot_px_estimate":[85,640], "readiness":"attachment estimate only"},
+    {"file":"left_thigh.png", "alpha_bounds_px":[376,45,931,1211], "pivot_name":"hip", "pivot_px_estimate":[650,70], "readiness":"knee brace appears integrated; knee endpoint estimate only"},
+    {"file":"right_thigh.png", "alpha_bounds_px":[293,46,1012,1218], "pivot_name":"hip", "pivot_px_estimate":[660,70], "readiness":"knee endpoint estimate only"},
+    {"file":"left_shin.png", "alpha_bounds_px":[453,73,868,1181], "pivot_name":"knee", "pivot_px_estimate":[650,75], "readiness":"ankle endpoint estimate only"},
+    {"file":"right_shin.png", "alpha_bounds_px":[447,12,914,1179], "pivot_name":"knee", "pivot_px_estimate":[665,75], "readiness":"ankle endpoint estimate only"},
+    {"file":"boot.png", "alpha_bounds_px":[23,106,1235,1154], "pivot_name":"ankle", "pivot_px_estimate":[410,145], "readiness":"reusable right-facing boot; mirrored for second-foot preview only"}
+  ],
+  "fit_review": {
+    "harness": "res://tests/breaker_parts_trial_01_preview.tscn",
+    "pose": "approximately 256 px foot-to-hair target; fixed ground root; waist/hips raised and lower legs extended; torso/pelvis/legs broadened; cyber arm/fist enlarged; exact ratios await user review because source reference is a dynamic pose",
+    "neutral_assembly_gate": "JOINT CONTACT PASS; REFERENCE FIDELITY FAILED",
+    "proportion_acceptance": "FAILED_VISUAL_MISMATCH_REPORTED_BY_USER",
+    "visual_fidelity": {
+      "status": "FAILED",
+      "comparison": "docs/visual_qa/breaker_reference_fidelity_comparison_01.png",
+      "mismatches": ["open natural hand instead of guarded fist", "claw-like cyber fingers instead of signature closed fist", "arm pose differs from boxer stance", "hip/leg silhouette and part perspective differ"]
+    },
+    "joint_contact_test": {
+      "status": "PASS_AT_SAMPLED_POINTS",
+      "sampled_poses": ["neutral", "walk", "punch", "hit"],
+      "representative_joint_pairs": 12,
+      "maximum_pixel_gap": 1.414,
+      "tested_neighborhood_radius_px": "14-18 depending on joint",
+      "boot_ground_max_pixel_gap": 2,
+      "failure_exit_code": 1,
+      "continuous_deformation_verified": false
+    },
+    "deformation_test": "HARNESS_TRACK_SMOKE_TESTS_RAN_IDLE_WALK_PUNCH_HIT; PRODUCTION_DEFORMATION_VALIDATION_BLOCKED",
+    "promotion": "NOT_APPROVED"
+  }
+}

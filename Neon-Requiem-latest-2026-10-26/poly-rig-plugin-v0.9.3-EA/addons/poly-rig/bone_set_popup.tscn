@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dus48t1fbggv"]
+
+[ext_resource type="Script" uid="uid://chkf8fa7ltw0y" path="res://addons/poly-rig/bone_set_popup.gd" id="1_kxdyf"]
+
+[node name="BoneSetPopup" type="AcceptDialog" unique_id=1663940824]
+oversampling_override = 1.0
+title = "添加骨骼"
+initial_position = 1
+size = Vector2i(300, 500)
+visible = true
+script = ExtResource("1_kxdyf")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=38977644]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 292.0
+offset_bottom = 451.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=504047390]
+layout_mode = 2
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer" unique_id=138263939]
+layout_mode = 2

@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cna7epvohfyd8"]
+
+[ext_resource type="Script" uid="uid://bmue337jkshb4" path="res://addons/poly-rig/zoom_bar.gd" id="1_7fcsr"]
+[ext_resource type="Texture2D" uid="uid://cay6p32234b24" path="res://addons/poly-rig/assets/icons/ZoomMore.svg" id="2_djaqj"]
+[ext_resource type="Texture2D" uid="uid://b815cjp51qi67" path="res://addons/poly-rig/assets/icons/ZoomLess.svg" id="3_fgwfj"]
+
+[node name="ZoomBar" type="HBoxContainer" unique_id=1401462186]
+offset_right = 106.0
+offset_bottom = 31.0
+script = ExtResource("1_7fcsr")
+
+[node name="ZoomMore" type="Button" parent="." unique_id=737498607]
+layout_mode = 2
+icon = ExtResource("2_djaqj")
+flat = true
+
+[node name="ZoomNumber" type="Button" parent="." unique_id=350888617]
+layout_mode = 2
+text = "100%"
+flat = true
+
+[node name="ZoomLess" type="Button" parent="." unique_id=416275926]
+layout_mode = 2
+icon = ExtResource("3_fgwfj")
+flat = true
+
+[connection signal="pressed" from="ZoomMore" to="." method="_on_zoom_more_pressed"]
+[connection signal="pressed" from="ZoomNumber" to="." method="_on_zoom_number_pressed"]
+[connection signal="pressed" from="ZoomLess" to="." method="_on_zoom_less_pressed"]

@@ -1,0 +1,21 @@
+{
+  "status": "QUARANTINED GENERATED UNDER-SHELL STUDY \u2014 NOT PRODUCTION ART OR RUNTIME",
+  "reference": "assets/characters/breaker/tier_01_drafts/BREAKER_T1_arm_extent_reconciliation_study_candidate_09.png",
+  "generated_donor": "assets/characters/breaker/tier_01_drafts/profile_rig_trial_09_canon_v13_compact_shoulder_donor/shell_off_anatomy_study.png",
+  "extraction": "skin-classified pixels from generated shoulder-shell-off study, clipped to opaque candidate 09 v4 shell pixels inside the arm ROI",
+  "arm_roi_px": [
+    240,
+    235,
+    455,
+    500
+  ],
+  "selected_hidden_skin_pixels": 16407,
+  "source_visible_composite_exact": true,
+  "canon_boundary": "user-approved 2026-10-25: external shoulder shell over biological upper arm; mechanical prosthesis begins at elbow",
+  "limitations": [
+    "The donor is a generated hypothesis, not artist-authored anatomy or canonical source content.",
+    "The shell-off review crop is used for shape inspection only; all original source layers remain unchanged.",
+    "Exact shell-on composite and mask connectivity do not establish anatomical truth.",
+    "No independent shell deformation, authored pivots, all-frame seams, or production alpha are verified."
+  ]
+}

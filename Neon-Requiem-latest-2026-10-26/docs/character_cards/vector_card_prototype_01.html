@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VECTOR — Neon Requiem Character Card Prototype</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #080c14;
+      --panel: #111925;
+      --line: #273847;
+      --muted: #a5b1c0;
+      --cyan: #67e4ff;
+      --red: #ff416b;
+      --white: #f2f6fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 18px;
+      color: var(--white);
+      background:
+        radial-gradient(ellipse at 50% 0%, #1a2b3b 0, transparent 55%),
+        #05080e;
+      font: 16px/1.45 "Segoe UI", Arial, sans-serif;
+    }
+    .card {
+      position: relative;
+      width: min(100%, 560px);
+      margin: 0 auto;
+      padding: 22px;
+      overflow: hidden;
+      border: 1px solid #456073;
+      border-radius: 18px;
+      background:
+        linear-gradient(145deg, rgb(255 255 255 / 3%), transparent 38%),
+        var(--ink);
+      box-shadow: 0 22px 70px rgb(0 0 0 / 55%), 0 0 30px rgb(39 200 255 / 9%);
+    }
+    .card::before, .card::after {
+      position: absolute;
+      top: 0;
+      width: 34%;
+      height: 3px;
+      content: "";
+    }
+    .card::before { left: 0; background: var(--cyan); }
+    .card::after { right: 0; background: var(--red); }
+    .brand-row, .identity-row, .section-head, .references {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      color: #d8e4ef;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .2em;
+    }
+    .eyebrow {
+      color: var(--cyan);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .rarity {
+      border: 1px solid #7ad8ef;
+      border-radius: 999px;
+      padding: 5px 10px;
+      color: #b5f0ff;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+    }
+    h1 {
+      margin: 12px 0 0;
+      font-size: clamp(34px, 10vw, 48px);
+      line-height: .96;
+      letter-spacing: .08em;
+    }
+    .role-line {
+      margin: 9px 0 16px;
+      color: #b9c7d5;
+      font-size: 13px;
+      letter-spacing: .025em;
+    }
+    figure {
+      margin: 0;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: #080c12;
+    }
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    figcaption {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 7px 2px 0;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    section {
+      margin-top: 15px;
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: linear-gradient(105deg, rgb(36 58 76 / 28%), rgb(10 16 24 / 75%));
+    }
+    .section-head { margin-bottom: 6px; }
+    h2 {
+      margin: 0;
+      color: #dceaf6;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .status {
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+    p { margin: 0; color: #d0d9e3; }
+    .bio { font-size: 14px; }
+    .attack-name {
+      margin: 2px 0 4px;
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 800;
+    }
+    .attack-copy { font-size: 13px; }
+    .open { color: #ffd08a; }
+    .source-note {
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+    .references {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-top: 14px;
+      font-size: 11px;
+    }
+    a { color: var(--cyan); text-decoration-color: rgb(103 228 255 / 40%); }
+    a:hover { text-decoration-color: currentColor; }
+    .footer {
+      margin: 13px 2px 0;
+      color: #8996a5;
+      font-size: 10px;
+      text-align: center;
+    }
+    @media (max-width: 420px) {
+      .card { padding: 16px; }
+      section { padding: 11px; }
+      .status { max-width: 45%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" aria-label="VECTOR character card content prototype">
+    <div class="brand-row">
+      <span class="brand">NEON REQUIEM</span>
+      <span class="eyebrow">Founding Recruit · Tier I Reference</span>
+    </div>
+    <div class="identity-row" style="margin-top: 13px">
+      <div>
+        <h1>VECTOR</h1>
+        <p class="role-line">Independent Mercenary · Blade Specialist / Skirmisher</p>
+      </div>
+      <span class="rarity">COMMON</span>
+    </div>
+
+    <figure>
+      <img src="../visual_qa/VECTOR_T1_CONCEPT_TURNAROUND_01_2026-10-25.png"
+           alt="Approved VECTOR Tier I concept turnaround showing front, side, and back views">
+      <figcaption><span>Approved concept reference</span><span>Reference art · not a sprite</span></figcaption>
+    </figure>
+
+    <section>
+      <div class="section-head"><h2>Backstory</h2><span class="status">Roster source</span></div>
+      <p class="bio">A courier who crossed dangerous territory using reflex implants.</p>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Basic Attack</h2><span class="status open">Open · not source-defined</span></div>
+      <p class="attack-copy">No canonical basic attack, weapon action, or combat rules are specified yet.</p>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Signature Ability / Alternate Action</h2><span class="status">Summary only</span></div>
+      <p class="attack-name">Slipstream</p>
+      <p class="attack-copy">Multi-target dash.</p>
+      <p class="source-note">The roster summary does not define targets, route, timing, or effect values. This is not an executable ability contract.</p>
+    </section>
+
+    <nav class="references" aria-label="Approved character references">
+      <a href="../visual_qa/VECTOR_T1_CONCEPT_TURNAROUND_01_2026-10-25.png">Open concept sheet</a>
+      <a href="../visual_qa/VECTOR_T1_ANATOMY_TURNAROUND_01_2026-10-25.png">Open anatomy turnaround</a>
+      <a href="../CHARACTER_CARDS_CONTENT_DRAFT_01.md">View all 12 content drafts</a>
+    </nav>
+    <p class="footer">Automatic combat · Prototype card layout · Character reference is not production sprite art</p>
+  </main>
+</body>
+</html>

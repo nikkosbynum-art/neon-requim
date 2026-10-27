@@ -1,0 +1,12 @@
+{
+  "district_id": "undercity",
+  "display_name": "Undercity Prototype",
+  "first_wave": 1,
+  "content_end_wave": 25,
+  "last_wave": 125,
+  "prototype_wave_limit": 125,
+  "post_content_display_name": "Progression Test Fixture",
+  "extension_status": "PROVISIONAL: waves 26–125 reuse the Undercity grunt, combat scaling, and placeholder battlefield; no district-specific content is implemented.",
+  "base_credit_reward": 12,
+  "credit_reward_per_wave": 4
+}

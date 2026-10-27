@@ -1,0 +1,26 @@
+{
+  "status": "QUARANTINED REFERENCE-GUIDED UNDERPAINT STUDY \u2014 VISUAL MATCH NOT ESTABLISHED",
+  "source_art": "assets/characters/breaker/tier_01_drafts/BREAKER_T1_arm_extent_reconciliation_study_candidate_09.png",
+  "generated_edit": "assets/characters/breaker/tier_01_drafts/profile_rig_trial_09_canon_v6_reference_contour/reference_contour_full_edit.png",
+  "extraction": "skin-classified pixels from reference-guided edit, clipped to the original candidate 09 shoulder-shell alpha and arm ROI",
+  "arm_roi_px": [
+    240,
+    235,
+    455,
+    500
+  ],
+  "selected_hidden_skin_pixels": 15993,
+  "v5_selected_hidden_skin_pixels": 18066,
+  "pixel_delta": "only hidden donor pixels are supplied beneath unchanged candidate 09 visible layers",
+  "source_visible_composite_exact": true,
+  "largest_8_connected_biological_surface_px": 25470,
+  "major_visible_skin_regions_connected": 2,
+  "canon_boundary": "user-approved 2026-10-25: external shell over biological upper arm; prosthesis begins at elbow",
+  "limitations": [
+    "Generated hidden anatomy is a hypothesis, not artist-authored or canonically sourced.",
+    "Manual shell-off review still sees a substantially rounder deltoid and residual edge fragments.",
+    "Visible shell-on composite preservation and 2D connected masks do not validate anatomy, pivots, independent shell motion, or deformation.",
+    "The full generated image is retained as a quarantined source study and must not replace the approved reference.",
+    "Godot rig registration and production-art acceptance have not been established by this export script."
+  ]
+}

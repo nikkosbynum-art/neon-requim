@@ -1,0 +1,271 @@
+{
+  "status": "quarantined_component_crops",
+  "source": "assets/characters/cipher/tier_01_drafts/parts_atlas_candidate_01/CIPHER_T1_PARTS_ATLAS_CANDIDATE_01_QUARANTINED.png",
+  "source_size_px": [
+    1536,
+    1024
+  ],
+  "alpha_threshold": 32,
+  "minimum_area": 500,
+  "padding_px": 12,
+  "semantic_part_names_assigned": false,
+  "pivots_authored": false,
+  "production_approved": false,
+  "components": [
+    {
+      "component_id": "component_01",
+      "file": "component_01.png",
+      "threshold_bbox_xyxy_exclusive": [
+        852,
+        29,
+        1152,
+        520
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        840,
+        17,
+        1164,
+        532
+      ],
+      "thresholded_alpha_pixel_area": 102466
+    },
+    {
+      "component_id": "component_02",
+      "file": "component_02.png",
+      "threshold_bbox_xyxy_exclusive": [
+        92,
+        50,
+        372,
+        380
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        80,
+        38,
+        384,
+        392
+      ],
+      "thresholded_alpha_pixel_area": 50882
+    },
+    {
+      "component_id": "component_03",
+      "file": "component_03.png",
+      "threshold_bbox_xyxy_exclusive": [
+        1181,
+        57,
+        1306,
+        286
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        1169,
+        45,
+        1318,
+        298
+      ],
+      "thresholded_alpha_pixel_area": 20751
+    },
+    {
+      "component_id": "component_04",
+      "file": "component_04.png",
+      "threshold_bbox_xyxy_exclusive": [
+        1359,
+        57,
+        1478,
+        285
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        1347,
+        45,
+        1490,
+        297
+      ],
+      "thresholded_alpha_pixel_area": 19632
+    },
+    {
+      "component_id": "component_05",
+      "file": "component_05.png",
+      "threshold_bbox_xyxy_exclusive": [
+        539,
+        58,
+        812,
+        529
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        527,
+        46,
+        824,
+        541
+      ],
+      "thresholded_alpha_pixel_area": 84474
+    },
+    {
+      "component_id": "component_06",
+      "file": "component_06.png",
+      "threshold_bbox_xyxy_exclusive": [
+        398,
+        137,
+        525,
+        281
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        386,
+        125,
+        537,
+        293
+      ],
+      "thresholded_alpha_pixel_area": 10493
+    },
+    {
+      "component_id": "component_07",
+      "file": "component_07.png",
+      "threshold_bbox_xyxy_exclusive": [
+        1380,
+        288,
+        1475,
+        577
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        1368,
+        276,
+        1487,
+        589
+      ],
+      "thresholded_alpha_pixel_area": 16998
+    },
+    {
+      "component_id": "component_08",
+      "file": "component_08.png",
+      "threshold_bbox_xyxy_exclusive": [
+        1196,
+        295,
+        1324,
+        579
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        1184,
+        283,
+        1336,
+        591
+      ],
+      "thresholded_alpha_pixel_area": 18794
+    },
+    {
+      "component_id": "component_09",
+      "file": "component_09.png",
+      "threshold_bbox_xyxy_exclusive": [
+        694,
+        571,
+        853,
+        963
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        682,
+        559,
+        865,
+        975
+      ],
+      "thresholded_alpha_pixel_area": 45218
+    },
+    {
+      "component_id": "component_10",
+      "file": "component_10.png",
+      "threshold_bbox_xyxy_exclusive": [
+        1331,
+        575,
+        1432,
+        997
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        1319,
+        563,
+        1444,
+        1009
+      ],
+      "thresholded_alpha_pixel_area": 24518
+    },
+    {
+      "component_id": "component_11",
+      "file": "component_11.png",
+      "threshold_bbox_xyxy_exclusive": [
+        882,
+        576,
+        1044,
+        960
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        870,
+        564,
+        1056,
+        972
+      ],
+      "thresholded_alpha_pixel_area": 40610
+    },
+    {
+      "component_id": "component_12",
+      "file": "component_12.png",
+      "threshold_bbox_xyxy_exclusive": [
+        90,
+        579,
+        255,
+        953
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        78,
+        567,
+        267,
+        965
+      ],
+      "thresholded_alpha_pixel_area": 46232
+    },
+    {
+      "component_id": "component_13",
+      "file": "component_13.png",
+      "threshold_bbox_xyxy_exclusive": [
+        285,
+        584,
+        447,
+        959
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        273,
+        572,
+        459,
+        971
+      ],
+      "thresholded_alpha_pixel_area": 39776
+    },
+    {
+      "component_id": "component_14",
+      "file": "component_14.png",
+      "threshold_bbox_xyxy_exclusive": [
+        447,
+        775,
+        665,
+        984
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        435,
+        763,
+        677,
+        996
+      ],
+      "thresholded_alpha_pixel_area": 27558
+    },
+    {
+      "component_id": "component_15",
+      "file": "component_15.png",
+      "threshold_bbox_xyxy_exclusive": [
+        1043,
+        777,
+        1273,
+        982
+      ],
+      "crop_bbox_xyxy_exclusive": [
+        1031,
+        765,
+        1285,
+        994
+      ],
+      "thresholded_alpha_pixel_area": 27862
+    }
+  ]
+}

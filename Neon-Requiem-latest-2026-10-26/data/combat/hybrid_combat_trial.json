@@ -1,0 +1,29 @@
+{
+  "status": "PROVISIONAL_TRIAL_VALUES_NOT_CANON",
+  "default_model": "direct_damage",
+  "trial_model_cli_flag": "--neon-hybrid-trial",
+  "seed_base": 2601026,
+  "seed_stride": 104729,
+  "power_score": {
+    "current_hp_weight": 1.0,
+    "max_hp_weight": 1.0,
+    "attack_power_weight": 1.0,
+    "cadence_weight": 1.0,
+    "max_hp_reference": 100.0,
+    "attack_power_reference": 10.0,
+    "cadence_reference_seconds": 1.0,
+    "minimum_attack_interval": 0.1
+  },
+  "likelihood": {
+    "minimum_high_impact_probability": 0.15,
+    "maximum_high_impact_probability": 0.85
+  },
+  "impact": {
+    "low_multiplier": 0.7,
+    "high_multiplier": 1.3
+  },
+  "timers": {
+    "maximum_encounter_seconds": 90.0,
+    "no_progress_seconds": 20.0
+  }
+}
